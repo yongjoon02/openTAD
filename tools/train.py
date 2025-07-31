@@ -1,5 +1,5 @@
 import opentad.models.backbones.vit_adapter
-import opentad.datasets.pku  # pku_mmd 대신 pku로 수정
+import opentad.datasets.pku 
 import sys
 import opentad.datasets as datasets
 import os
@@ -255,7 +255,7 @@ def main():
             scaler=scaler,
         )
 
-        # validation 평가
+
         if (val_loader is not None and 
             epoch >= cfg.workflow.val_start_epoch and
             (epoch + 1) % cfg.workflow.val_loss_interval == 0):
@@ -268,8 +268,7 @@ def main():
                 model_ema=model_ema,
                 scaler=scaler,
             )
-
-        # save checkpoint - PKU-MMD 학습에 적합한 체크포인트 저장
+    
         if (epoch == max_epoch - 1) or ((epoch + 1) % cfg.workflow.checkpoint_interval == 0):
             if args.rank == 0:
                 save_checkpoint(model, model_ema, optimizer, scheduler, epoch, work_dir=cfg.work_dir)

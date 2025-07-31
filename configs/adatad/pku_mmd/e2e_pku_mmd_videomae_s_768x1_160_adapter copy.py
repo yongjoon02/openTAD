@@ -4,7 +4,7 @@ _base_ = [
     "../../_base_/models/actionformer.py",
 ]
 
-# 실험별 주요 파라미터
+
 scale_factor = 1
 chunk_num = 512 * scale_factor // 16  
 
@@ -42,13 +42,13 @@ dataset = dict(
             dict(
                 type="LoadFrames",
                 num_clips=1,
-                method="sliding_window",  # random_trunc → center_trunc
+                method="sliding_window",  
                 trunc_len=512,
                 scale_factor=scale_factor,
             ),
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 160)),
-            dict(type="mmaction.CenterCrop", crop_size=160),  # 고정 크기로 변경
+            dict(type="mmaction.CenterCrop", crop_size=160), 
             dict(type="mmaction.FormatShape", input_format="NCTHW"),
             dict(type="ConvertToTensor", keys=["imgs", "gt_segments", "gt_labels"]),
             dict(type="Collect", inputs="imgs", keys=["masks", "gt_segments", "gt_labels"]),
@@ -75,8 +75,8 @@ model = dict(
     num_classes=51,
     prior_generator=dict(
         type="PointGenerator",
-        strides=[4, 8, 16, 32, 64, 128],                # ← 수정
-        regression_range=[                              # ← 수정
+        strides=[4, 8, 16, 32, 64, 128],              
+        regression_range=[                             
             (0, 8), (8, 16), (16, 32),
             (32, 64), (64, 128), (128, 10000)
         ],
@@ -119,9 +119,9 @@ model = dict(
 )
 
 solver = dict(
-    train=dict(batch_size=16, num_workers=4),  # 8 → 16, 2 → 4
-    val=dict(batch_size=8, num_workers=4),     # 4 → 8, 2 → 4
-    test=dict(batch_size=4, num_workers=4),    # 2 → 4, 2 → 4
+    train=dict(batch_size=16, num_workers=4), 
+    val=dict(batch_size=8, num_workers=4),     
+    test=dict(batch_size=4, num_workers=4),    
     clip_grad_norm=1,
     amp=True,
     fp16_compress=True,
@@ -147,15 +147,15 @@ scheduler = dict(type="LinearWarmupCosineAnnealingLR", warmup_epoch=5, max_epoch
 inference = dict(
     load_from_raw_predictions=False, 
     save_raw_prediction=False,
-    score_thresh=0.3,  # 더 높은 임계값으로 필터링
+    score_thresh=0.3,  
 )
 post_processing = dict(
     nms=dict(
         use_soft_nms=True,
-        sigma=0.3,  # 더 엄격한 NMS
-        max_seg_num=500,  # 더 적은 예측 수
-        multiclass=False,  # 단일 클래스만
-        voting_thresh=0.7,  # 더 높은 투표 임계값
+        sigma=0.3,  
+        max_seg_num=500,  
+        multiclass=False, 
+        voting_thresh=0.7,  
     ),
     save_dict=True,
 )
@@ -163,9 +163,9 @@ post_processing = dict(
 workflow = dict(
     logging_interval=10,
     checkpoint_interval=2,
-    val_loss_interval=5,      # 5 epoch마다 validation loss 계산
-    val_eval_interval=5,     # 10 epoch마다 validation 평가
-    val_start_epoch=10,       # 10 epoch부터 validation 시작
+    val_loss_interval=5,      
+    val_eval_interval=5,    
+    val_start_epoch=10,       
     end_epoch=120,
 )
 
@@ -174,7 +174,7 @@ work_dir = "work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter"
 
 evaluation = dict(
     type="mAP_PKU_MMD",
-    subset="validation",  # test → validation
+    subset="validation",  
     tiou_thresholds=[0.1, 0.3, 0.5, 0.7, 0.9],
-    ground_truth_filename="data/PKU-MMD/pku_val.json",  # validation 파일로 변경
+    ground_truth_filename="data/PKU-MMD/pku_val.json",  
 )

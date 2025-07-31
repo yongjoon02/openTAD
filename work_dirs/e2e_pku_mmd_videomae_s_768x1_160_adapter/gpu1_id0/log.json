@@ -66637,3 +66637,6 @@ workflow = dict(
 2025-07-31 17:18:27 Train INFO: [Train]: Epoch 2 completed in 2371.8s (avg 45.611s/iter)
 2025-07-31 17:18:27 Train INFO: [Train]: Final Loss=1.1800
 2025-07-31 17:18:27 Train INFO: [Train]: Epoch 3 started (Total iterations: 52)
+2025-07-31 17:27:10 Train INFO: [Train]: [003][00010/00051] (21.2%)  Loss=1.1777  cls_loss=0.8053  reg_loss=0.3724  lr_det=6.4e-05  GPU=1430MB(alloc)/11456MB(reserved)/9063MB(max)  ETA=1947s  iter_time=522.247s  fwd=3.045s/bwd=0.081s/opt=0.034s
+2025-07-31 17:35:12 Train INFO: [Train]: [003][00020/00051] (40.4%)  Loss=1.1466  cls_loss=0.7823  reg_loss=0.3643  lr_det=6.8e-05  GPU=1430MB(alloc)/11456MB(reserved)/9063MB(max)  ETA=1483s  iter_time=482.293s
+2025-07-31 17:40:51 Train INFO: [Train]: [003][00030/00051] (59.6%)  Loss=1.1486  cls_loss=0.7805  reg_loss=0.3681  lr_det=7.2e-05  GPU=1430MB(alloc)/11456MB(reserved)/9063MB(max)  ETA=910s  iter_time=338.970s

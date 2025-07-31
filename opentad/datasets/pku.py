@@ -9,7 +9,7 @@ class PkuSlidingDataset(SlidingWindowDataset):
     def get_dataset(self):
         """PKU-MMD JSON 구조에 맞게 오버라이드"""
         with open(self.ann_file, "r") as f:
-            anno_database = json.load(f)  # 배열 형태로 로드
+            anno_database = json.load(f)  
         
         # 배열을 딕셔너리로 변환
         video_dict = {}
@@ -69,8 +69,7 @@ class PkuSlidingDataset(SlidingWindowDataset):
         video_name, video_info, video_anno, window_centers = self.data_list[index]
         if video_anno:
             video_anno = deepcopy(video_anno)
-            # 프레임 단위에서 윈도우 오프셋/stride 적용
-            # VideoMAE는 16프레임 단위로 처리하므로 stride 조정
+
             video_anno["gt_segments"] = (
                 video_anno["gt_segments"]
                 - window_centers[0]
@@ -84,10 +83,10 @@ class PkuSlidingDataset(SlidingWindowDataset):
             feature_start_idx=int(window_centers[0] / self.snippet_stride),
             feature_end_idx=int(window_centers[-1] / self.snippet_stride),
             sample_stride=self.sample_stride,
-            fps=30.0,  # PKU-MMD는 30fps로 설정 (JSON 기준)
+            fps=30.0,
             snippet_stride=self.snippet_stride,
             window_start_frame=window_centers[0],
-            duration=video_info["frame"],  # 프레임 단위로 duration 사용
+            duration=video_info["frame"], 
             offset_frames=self.offset_frames,
             **video_anno,
         )
@@ -98,13 +97,12 @@ class PkuPaddingDataset(PaddingDataset):
     def get_dataset(self):
         """PKU-MMD JSON 구조에 맞게 오버라이드"""
         with open(self.ann_file, "r") as f:
-            anno_database = json.load(f)  # 배열 형태로 로드
+            anno_database = json.load(f) 
         
         # 배열을 딕셔너리로 변환
         video_dict = {}
         for video_info in anno_database:
             video_name = video_info["video_name"]
-            # JSON 파일에 이미 subset이 있으면 사용, 없으면 기본값 설정
             if "subset" not in video_info:
                 if "train" in self.subset_name.lower():
                     video_info["subset"] = "training"
@@ -114,7 +112,7 @@ class PkuPaddingDataset(PaddingDataset):
                     video_info["subset"] = "testing"
             video_dict[video_name] = video_info
         
-        # some videos might be missed in the features or videos, we need to block them
+
         if self.block_list != None:
             if isinstance(self.block_list, list):
                 blocked_videos = self.block_list
@@ -129,12 +127,12 @@ class PkuPaddingDataset(PaddingDataset):
             if (video_name in blocked_videos) or (video_info["subset"] not in self.subset_name):
                 continue
 
-            # get the ground truth annotation
+
             if self.test_mode:
                 video_anno = {}
             else:
                 video_anno = self.get_gt(video_info)
-                if video_anno == None:  # have no valid gt
+                if video_anno == None:  
                     continue
 
             self.data_list.append([video_name, video_info, video_anno])
@@ -170,8 +168,8 @@ class PkuPaddingDataset(PaddingDataset):
             data_path=self.data_path,
             sample_stride=self.sample_stride,
             snippet_stride=self.snippet_stride,
-            fps=30.0,  # PKU-MMD는 30fps로 설정 (JSON 기준)
-            duration=video_info["frame"],  # 프레임 단위로 duration 사용
+            fps=30.0, 
+            duration=video_info["frame"],  
             offset_frames=self.offset_frames,
             **video_anno,
         )

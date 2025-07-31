@@ -7,7 +7,7 @@ class_map        = "data/PKU-MMD/class_map.txt"
 video_dir        = "F:/dataset/pku-mmd/rgb"
 block_list       = None
 
-window_size = 512  # PKU-MMD의 짧은 액션 특성에 맞춰 512로 설정
+window_size = 512 
 
 dataset = dict(
     train=dict(
@@ -17,7 +17,7 @@ dataset = dict(
         class_map=class_map,
         data_path=video_dir,
         filter_gt=False,
-        feature_stride=4,  # VideoMAE-S에 맞춰 4로 조정
+        feature_stride=4,  
         sample_stride=1,
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
@@ -50,7 +50,7 @@ dataset = dict(
         class_map=class_map,
         data_path=video_dir,
         filter_gt=False,
-        feature_stride=4,  # VideoMAE-S에 맞춰 4로 조정
+        feature_stride=4, 
         sample_stride=1,
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
@@ -86,7 +86,7 @@ dataset = dict(
         test_mode=True,
         window_size=window_size,
         window_overlap_ratio=0.5,
-        feature_stride=4,  # VideoMAE-S에 맞춰 4로 조정
+        feature_stride=4,  
         sample_stride=1,
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),

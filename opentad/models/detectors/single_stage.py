@@ -106,6 +106,8 @@ class SingleStageDetector(BaseDetector):
         for i in range(len(metas)):  # processing each video
             segments = rpn_proposals[i].detach().cpu()  # [N,2]
             scores = rpn_scores[i].detach().cpu()  # [N,class]
+            
+
 
             if num_classes == 1:
                 scores = scores.squeeze(-1)
@@ -145,8 +147,9 @@ class SingleStageDetector(BaseDetector):
             # merge with external classifier
             if isinstance(ext_cls, list):  # own classification results
                 labels = [ext_cls[label.item()] for label in labels]
-            else:
+            elif callable(ext_cls):  # ext_cls가 함수인 경우에만 호출
                 segments, labels, scores = ext_cls(video_id, segments, scores)
+            # ext_cls가 딕셔너리이거나 None인 경우는 아무것도 하지 않음
 
             results_per_video = []
             for segment, label, score in zip(segments, labels, scores):
@@ -154,7 +157,7 @@ class SingleStageDetector(BaseDetector):
                 results_per_video.append(
                     dict(
                         segment=[round(seg.item(), 2) for seg in segment],
-                        label=label,
+                        label=label.item() if hasattr(label, 'item') else label,  # Tensor를 스칼라로 변환
                         score=round(score.item(), 4),
                     )
                 )

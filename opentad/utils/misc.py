@@ -39,6 +39,10 @@ def save_config(cfg, folder_path):
 
 def reduce_loss(loss_dict):
     # reduce loss when distributed training, only for logging
+    # Check if distributed training is initialized
+    if not dist.is_available() or not dist.is_initialized():
+        return loss_dict
+    
     for loss_name, loss_value in loss_dict.items():
         loss_value = loss_value.data.clone()
         dist.all_reduce(loss_value.div_(dist.get_world_size()))

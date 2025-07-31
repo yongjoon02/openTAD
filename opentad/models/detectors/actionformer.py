@@ -41,18 +41,48 @@ class ActionFormer(SingleStageDetector):
         self.max_div_factor = max_div_factor
 
     def pad_data(self, inputs, masks):
-        feat_len = inputs.shape[-1]
-        if feat_len == self.max_seq_len:
-            return inputs, masks
-        elif feat_len < self.max_seq_len:
-            max_len = self.max_seq_len
-        else:  # feat_len > self.max_seq_len
-            max_len = feat_len
+        # inputs: [B, C, T] or [B, T, C]
+        # masks: [B, T]
+        
+        # Handle different input formats
+        if inputs.dim() == 3:
+            if inputs.shape[1] < inputs.shape[2]:  # [B, C, T] format
+                feat_len = inputs.shape[2]
+                is_bct_format = True
+            else:  # [B, T, C] format
+                feat_len = inputs.shape[1]
+                is_bct_format = False
+        else:
+            feat_len = inputs.shape[-1]
+            is_bct_format = True  # Assume [B, C, T] format
+        
+        # Adjust mask length to match feature length
+        if masks.shape[1] != feat_len:
+            # Resize mask to match feature length
+            if masks.shape[1] > feat_len:
+                # Truncate mask
+                masks = masks[:, :feat_len]
+            else:
+                # Pad mask
+                pad_size = feat_len - masks.shape[1]
+                masks = torch.nn.functional.pad(masks, (0, pad_size), value=False)
+        
+        # Initialize max_len
+        max_len = feat_len
+        
+        if feat_len > self.max_div_factor:
             # pad the input to the next divisible size
             stride = self.max_div_factor
             max_len = (max_len + (stride - 1)) // stride * stride
 
-        padding_size = [0, max_len - feat_len]
+        # Pad inputs properly based on format
+        if is_bct_format:
+            # [B, C, T] format - pad only the temporal dimension
+            padding_size = [0, max_len - feat_len]  # pad only the last dimension (T)
+        else:
+            # [B, T, C] format - pad only the temporal dimension
+            padding_size = [0, 0, 0, max_len - feat_len]  # pad only the second dimension (T)
+        
         inputs = torch.nn.functional.pad(inputs, padding_size, value=0)
         pad_masks = torch.zeros((inputs.shape[0], max_len), device=masks.device).bool()
         pad_masks[:, :feat_len] = masks

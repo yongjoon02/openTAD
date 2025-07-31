@@ -50,7 +50,20 @@ def load_predictions(metas, infer_cfg):
 
 
 def convert_to_seconds(segments, meta):
-    if meta["fps"] == -1:  # resize setting, like in anet / hacs
+    # 디버깅: 변환 전 상태 확인
+    if segments.shape[0] > 0 and "video_name" in meta:
+        print(f"DEBUG: convert_to_seconds - video: {meta['video_name']}")
+        print(f"DEBUG: convert_to_seconds - segments before: {segments[:3]}")
+        print(f"DEBUG: convert_to_seconds - meta fps: {meta.get('fps', 'NOT_FOUND')}")
+        print(f"DEBUG: convert_to_seconds - meta duration: {meta.get('duration', 'NOT_FOUND')}")
+    
+    # PKU-MMD 특별 처리: 프레임 단위 유지 (시간 변환 안함)
+    if "video_name" in meta and meta.get("fps", 0) == 30.0:  # PKU-MMD 특성 확인 (30fps)
+        # PKU-MMD는 프레임 단위로 그대로 유지 (시간 변환 안함)
+        # segments는 이미 프레임 단위이므로 그대로 사용
+        if segments.shape[0] > 0:
+            print(f"DEBUG: convert_to_seconds - PKU-MMD mode, segments after (frame): {segments[:3]}")
+    elif meta["fps"] == -1:  # resize setting, like in anet / hacs
         segments = segments / meta["resize_length"] * meta["duration"]
     else:  # sliding window / padding setting, like in thumos / ego4d
         snippet_stride = meta["snippet_stride"]
@@ -58,8 +71,12 @@ def convert_to_seconds(segments, meta):
         window_start_frame = meta["window_start_frame"] if "window_start_frame" in meta.keys() else 0
         segments = (segments * snippet_stride + window_start_frame + offset_frames) / meta["fps"]
 
-    # truncate all boundaries within [0, duration]
+    # truncate all boundaries within [0, duration] (duration도 프레임 단위로 처리)
     if segments.shape[0] > 0:
         segments[segments <= 0.0] *= 0.0
-        segments[segments >= meta["duration"]] = segments[segments >= meta["duration"]] * 0.0 + meta["duration"]
+        # duration을 프레임 단위로 변환 (초 * fps)
+        max_frames = meta["duration"] * meta["fps"] if meta.get("fps", 0) == 30.0 else meta["duration"]
+        segments[segments >= max_frames] = segments[segments >= max_frames] * 0.0 + max_frames
+        if "video_name" in meta:
+            print(f"DEBUG: convert_to_seconds - final segments (frame): {segments[:3]}")
     return segments

@@ -6,6 +6,7 @@ from .vit import VisionTransformerCP
 from .vit_adapter import VisionTransformerAdapter
 from .vit_ladder import VisionTransformerLadder
 
+
 __all__ = [
     "BackboneWrapper",
     "ResNet2Plus1d_TSP",

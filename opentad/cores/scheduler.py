@@ -25,7 +25,7 @@ def build_scheduler(cfg, optimizer, dataloader_len):
         cfg["milestones"] = [dataloader_len * step for step in cfg["milestones"]]
         scheduler = LinearWarmupMultiStepLR(optimizer, warmup_epoch=0, **cfg)
     else:
-        raise f"Optimizer {scheduler_type} is not supported so far."
+        raise RuntimeError(f"Optimizer {scheduler_type} is not supported so far.")
 
     return scheduler, max_epoch
 

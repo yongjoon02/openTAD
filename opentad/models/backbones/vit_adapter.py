@@ -63,11 +63,26 @@ class Adapter(BaseModule):
 
         # temporal depth-wise convolution
         B, N, C = x.shape  # 48, 8*10*10, 384
-        attn = x.reshape(-1, self.temporal_size, h, w, x.shape[-1])  # [b,t,h,w,c]  [1,384,10,10,384]
+        # h와 w를 확실히 정수로 변환
+        if hasattr(h, 'item'):
+            h_int = int(h.item())
+        elif isinstance(h, (list, tuple)):
+            h_int = int(h[1]) if len(h) > 1 else int(h[0])  # 두 번째 값 사용 (실제 공간 차원)
+        else:
+            h_int = int(h)
+            
+        if hasattr(w, 'item'):
+            w_int = int(w.item())
+        elif isinstance(w, (list, tuple)):
+            w_int = int(w[1]) if len(w) > 1 else int(w[0])  # 두 번째 값 사용 (실제 공간 차원)
+        else:
+            w_int = int(w)
+            
+        attn = x.reshape(-1, self.temporal_size, h_int, w_int, x.shape[-1])  # [b,t,h,w,c]  [1,384,10,10,384]
         attn = attn.permute(0, 2, 3, 4, 1).flatten(0, 2)  # [b*h*w,c,t] [1*10*10,384,384]
         attn = self.dwconv(attn)  # [b*h*w,c,t] [1*10*10,384,384]
         attn = self.conv(attn)  # [b*h*w,c,t] [1*10*10,384,384]
-        attn = attn.unflatten(0, (-1, h, w)).permute(0, 4, 1, 2, 3)  # [b,t,h,w,c] [1,384,10,10,384]
+        attn = attn.unflatten(0, (-1, h_int, w_int)).permute(0, 4, 1, 2, 3)  # [b,t,h,w,c] [1,384,10,10,384]
         attn = attn.reshape(B, N, C)
         x = x + attn
 
@@ -100,6 +115,32 @@ class PlainAdapter(BaseModule):
         # down and up projection
         x = self.down_proj(x)
         x = self.act(x)
+
+        # temporal depth-wise convolution
+        B, N, C = x.shape  # 48, 8*10*10, 384
+        # h와 w를 확실히 정수로 변환
+        if hasattr(h, 'item'):
+            h_int = int(h.item())
+        elif isinstance(h, (list, tuple)):
+            h_int = int(h[1]) if len(h) > 1 else int(h[0])  # 두 번째 값 사용 (실제 공간 차원)
+        else:
+            h_int = int(h)
+            
+        if hasattr(w, 'item'):
+            w_int = int(w.item())
+        elif isinstance(w, (list, tuple)):
+            w_int = int(w[1]) if len(w) > 1 else int(w[0])  # 두 번째 값 사용 (실제 공간 차원)
+        else:
+            w_int = int(w)
+            
+        attn = x.reshape(-1, self.temporal_size, h_int, w_int, x.shape[-1])  # [b,t,h,w,c]  [1,384,10,10,384]
+        attn = attn.permute(0, 2, 3, 4, 1).flatten(0, 2)  # [b*h*w,c,t] [1*10*10,384,384]
+        attn = self.dwconv(attn)  # [b*h*w,c,t] [1*10*10,384,384]
+        attn = self.conv(attn)  # [b*h*w,c,t] [1*10*10,384,384]
+        attn = attn.unflatten(0, (-1, h_int, w_int)).permute(0, 4, 1, 2, 3)  # [b,t,h,w,c] [1,384,10,10,384]
+        attn = attn.reshape(B, N, C)
+        x = x + attn
+
         x = self.up_proj(x)
         return x * self.gamma + inputs
 
@@ -269,7 +310,7 @@ class Block(BaseModule):
                 mlp_ratio=adapter_mlp_ratio,
             )
 
-    def forward(self, x: Tensor, h, w) -> Tensor:
+    def forward(self, x: Tensor, h: int, w: int) -> Tensor:
         """Defines the computation performed at every call.
 
         Args:
@@ -296,48 +337,35 @@ class Block(BaseModule):
 
 @MODELS.register_module()
 class VisionTransformerAdapter(BaseModule):
-    """Vision Transformer with support for patch or hybrid CNN input stage. An
-    impl of `VideoMAE: Masked Autoencoders are Data-Efficient Learners for
-    Self-Supervised Video Pre-Training <https://arxiv.org/pdf/2203.12602.pdf>`_
-
-    We add the checkpointing and frozen stage to the original VisionTransformer.
+    """Vision Transformer with Adapter for Video Action Detection.
 
     Args:
-        img_size (int or tuple): Size of input image.
-            Defaults to 224.
-        patch_size (int): Spatial size of one patch. Defaults to 16.
-        in_channels (int): The number of channels of he input.
-            Defaults to 3.
-        embed_dims (int): Dimensions of embedding. Defaults to 768.
-        depth (int): number of blocks in the transformer.
-            Defaults to 12.
-        num_heads (int): Number of parallel attention heads in
-            TransformerCoder. Defaults to 12.
-        mlp_ratio (int): The ratio between the hidden layer and the
-            input layer in the FFN. Defaults to 4.
-        qkv_bias (bool): If True, add a learnable bias to q and v.
+        img_size (int): Input image size. Defaults to 224.
+        patch_size (int): Patch size. Defaults to 16.
+        in_channels (int): Number of input channels. Defaults to 3.
+        embed_dims (int): Embedding dimension. Defaults to 768.
+        depth (int): Depth of transformer. Defaults to 12.
+        num_heads (int): Number of attention heads. Defaults to 12.
+        mlp_ratio (int): Ratio of mlp hidden dim to embedding dim. Defaults to 4.
+        qkv_bias (bool): If True, add a learnable bias to query, key, value.
             Defaults to True.
-        qk_scale (float, optional): Override default qk scale of
-            ``head_dim ** -0.5`` if set. Defaults to None.
-        drop_rate (float): Dropout ratio of output. Defaults to 0.
-        attn_drop_rate (float): Dropout ratio of attention weight.
-            Defaults to 0.
-        drop_path_rate (float): Dropout ratio of the residual branch.
-            Defaults to 0.
-        norm_cfg (dict or Configdict): Config for norm layers.
-            Defaults to `dict(type='LN', eps=1e-6)`.
-        num_frames (int): Number of frames in the video. Defaults to 16.
-        tubelet_size (int): Temporal size of one patch. Defaults to 2.
-        use_mean_pooling (bool): If True, take the mean pooling over all
-            positions. Defaults to True.
-        pretrained (str, optional): Name of pretrained model. Default: None.
-        return_feat_map (bool): If True, return the feature in the shape of
-            `[B, C, T, H, W]`. Defaults to False.
-        init_cfg (dict or list[dict]): Initialization config dict. Defaults to
-            ``[
-            dict(type='TruncNormal', layer='Linear', std=0.02, bias=0.),
-            dict(type='Constant', layer='LayerNorm', val=1., bias=0.)
-            ]``.
+        qk_scale (int): Override default qk scale of head_dim ** -0.5 if set.
+            Defaults to None.
+        drop_rate (float): Dropout rate. Defaults to 0.
+        attn_drop_rate (float): Attention dropout rate. Defaults to 0.
+        drop_path_rate (float): Stochastic depth rate. Defaults to 0.
+        norm_cfg (dict): Config dict for normalization layer.
+            Defaults to dict(type='LN', eps=1e-6).
+        num_frames (int): Number of frames per attention. Defaults to 16.
+        tubelet_size (int): Size of tubelet. Defaults to 2.
+        use_mean_pooling (bool): Whether to use mean pooling. Defaults to True.
+        pretrained (str): Path to pretrained model. Defaults to None.
+        return_feat_map (bool): Whether to return feature map. Defaults to False.
+        with_cp (bool): Use checkpoint or not. Defaults to False.
+        adapter_mlp_ratio (float): MLP ratio for adapter. Defaults to 0.25.
+        total_frames (int): Total number of frames. Defaults to 768.
+        adapter_index (list): Index of layers to add adapter. Defaults to [3, 5, 7, 11].
+        init_cfg (dict): Initialization config dict. Defaults to None.
     """
 
     def __init__(
@@ -370,15 +398,33 @@ class VisionTransformerAdapter(BaseModule):
         ],
         **kwargs,
     ) -> None:
-        if pretrained:
-            self.init_cfg = dict(type="Pretrained", checkpoint=pretrained)
         super().__init__(init_cfg=init_cfg)
 
-        self.with_cp = with_cp
-
-        self.embed_dims = embed_dims
+        self.img_size = img_size
         self.patch_size = patch_size
+        self.in_channels = in_channels
+        self.embed_dims = embed_dims
+        self.depth = depth
+        self.num_heads = num_heads
+        self.mlp_ratio = mlp_ratio
+        self.qkv_bias = qkv_bias
+        self.qk_scale = qk_scale
+        self.drop_rate = drop_rate
+        self.attn_drop_rate = attn_drop_rate
+        self.drop_path_rate = drop_path_rate
+        self.norm_cfg = norm_cfg
+        self.num_frames = num_frames
+        self.tubelet_size = tubelet_size
+        self.use_mean_pooling = use_mean_pooling
+        self.pretrained = pretrained
+        self.return_feat_map = return_feat_map
+        self.with_cp = with_cp
+        self.adapter_mlp_ratio = adapter_mlp_ratio
+        self.total_frames = total_frames
+        self.adapter_index = adapter_index
+        self.use_abs_pos_emb = True # Added missing attribute
 
+        # patch embedding
         self.patch_embed = PatchEmbed(
             in_channels=in_channels,
             embed_dims=embed_dims,
@@ -386,24 +432,18 @@ class VisionTransformerAdapter(BaseModule):
             kernel_size=(tubelet_size, patch_size, patch_size),
             stride=(tubelet_size, patch_size, patch_size),
             padding=(0, 0, 0),
-            dilation=(1, 1, 1),
+            dilation=(1, 1, 1),  # 3D conv이므로 3개 값 필요
+            norm_cfg=None,
         )
 
-        grid_size = img_size // patch_size
-        num_patches = grid_size**2 * (num_frames // tubelet_size)
-        self.grid_size = (grid_size, grid_size)
+        # positional encoding
+        self.pos_embed = nn.Parameter(torch.zeros(1, (total_frames // tubelet_size) * (img_size // patch_size) ** 2, embed_dims))
 
-        # sine-cosine positional embeddings
-        pos_embed = get_sinusoid_encoding(num_patches, embed_dims)
-        self.register_buffer("pos_embed", pos_embed)
-
-        self.pos_drop = nn.Dropout(p=drop_rate)
-
-        # stochastic depth decay rule
+        # transformer blocks
         dpr = [x.item() for x in torch.linspace(0, drop_path_rate, depth)]
-
-        self.blocks = ModuleList(
-            [
+        self.blocks = ModuleList()
+        for i in range(depth):
+            self.blocks.append(
                 Block(
                     embed_dims=embed_dims,
                     num_heads=num_heads,
@@ -415,85 +455,110 @@ class VisionTransformerAdapter(BaseModule):
                     drop_path_rate=dpr[i],
                     norm_cfg=norm_cfg,
                     with_cp=with_cp,
-                    init_cfg=init_cfg,
-                    use_adapter=i in adapter_index,
+                    use_adapter=(i in adapter_index),
                     adapter_mlp_ratio=adapter_mlp_ratio,
                     temporal_size=total_frames // tubelet_size,
                 )
-                for i in range(depth)
-            ]
-        )
+            )
 
-        if use_mean_pooling:
-            self.norm = nn.Identity()
-            self.fc_norm = build_norm_layer(norm_cfg, embed_dims)[1]
+        # final norm
+        self.fc_norm = build_norm_layer(norm_cfg, embed_dims)[1]
+
+        # load pretrained weights
+        if pretrained:
+            self._freeze_layers()
+
+        # Initialize mean and std for normalization
+        self.register_buffer('mean', torch.tensor([0.485, 0.456, 0.406]).view(1, 3, 1, 1, 1))
+        self.register_buffer('std', torch.tensor([0.229, 0.224, 0.225]).view(1, 3, 1, 1, 1))
+        
+        # Initialize weights
+        self.apply(self._init_weights)
+        trunc_normal_init(self.pos_embed, std=0.02)
+
+    def _init_weights(self, m):
+        if isinstance(m, nn.Linear):
+            trunc_normal_init(m, std=0.02)
+            if isinstance(m, nn.Linear) and m.bias is not None:
+                constant_init(m.bias, 0)
+        elif isinstance(m, nn.LayerNorm):
+            constant_init(m.bias, 0)
+            constant_init(m.weight, 1.0)
+
+    def forward(self, x):
+        # Input: [B, C, T, H, W]
+        B, C, T, H, W = x.shape
+        
+        # Basic normalization
+        if x.dtype == torch.uint8:
+            x = x.float() / 255.0
+        x = (x - self.mean) / self.std
+        
+        # Patch embedding expects [B, C, T, H, W] format
+        patch_result = self.patch_embed(x)
+        if isinstance(patch_result, tuple):
+            x, patch_info = patch_result
         else:
-            self.norm = build_norm_layer(norm_cfg, embed_dims)[1]
-            self.fc_norm = None
-
-        self.return_feat_map = return_feat_map
-
-        # count the number of parameters in the backbone
-        num_vit_param = sum(p.numel() for name, p in self.named_parameters() if "adapter" not in name)
-        num_adapter_param = sum(p.numel() for name, p in self.named_parameters() if "adapter" in name)
-        ratio = num_adapter_param / num_vit_param * 100
-        print("ViT's param: {}, Adapter's params: {}, ratio: {:2.1f}%".format(num_vit_param, num_adapter_param, ratio))
-
-    def forward(self, x: Tensor) -> Tensor:
-        """Defines the computation performed at every call.
-
-        Args:
-            x (Tensor): The input data.
-        Returns:
-            Tensor: The feature of the input
-                samples extracted by the backbone.
-        """
-        self._freeze_layers()
-
-        b, _, _, h, w = x.shape
-        h //= self.patch_size
-        w //= self.patch_size
-        x = self.patch_embed(x)[0]
-        if (h, w) != self.grid_size:
-            pos_embed = self.pos_embed.reshape(-1, *self.grid_size, self.embed_dims)
-            pos_embed = pos_embed.permute(0, 3, 1, 2)
-            pos_embed = F.interpolate(pos_embed, size=(h, w), mode="bicubic", align_corners=False)
-            pos_embed = pos_embed.permute(0, 2, 3, 1).flatten(1, 2)
-            pos_embed = pos_embed.reshape(1, -1, self.embed_dims)
-        else:
-            pos_embed = self.pos_embed
-
-        x = x + pos_embed
-        x = self.pos_drop(x)
-
-        for blk in self.blocks:
-            x = blk(x, h, w)
-
-        x = self.norm(x)
-
+            x = patch_result
+            patch_info = None
+        
+        # Add position embedding
+        if hasattr(self, 'pos_embed') and self.pos_embed is not None:
+            if hasattr(self, 'use_abs_pos_emb') and self.use_abs_pos_emb:
+                # Resize pos_embed to match x size
+                if x.shape[1] != self.pos_embed.shape[1]:
+                    pos_embed = self.pos_embed
+                    if hasattr(self, 'cls_token') and self.cls_token is not None:
+                        pos_embed = pos_embed[:, 1:]  # Remove cls_token position
+                    pos_embed = pos_embed[:, :x.shape[1]]
+                    x = x + pos_embed
+                else:
+                    x = x + self.pos_embed
+        
+        # Apply transformer blocks
+        for block in self.blocks:
+            # Calculate spatial dimensions for adapter
+            B, N, C = x.shape
+            T_patches = T // self.tubelet_size  # temporal patches
+            H_patches = W_patches = int((N // T_patches) ** 0.5)  # spatial patches (assuming square)
+            
+            x = block(x, H_patches, W_patches)
+        
+        # Apply final normalization
+        if hasattr(self, 'fc_norm'):
+            x = self.fc_norm(x)
+        
+        # Return format based on return_feat_map
         if self.return_feat_map:
-            x = x.reshape(b, -1, h, w, self.embed_dims)
-            x = x.permute(0, 4, 1, 2, 3)
+            # (1) cls 토큰 제거
+            if getattr(self, 'cls_token', None) is not None:
+                x = x[:, 1:]           # [B, N-1, C]
+
+            # (2) 시퀀스를 [B, C, T] 형태로 변환
+            B, N, C = x.shape
+            T_p = T // self.tubelet_size              # 예: 768/2 = 384
+            S   = N // T_p                            # spatial 패치 수
+
+            x = x.reshape(B, T_p, S, C)               # [B, T_p, S, C]
+            x = x.mean(dim=2)                         # [B, T_p, C] - spatial 차원 평균
+            x = x.permute(0, 2, 1)                    # [B, C, T_p]
+
+            # BackboneWrapper가 기대하는 형태: [B*N, C, T]
+            # 입력이 [B*N, C, T, H, W]이므로 출력도 [B*N, C, T]여야 함
             return x
 
-        if self.fc_norm is not None:
-            return self.fc_norm(x.mean(1))
-
-        return x[:, 0]
+        elif self.use_mean_pooling:
+            # mean pooling
+            if hasattr(self, 'cls_token') and self.cls_token is not None:
+                x = x[:, 1:].mean(dim=1)  # Remove cls_token and mean pool
+            else:
+                x = x.mean(dim=1)
+            return x
+        else:
+            return x
 
     def _freeze_layers(self):
-        """Prevent all the parameters not in the adapters"""
-
-        # freeze patch_embed
-        self.patch_embed.eval()
-        for m in self.patch_embed.modules():
-            for param in m.parameters():
+        """Freeze layers for pretrained model."""
+        for name, param in self.named_parameters():
+            if "adapter" not in name:  # adapter는 학습 가능하게 유지
                 param.requires_grad = False
-
-        # freeze blocks except the adapter's parameters
-        for block in self.blocks:
-            for m, n in block.named_children():
-                if "adapter" not in m and m != "drop_path":
-                    n.eval()
-                    for param in n.parameters():
-                        param.requires_grad = False

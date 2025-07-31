@@ -2,6 +2,11 @@ import torch
 from .layer_decay_optimizer import build_vit_optimizer
 
 
+def get_model(model):
+    """Get the actual model from either DDP wrapped model or single GPU model"""
+    return model.module if hasattr(model, 'module') else model
+
+
 def build_optimizer(cfg, model, logger):
     optimizer_type = cfg["type"]
     cfg.pop("type")
@@ -9,9 +14,12 @@ def build_optimizer(cfg, model, logger):
     if optimizer_type == "LayerDecayAdamW":
         return build_vit_optimizer(cfg, model, logger)
 
+    # Get the actual model (handle both DDP and single GPU cases)
+    actual_model = get_model(model)
+
     # set the backbone's optim_groups: SHOULD ONLY CONTAIN BACKBONE PARAMS
-    if hasattr(model.module, "backbone"):  # if backbone exists
-        if model.module.backbone.freeze_backbone == False:  # not frozen
+    if hasattr(actual_model, "backbone"):  # if backbone exists
+        if actual_model.backbone.freeze_backbone == False:  # not frozen
             assert (
                 "backbone" in cfg.keys()
             ), "Freeze_backbone is set to False, but backbone parameters is not provided in the optimizer config."
@@ -30,11 +38,11 @@ def build_optimizer(cfg, model, logger):
     # weight decay for a certain layer, the model should have a function called get_optim_groups
     if "paramwise" in cfg.keys() and cfg["paramwise"]:
         cfg.pop("paramwise")
-        det_optim_groups = model.module.get_optim_groups(cfg)
+        det_optim_groups = actual_model.get_optim_groups(cfg)
     else:
         # optim_groups that does not contain backbone params
         detector_params = []
-        for name, param in model.module.named_parameters():
+        for name, param in actual_model.named_parameters():
             # exclude the backbone
             if name.startswith("backbone"):
                 continue
@@ -45,7 +53,9 @@ def build_optimizer(cfg, model, logger):
     optim_groups = backbone_optim_groups + det_optim_groups
 
     if optimizer_type == "AdamW":
-        optimizer = torch.optim.AdamW(optim_groups, **cfg)
+        # Remove backbone config from cfg to avoid passing it to AdamW
+        optimizer_cfg = {k: v for k, v in cfg.items() if k not in ['backbone']}
+        optimizer = torch.optim.AdamW(optim_groups, **optimizer_cfg)
     elif optimizer_type == "Adam":
         optimizer = torch.optim.Adam(optim_groups, **cfg)
     elif optimizer_type == "SGD":
@@ -66,6 +76,9 @@ def get_backbone_optim_groups(cfg, model, logger):
     )
     """
 
+    # Get the actual model (handle both DDP and single GPU cases)
+    actual_model = get_model(model)
+
     # custom_name_list
     if "custom" in cfg.keys():
         custom_name_list = [d["name"] for d in cfg["custom"]]
@@ -84,7 +97,7 @@ def get_backbone_optim_groups(cfg, model, logger):
 
     name_list = []
     # split the backbone parameters into different groups
-    for name, param in model.module.backbone.named_parameters():
+    for name, param in actual_model.backbone.named_parameters():
         # loop the exclude_name_list
         is_exclude = False
         if len(exclude_name_list) > 0:

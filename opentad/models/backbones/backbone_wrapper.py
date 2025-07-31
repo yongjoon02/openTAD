@@ -73,11 +73,15 @@ class BackboneWrapper(nn.Module):
         self.set_norm_layer()
 
         # data preprocessing: normalize mean and std
-        frames, _ = self.model.data_preprocessor.preprocess(
-            self.tensor_to_list(frames),  # need list input
-            data_samples=None,
-            training=False,  # for blending, which is not used in openTAD
-        )
+        if hasattr(self.model, 'data_preprocessor'):
+            frames, _ = self.model.data_preprocessor.preprocess(
+                self.tensor_to_list(frames),  # need list input
+                data_samples=None,
+                training=False,  # for blending, which is not used in openTAD
+            )
+        else:
+            # If no data_preprocessor, use frames directly
+            frames = frames
 
         # pre_processing_pipeline:
         if self.pre_processing_pipeline is not None:
@@ -97,7 +101,10 @@ class BackboneWrapper(nn.Module):
                         self.temporal_checkpointing_chunk_dim,
                     )
                 else:
-                    features = self.model.backbone(frames)
+                    if hasattr(self.model, 'backbone'):
+                        features = self.model.backbone(frames)
+                    else:
+                        features = self.model(frames)
 
         else:  # let the model.train() or model.eval() decide whether to freeze
             if self.use_temporal_checkpointing:
@@ -107,7 +114,10 @@ class BackboneWrapper(nn.Module):
                     self.temporal_checkpointing_chunk_dim,
                 )
             else:
-                features = self.model.backbone(frames)
+                if hasattr(self.model, 'backbone'):
+                    features = self.model.backbone(frames)
+                else:
+                    features = self.model(frames)
 
         # unflatten and pool the features
         if isinstance(features, (tuple, list)):
@@ -158,7 +168,10 @@ class BackboneWrapper(nn.Module):
         """
 
         def _inner_forward(frames):
-            return self.model.backbone(frames)
+            if hasattr(self.model, 'backbone'):
+                return self.model.backbone(frames)
+            else:
+                return self.model(frames)
 
         video_feat = []
         for mini_frames in torch.chunk(frames, chunk_num, dim=chunk_dim):  # B*N is chunked

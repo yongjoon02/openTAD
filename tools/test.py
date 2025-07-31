@@ -1,3 +1,5 @@
+import opentad.models.backbones.vit_adapter
+import opentad.datasets.pku  # pku_mmd 대신 pku로 수정
 import os
 import sys
 
@@ -25,6 +27,7 @@ def parse_args():
     parser.add_argument("--id", type=int, default=0, help="repeat experiment id")
     parser.add_argument("--not_eval", action="store_true", help="whether to not to eval, only do inference")
     parser.add_argument("--cfg-options", nargs="+", action=DictAction, help="override settings")
+    parser.add_argument("--single_gpu", action="store_true", help="use single GPU testing (non-distributed)")
     args = parser.parse_args()
     return args
 
@@ -37,17 +40,37 @@ def main():
     if args.cfg_options is not None:
         cfg.merge_from_dict(args.cfg_options)
 
-    # DDP init
-    args.local_rank = int(os.environ["LOCAL_RANK"])
-    args.world_size = int(os.environ["WORLD_SIZE"])
-    args.rank = int(os.environ["RANK"])
-    print(f"Distributed init (rank {args.rank}/{args.world_size}, local rank {args.local_rank})")
-    dist.init_process_group("nccl", rank=args.rank, world_size=args.world_size)
-    torch.cuda.set_device(args.local_rank)
+    # Check if we should use distributed testing
+    use_distributed = not args.single_gpu and "LOCAL_RANK" in os.environ
+    
+    if use_distributed:
+        # DDP init
+        args.local_rank = int(os.environ["LOCAL_RANK"])
+        args.world_size = int(os.environ["WORLD_SIZE"])
+        args.rank = int(os.environ["RANK"])
+        print(f"Distributed init (rank {args.rank}/{args.world_size}, local rank {args.local_rank})")
+        
+        # Disable libuv for Windows compatibility
+        if os.name == 'nt':  # Windows
+            os.environ.setdefault("USE_LIBUV", "0")
+            
+        dist.init_process_group("gloo", rank=args.rank, world_size=args.world_size)
+        torch.cuda.set_device(args.local_rank)
+    else:
+        # Single GPU mode
+        print("Using single GPU testing")
+        args.local_rank = 0
+        args.world_size = 1
+        args.rank = 0
+        if torch.cuda.is_available():
+            torch.cuda.set_device(0)
 
     # set random seed, create work_dir
     set_seed(args.seed)
-    cfg = update_workdir(cfg, args.id, torch.cuda.device_count())
+    if use_distributed:
+        cfg = update_workdir(cfg, args.id, torch.cuda.device_count())
+    else:
+        cfg = update_workdir(cfg, args.id, 1)
     if args.rank == 0:
         create_folder(cfg.work_dir)
 
@@ -58,22 +81,38 @@ def main():
 
     # build dataset
     test_dataset = build_dataset(cfg.dataset.test, default_args=dict(logger=logger))
-    test_loader = build_dataloader(
-        test_dataset,
-        rank=args.rank,
-        world_size=args.world_size,
-        shuffle=False,
-        drop_last=False,
-        **cfg.solver.test,
-    )
+    
+    if use_distributed:
+        test_loader = build_dataloader(
+            test_dataset,
+            rank=args.rank,
+            world_size=args.world_size,
+            shuffle=False,
+            drop_last=False,
+            **cfg.solver.test,
+        )
+    else:
+        test_loader = build_dataloader(
+            test_dataset,
+            rank=0,
+            world_size=1,
+            shuffle=False,
+            drop_last=False,
+            **cfg.solver.test,
+        )
 
     # build model
     model = build_detector(cfg.model)
 
-    # DDP
-    model = model.to(args.local_rank)
-    model = DistributedDataParallel(model, device_ids=[args.local_rank], output_device=args.local_rank)
-    logger.info(f"Using DDP with total {args.world_size} GPUS...")
+    # DDP or single GPU
+    if use_distributed:
+        model = model.to(args.local_rank)
+        model = DistributedDataParallel(model, device_ids=[args.local_rank], output_device=args.local_rank)
+        logger.info(f"Using DDP with total {args.world_size} GPUS...")
+    else:
+        if torch.cuda.is_available():
+            model = model.cuda()
+        logger.info("Using single GPU testing...")
 
     if cfg.inference.load_from_raw_predictions:  # if load with saved predictions, no need to load checkpoint
         logger.info(f"Loading from raw predictions: {cfg.inference.fuse_list}")
@@ -85,7 +124,7 @@ def main():
         else:
             checkpoint_path = os.path.join(cfg.work_dir, "checkpoint/best.pth")
         logger.info("Loading checkpoint from: {}".format(checkpoint_path))
-        device = f"cuda:{args.rank % torch.cuda.device_count()}"
+        device = f"cuda:{args.rank % torch.cuda.device_count()}" if torch.cuda.is_available() else "cpu"
         checkpoint = torch.load(checkpoint_path, map_location=device)
         logger.info("Checkpoint is epoch {}.".format(checkpoint["epoch"]))
 
@@ -116,6 +155,11 @@ def main():
         not_eval=args.not_eval,
     )
     logger.info("Testing Over...\n")
+    
+    # PKU-MMD 평가 완료 후 추가 정보 출력
+    if args.rank == 0 and not args.not_eval:
+        logger.info("PKU-MMD evaluation completed successfully!")
+        logger.info(f"Results saved in: {cfg.work_dir}")
 
 
 if __name__ == "__main__":

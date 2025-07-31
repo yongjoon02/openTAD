@@ -94,7 +94,9 @@ class ConvModule(nn.Module):
                     .squeeze(1)
                     .to(mask.dtype)
                 )
-            x = x * mask.unsqueeze(1).float().detach()  # [B,C,T]
+            # Properly broadcast mask to [B, 1, T] for [B, C, T] tensor
+            mask_expanded = mask.unsqueeze(1).expand(-1, x.size(1), -1)
+            x = x * mask_expanded.float().detach()  # [B,C,T]
 
         if self.with_norm:
             if self.norm_type == "LN":
@@ -106,7 +108,9 @@ class ConvModule(nn.Module):
             x = self.act(x)
 
         if mask is not None:  # masking the output
-            x = x * mask.unsqueeze(1).float().detach()  # [B,C,T]
+            # Properly broadcast mask to [B, 1, T] for [B, C, T] tensor
+            mask_expanded = mask.unsqueeze(1).expand(-1, x.size(1), -1)
+            x = x * mask_expanded.float().detach()  # [B,C,T]
             return x, mask
         else:
             return x

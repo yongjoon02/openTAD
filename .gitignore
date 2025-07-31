@@ -121,3 +121,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Model files
+*.pth
+*.pkl
+*.pt

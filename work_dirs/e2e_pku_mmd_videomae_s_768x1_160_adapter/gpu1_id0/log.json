@@ -76080,3 +76080,4 @@ workflow = dict(
 2025-08-06 14:19:59 Train INFO: [Train]: [006][00020/00051] (40.4%)  Loss=1.0816  cls_loss=0.7318  reg_loss=0.3498  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=874s  iter_time=180.970s
 2025-08-06 14:21:36 Train INFO: [Train]: [006][00025/00051] (50.0%)  Loss=1.0784  cls_loss=0.7294  reg_loss=0.3491  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=689s  iter_time=97.293s
 2025-08-06 14:23:19 Train INFO: [Train]: [006][00030/00051] (59.6%)  Loss=1.0821  cls_loss=0.7326  reg_loss=0.3495  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=536s  iter_time=102.224s
+2025-08-06 14:24:56 Train INFO: [Train]: [006][00035/00051] (69.2%)  Loss=1.0743  cls_loss=0.7267  reg_loss=0.3477  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=395s  iter_time=97.788s

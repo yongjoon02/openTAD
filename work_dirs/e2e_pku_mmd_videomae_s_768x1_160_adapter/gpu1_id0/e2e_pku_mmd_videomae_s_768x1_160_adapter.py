@@ -23,7 +23,7 @@ dataset = dict(
         split_file=split_file,
         actions_file=actions_file,
         split='train',
-        fps=10,  # PKU-MMD는 10fps로 변경
+        fps=30,  # PKU-MMD는 30fps로 변경
         # SlidingWindowDataset 파라미터들
         feature_stride=1,  # 프레임 간격
         sample_stride=1,  # 샘플링 스트라이드
@@ -55,7 +55,7 @@ dataset = dict(
         split='test',  
         window_size=window_size,  # window_size 추가
         test_mode=True,  # test_mode 추가
-        fps=10,  # PKU-MMD는 10fps로 변경
+        fps=30,  # PKU-MMD는 30fps로 변경
         # SlidingWindowDataset 파라미터들
         feature_stride=1,  # 프레임 간격
         sample_stride=1,  # 샘플링 스트라이드

@@ -45,7 +45,7 @@ class SingleStageDetector(BaseDetector):
         """bool: whether the detector has localization head"""
         return hasattr(self, "rpn_head") and self.rpn_head is not None
 
-    def forward_train(self, inputs, masks, metas, gt_segments, gt_labels, **kwargs):
+    def forward_train(self, inputs, masks, metas, gt_segments, gt_labels, return_predictions=False, **kwargs):
         losses = dict()
         if self.with_backbone:
             x = self.backbone(inputs, masks)
@@ -70,6 +70,16 @@ class SingleStageDetector(BaseDetector):
 
         # only key has loss will be record
         losses["cost"] = sum(_value for _key, _value in losses.items())
+        
+        # 예측도 함께 반환 (validation용)
+        if return_predictions:
+            if self.with_rpn_head:
+                rpn_proposals, rpn_scores = self.rpn_head.forward_test(x, masks)
+            else:
+                rpn_proposals = rpn_scores = None
+            predictions = rpn_proposals, rpn_scores
+            return losses, predictions
+        
         return losses
 
     def forward_test(self, inputs, masks, metas=None, infer_cfg=None, **kwargs):
@@ -136,8 +146,8 @@ class SingleStageDetector(BaseDetector):
                 labels = cls_idxs
 
             # if not sliding window, do nms
-            if post_cfg.sliding_window == False and post_cfg.nms is not None:
-                segments, scores, labels = batched_nms(segments, scores, labels, **post_cfg.nms)
+            if post_cfg.get('sliding_window', False) == False and post_cfg.get('nms') is not None:
+                segments, scores, labels = batched_nms(segments, scores, labels, **post_cfg.get('nms', {}))
 
             video_id = metas[i]["video_name"]
 

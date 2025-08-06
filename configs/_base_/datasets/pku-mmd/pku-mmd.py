@@ -17,7 +17,7 @@ dataset = dict(
         class_map=class_map,
         data_path=video_dir,
         filter_gt=False,
-        feature_stride=4,  
+        feature_stride=1,  # 2에서 1로 되돌림
         sample_stride=1,
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
@@ -29,7 +29,7 @@ dataset = dict(
                 trunc_len=window_size,
                 trunc_thresh=0.5,
                 crop_ratio=[0.9, 1.0],
-                scale_factor=1,
+                scale_factor=1,  # 1로 되돌림
             ),
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 182)),
@@ -44,33 +44,23 @@ dataset = dict(
         ],
     ),
     val=dict(
-        type="PkuPaddingDataset",
+        type="PkuSlidingDataset",
         ann_file=annotation_val,
         subset_name="validation",
         class_map=class_map,
         data_path=video_dir,
         filter_gt=False,
-        feature_stride=4, 
+        window_size=window_size,
+        window_overlap_ratio=0.5,
+        feature_stride=1,  # 2에서 1로 되돌림
         sample_stride=1,
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
             dict(type="mmaction.DecordInit", num_threads=4),
-            dict(
-                type="LoadFrames",
-                num_clips=1,
-                method="random_trunc",
-                trunc_len=window_size,
-                trunc_thresh=0.5,
-                crop_ratio=[0.9, 1.0],
-                scale_factor=1,
-            ),
+            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1),  # 1로 되돌림
             dict(type="mmaction.DecordDecode"),
-            dict(type="mmaction.Resize", scale=(-1, 182)),
-            dict(type="mmaction.RandomResizedCrop"),
-            dict(type="mmaction.Resize", scale=(160, 160), keep_ratio=False),
-            dict(type="mmaction.Flip", flip_ratio=0.5),
-            dict(type="mmaction.ImgAug", transforms="default"),
-            dict(type="mmaction.ColorJitter"),
+            dict(type="mmaction.Resize", scale=(-1, 160)),
+            dict(type="mmaction.CenterCrop", crop_size=160),
             dict(type="mmaction.FormatShape", input_format="NCTHW"),
             dict(type="ConvertToTensor", keys=["imgs", "gt_segments", "gt_labels"]),
             dict(type="Collect", inputs="imgs", keys=["masks", "gt_segments", "gt_labels"]),
@@ -86,12 +76,12 @@ dataset = dict(
         test_mode=True,
         window_size=window_size,
         window_overlap_ratio=0.5,
-        feature_stride=4,  
+        feature_stride=1,  # 2에서 1로 되돌림
         sample_stride=1,
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
             dict(type="mmaction.DecordInit", num_threads=4),
-            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1),
+            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1),  # 1로 되돌림
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 160)),
             dict(type="mmaction.CenterCrop", crop_size=160),
@@ -104,7 +94,8 @@ dataset = dict(
 
 evaluation = dict(
     type="mAP_PKU_MMD",
-    subset="test",
+    subset="validation",  # 일관성 유지
     tiou_thresholds=[0.1, 0.3, 0.5, 0.7, 0.9],
-    ground_truth_filename=annotation_test,
+    ground_truth_filename="data/PKU-MMD/pku_val.json",
+    prediction_filename="work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/predictions_val.json",  # 예측 결과 저장 경로
 )

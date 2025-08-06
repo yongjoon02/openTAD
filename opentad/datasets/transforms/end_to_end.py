@@ -270,23 +270,28 @@ class LoadFrames:
             ), "snippet_stride should be divisible by scale_factor"
 
             frame_num = self.trunc_len * self.scale_factor
-            frame_stride = results["snippet_stride"] // self.scale_factor
+            frame_stride = results["snippet_stride"]  # scale_factor로 나누지 않음 - 어노테이션과 일치
             frame_idxs = np.arange(0, total_frames, frame_stride)
 
             # trunc the frame_idxs
             frame_idxs, gt_segments, gt_labels = self.random_trunc(
                 frame_idxs,
                 trunc_len=frame_num,
-                gt_segments=results["gt_segments"] * self.scale_factor,  # gt segment should be mapped to frame level
+                gt_segments=results["gt_segments"] * frame_stride,  # 어노테이션을 프레임 레벨로 변환
                 gt_labels=results["gt_labels"],
             )
-            results["gt_segments"] = gt_segments / self.scale_factor  # convert back to original scale
+            results["gt_segments"] = gt_segments / frame_stride  # 다시 특징 레벨로 변환
             results["gt_labels"] = gt_labels
 
             # pad the frame_idxs
             if len(frame_idxs) < frame_num:
                 valid_len = len(frame_idxs) // self.scale_factor
-                frame_idxs = np.pad(frame_idxs, (0, frame_num - len(frame_idxs)), mode="edge")
+                if len(frame_idxs) == 0:
+                    # 빈 배열인 경우 constant로 패딩
+                    frame_idxs = np.pad(frame_idxs, (0, frame_num - len(frame_idxs)), mode="constant", constant_values=0)
+                else:
+                    # 비어있지 않은 경우 edge로 패딩
+                    frame_idxs = np.pad(frame_idxs, (0, frame_num - len(frame_idxs)), mode="edge")
                 masks = torch.cat([torch.ones(valid_len), torch.zeros(self.trunc_len - valid_len)]).bool()
             else:
                 masks = torch.ones(self.trunc_len).bool()
@@ -299,7 +304,7 @@ class LoadFrames:
 
             window_size = results["window_size"]
             frame_num = window_size * self.scale_factor
-            frame_stride = results["snippet_stride"] // self.scale_factor
+            frame_stride = results["snippet_stride"]  # scale_factor로 나누지 않음 - 어노테이션과 일치
             frame_idxs = np.arange(0, total_frames, frame_stride)
 
             start_idx = min(results["feature_start_idx"] * self.scale_factor, len(frame_idxs))
@@ -307,9 +312,21 @@ class LoadFrames:
 
             frame_idxs = frame_idxs[start_idx:end_idx]
 
+            # 어노테이션 변환 추가 (random_trunc와 일관성 유지)
+            # scale_factor=1이므로 실제로는 변환 없음, 하지만 일관성을 위해 추가
+            if "gt_segments" in results:
+                # PkuSlidingDataset에서 이미 snippet_stride로 나누어진 상태
+                # LoadFrames에서는 추가 변환 없이 그대로 사용
+                pass
+
             if len(frame_idxs) < frame_num:
                 valid_len = len(frame_idxs) // self.scale_factor
-                frame_idxs = np.pad(frame_idxs, (0, frame_num - len(frame_idxs)), mode="edge")
+                if len(frame_idxs) == 0:
+                    # 빈 배열인 경우 constant로 패딩
+                    frame_idxs = np.pad(frame_idxs, (0, frame_num - len(frame_idxs)), mode="constant", constant_values=0)
+                else:
+                    # 비어있지 않은 경우 edge로 패딩
+                    frame_idxs = np.pad(frame_idxs, (0, frame_num - len(frame_idxs)), mode="edge")
                 masks = torch.cat([torch.ones(valid_len), torch.zeros(window_size - valid_len)]).bool()
             else:
                 masks = torch.ones(window_size).bool()

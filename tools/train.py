@@ -237,6 +237,23 @@ def main():
 
     # train the detector
     logger.info("Training Starts...\n")
+    
+    # Sanity Check: 학습 시작 전 validation 실행 (PyTorch Lightning style)
+    num_sanity_check = getattr(cfg.workflow, "num_sanity_check", 0)
+    if num_sanity_check > 0 and val_loader is not None and resume_epoch == -1:
+        logger.info(f"Running sanity check with {num_sanity_check} validation steps...")
+        val_one_epoch(
+            val_loader,
+            model,
+            logger,
+            args.rank,
+            -1,  # sanity check epoch
+            model_ema=model_ema,
+            use_amp=use_amp,
+            evaluation=getattr(cfg, 'evaluation', None),
+        )
+        logger.info("Sanity check completed.\n")
+    
     for epoch in range(resume_epoch + 1, max_epoch):
         if use_distributed:
             train_loader.sampler.set_epoch(epoch)
@@ -263,10 +280,12 @@ def main():
             val_one_epoch(
                 val_loader,
                 model,
-                epoch,
                 logger,
+                args.rank,
+                epoch,
                 model_ema=model_ema,
-                scaler=scaler,
+                use_amp=use_amp,
+                evaluation=getattr(cfg, 'evaluation', None),  # mAP 평가를 위한 evaluation 설정 추가
             )
     
         if (epoch == max_epoch - 1) or ((epoch + 1) % cfg.workflow.checkpoint_interval == 0):

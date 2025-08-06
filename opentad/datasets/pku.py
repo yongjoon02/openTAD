@@ -15,9 +15,11 @@ class PkuSlidingDataset(SlidingWindowDataset):
         video_dict = {}
         for video_info in anno_database:
             video_name = video_info["video_name"]
-            # subset 정보 추가 (train/test 구분)
+            # subset 정보 추가 (train/validation/test 구분)
             if "train" in self.subset_name.lower():
                 video_info["subset"] = "training"
+            elif "val" in self.subset_name.lower():
+                video_info["subset"] = "validation"
             else:
                 video_info["subset"] = "testing"
             video_dict[video_name] = video_info
@@ -67,8 +69,10 @@ class PkuSlidingDataset(SlidingWindowDataset):
 
     def __getitem__(self, index):
         video_name, video_info, video_anno, window_centers = self.data_list[index]
+        
         if video_anno:
             video_anno = deepcopy(video_anno)
+            original_segments = video_anno["gt_segments"].copy()
 
             video_anno["gt_segments"] = (
                 video_anno["gt_segments"]
@@ -83,7 +87,7 @@ class PkuSlidingDataset(SlidingWindowDataset):
             feature_start_idx=int(window_centers[0] / self.snippet_stride),
             feature_end_idx=int(window_centers[-1] / self.snippet_stride),
             sample_stride=self.sample_stride,
-            fps=30.0,
+            fps=30.0,  # 10.0에서 30.0으로 변경
             snippet_stride=self.snippet_stride,
             window_start_frame=window_centers[0],
             duration=video_info["frame"], 
@@ -155,20 +159,34 @@ class PkuPaddingDataset(PaddingDataset):
 
     def __getitem__(self, index):
         video_name, video_info, video_anno = self.data_list[index]
+        
         if video_anno:
             video_anno = deepcopy(video_anno)
-            # VideoMAE stride에 맞춰 조정
+            # 어노테이션을 snippet_stride로 나누어 샘플링된 인덱스로 변환
+            # PkuSlidingDataset과 일관성 유지 - window 시작점은 0으로 가정
             video_anno["gt_segments"] = (
-                video_anno["gt_segments"]
-                - self.offset_frames
+                video_anno["gt_segments"] - self.offset_frames
             ) / self.snippet_stride
 
+        # sliding_window 메서드에서 필요한 feature_start_idx와 feature_end_idx 계산
+        window_size = getattr(self, 'window_size', 512)
+        total_frames = video_info["frame"]
+        frame_stride = self.snippet_stride // 1  # scale_factor = 1
+        frame_idxs = np.arange(0, total_frames, frame_stride)
+        
+        # 전체 프레임 인덱스를 window_size로 나누어 feature_start_idx와 feature_end_idx 계산
+        feature_start_idx = 0
+        feature_end_idx = min(len(frame_idxs) - 1, window_size - 1)
+        
         data = dict(
             video_name=video_name,
             data_path=self.data_path,
+            window_size=window_size,
+            feature_start_idx=feature_start_idx,
+            feature_end_idx=feature_end_idx,
             sample_stride=self.sample_stride,
             snippet_stride=self.snippet_stride,
-            fps=30.0, 
+            fps=30.0,  # 10.0에서 30.0으로 변경
             duration=video_info["frame"],  
             offset_frames=self.offset_frames,
             **video_anno,

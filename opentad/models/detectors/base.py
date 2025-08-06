@@ -27,13 +27,13 @@ class BaseDetector(torch.nn.Module):
 
     def forward_detection(self, inputs, masks, metas, infer_cfg, post_cfg, **kwargs):
         # step1: inference the model
-        if infer_cfg.load_from_raw_predictions:  # easier and faster to tune the hyper parameter in postprocessing
+        if infer_cfg.get('load_from_raw_predictions', False):  # 딕셔너리 접근으로 변경
             predictions = load_predictions(metas, infer_cfg)
         else:
             predictions = self.forward_test(inputs, masks, metas, infer_cfg)
 
-            if infer_cfg.save_raw_prediction:  # save the predictions to disk
-                save_predictions(predictions, metas, infer_cfg.folder)
+            if infer_cfg.get('save_raw_prediction', False):  # 딕셔너리 접근으로 변경
+                save_predictions(predictions, metas, infer_cfg.get('folder', ''))
 
         # step2: detection post processing
         results = self.post_processing(predictions, metas, post_cfg, **kwargs)

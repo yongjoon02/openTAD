@@ -24,7 +24,7 @@ class PKUMMDLoader(object):
         self.offset_frames = kwargs.get('offset_frames', 0)
         self.data_path = video_dir
         self.window_size = kwargs.get('window_size', 512)
-        self.fps = kwargs.get('fps', 30)  # PKU-MMD FPS 설정
+        self.fps = kwargs.get('fps', 30)  # PKU-MMD FPS 설정을 30으로 변경
         
         # SlidingWindowDataset 파라미터들
         self.feature_stride = kwargs.get('feature_stride', 1)
@@ -218,7 +218,7 @@ class PKUMMDLoader(object):
 
             # duration 계산 (프레임을 초 단위로 변환, PKU-MMD FPS 기준)
             if max_end_frame > 0:
-                video_info["duration"] = max_end_frame / 10.0  # PKU-MMD는 10fps로 변경
+                video_info["duration"] = max_end_frame / 30.0  # PKU-MMD는 30fps로 변경
                 video_info["frame"] = max_end_frame
 
             # GT 어노테이션 생성
@@ -273,7 +273,7 @@ class PKUMMDLoader(object):
                 feature_end_idx=int(window_snippet_centers[-1] / self.snippet_stride),
                 sample_stride=self.sample_stride,
                 # sliding post process setting
-                fps=10,  # PKU-MMD는 10fps로 변경
+                fps=30,  # PKU-MMD는 30fps로 변경
                 snippet_stride=self.snippet_stride,
                 window_start_frame=window_snippet_centers[0],  # 올바른 window 시작점
                 duration=video_info.get("duration", 0),

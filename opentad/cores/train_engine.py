@@ -171,8 +171,9 @@ def val_one_epoch(
     curr_epoch,
     model_ema=None,
     use_amp=False,
+    evaluation=None,  # mAP 평가를 위한 파라미터 추가
 ):
-    """Validating the model for one epoch: compute the loss"""
+    """Validating the model for one epoch: compute the loss and mAP"""
 
     # load the ema dict for evaluation
     if model_ema != None:
@@ -181,6 +182,7 @@ def val_one_epoch(
 
     logger.info("[Val]: Epoch {:d} Loss".format(curr_epoch))
     losses_tracker = {}
+    result_dict = {}  # 예측 결과 수집을 위한 딕셔너리
 
     # Determine device
     device = next(model.parameters()).device
@@ -192,7 +194,29 @@ def val_one_epoch(
         
         with torch.amp.autocast('cuda', dtype=torch.float16, enabled=use_amp):
             with torch.no_grad():
+                # 손실 계산
                 losses = model(**data_dict, return_loss=True)
+                
+                # 예측 수행 (mAP 평가를 위해)
+                if evaluation is not None:
+                    results = model(
+                        **data_dict,
+                        return_loss=False,
+                        infer_cfg=dict(
+                            load_from_raw_predictions=False,
+                            save_raw_prediction=False,
+                            folder="",
+                        ),
+                        post_cfg=dict(save_dict=False, sliding_window=True, nms=None),
+                        ext_cls=val_loader.dataset.class_map,
+                    )
+                    
+                    # 예측 결과 수집
+                    for k, v in results.items():
+                        if k in result_dict.keys():
+                            result_dict[k].extend(v)
+                        else:
+                            result_dict[k] = v
 
         # track all losses
         losses = reduce_loss(losses)  # only for log
@@ -205,7 +229,34 @@ def val_one_epoch(
     block1 = "[Val]: [{:03d}]".format(curr_epoch)
     block2 = "Loss={:.4f}".format(losses_tracker["cost"].avg)
     block3 = ["{:s}={:.4f}".format(key, value.avg) for key, value in losses_tracker.items() if key != "cost"]
-    logger.info("  ".join([block1, block2, "  ".join(block3)]))
+    
+    # mAP 평가 추가
+    mAP_results = ""
+    if evaluation is not None and len(result_dict) > 0:
+        try:
+            # 예측 결과를 evaluation 형식으로 변환
+            result_eval = dict(results=result_dict)
+            
+            # mAP 평가 실행
+            from opentad.evaluations import build_evaluator
+            # evaluation 설정을 복사하고 prediction_filename을 덮어쓰기
+            eval_config = evaluation.copy()
+            eval_config['prediction_filename'] = result_eval
+            evaluator = build_evaluator(eval_config)
+            mAP_metrics = evaluator.evaluate()
+            
+            # mAP 결과를 문자열로 변환
+            mAP_parts = []
+            for tiou, mAP in zip(evaluation.get('tiou_thresholds', []), mAP_metrics.get('mAPs', [])):
+                mAP_parts.append(f"mAP@{tiou}={mAP*100:.2f}%")
+            mAP_parts.append(f"Average-mAP={mAP_metrics.get('average_mAP', 0)*100:.2f}%")
+            mAP_results = "  " + "  ".join(mAP_parts)
+            
+        except Exception as e:
+            logger.warning(f"mAP evaluation failed: {e}")
+            mAP_results = ""
+    
+    logger.info("  ".join([block1, block2, "  ".join(block3)]) + mAP_results)
 
     # load back the normal model dict
     if model_ema != None:

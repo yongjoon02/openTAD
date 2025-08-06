@@ -5,8 +5,8 @@ _base_ = [
 ]
 
 
-scale_factor = 1
-chunk_num = 512 * scale_factor // 16  
+scale_factor = 1  # 2에서 1로 되돌림 - 모델과 일치
+chunk_num = 512 * scale_factor // 16  # 512/16=32 chunks, since videomae takes 16 frames as input
 
 
 dataset = dict(
@@ -21,7 +21,7 @@ dataset = dict(
                 trunc_len=512,
                 trunc_thresh=0.5,
                 crop_ratio=[0.9, 1.0],
-                scale_factor=scale_factor,
+                scale_factor=1,  # 2에서 1로 되돌림
             ),
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 182)),
@@ -39,13 +39,7 @@ dataset = dict(
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
             dict(type="mmaction.DecordInit", num_threads=4),
-            dict(
-                type="LoadFrames",
-                num_clips=1,
-                method="sliding_window",  
-                trunc_len=512,
-                scale_factor=scale_factor,
-            ),
+            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1),  # 1로 되돌림
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 160)),
             dict(type="mmaction.CenterCrop", crop_size=160), 
@@ -58,7 +52,7 @@ dataset = dict(
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
             dict(type="mmaction.DecordInit", num_threads=4),
-            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=scale_factor),
+            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1),  # 1로 되돌림
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 160)),
             dict(type="mmaction.CenterCrop", crop_size=160),
@@ -120,7 +114,7 @@ model = dict(
 
 solver = dict(
     train=dict(batch_size=16, num_workers=4), 
-    val=dict(batch_size=8, num_workers=4),     
+    val=dict(batch_size=16, num_workers=4),     
     test=dict(batch_size=4, num_workers=4),    
     clip_grad_norm=1,
     amp=True,
@@ -142,7 +136,7 @@ optimizer = dict(
     ),
 )
 
-scheduler = dict(type="LinearWarmupCosineAnnealingLR", warmup_epoch=5, max_epoch=120)
+scheduler = dict(type="LinearWarmupCosineAnnealingLR", warmup_epoch=1, max_epoch=120)
 
 inference = dict(
     load_from_raw_predictions=False, 
@@ -161,16 +155,20 @@ post_processing = dict(
 )
 
 workflow = dict(
-    logging_interval=10,
-    checkpoint_interval=2,
-    val_loss_interval=5,      
-    val_eval_interval=5,    
-    val_start_epoch=10,       
-    end_epoch=120,
+    logging_interval=5,
+    checkpoint_interval=5,
+    val_loss_interval=5,      # 매 에폭마다 loss 계산
+    val_eval_interval=5,      # 매 에폭마다 mAP 평가
+    val_start_epoch=5,        # 1에폭부터 validation 시작
+    end_epoch=120,              # 3에폭까지 학습
+    num_sanity_check=1,       # 학습 시작 전 validation 실행 (PyTorch Lightning style)
 )
 
 work_dir = "work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter"
 
+# 새로 학습하기 위해 기존 체크포인트 로드 제거
+# load_from = "work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/checkpoint/epoch_13.pth"
+# resume = True
 
 evaluation = dict(
     type="mAP_PKU_MMD",

@@ -76067,3 +76067,15 @@ workflow = dict(
 2025-08-06 14:00:25 Train INFO: [Train]: [005][00025/00051] (50.0%)  Loss=1.0856  cls_loss=0.7342  reg_loss=0.3514  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=730s  iter_time=107.910s
 2025-08-06 14:02:07 Train INFO: [Train]: [005][00030/00051] (59.6%)  Loss=1.0766  cls_loss=0.7288  reg_loss=0.3478  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=564s  iter_time=102.574s
 2025-08-06 14:03:47 Train INFO: [Train]: [005][00035/00051] (69.2%)  Loss=1.0764  cls_loss=0.7282  reg_loss=0.3482  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=415s  iter_time=99.926s
+2025-08-06 14:06:49 Train INFO: [Train]: [005][00040/00051] (78.8%)  Loss=1.0716  cls_loss=0.7255  reg_loss=0.3462  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=299s  iter_time=182.107s
+2025-08-06 14:08:32 Train INFO: [Train]: [005][00045/00051] (88.5%)  Loss=1.0831  cls_loss=0.7341  reg_loss=0.3490  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=159s  iter_time=102.665s
+2025-08-06 14:10:05 Train INFO: [Train]: [005][00050/00051] (98.1%)  Loss=1.0844  cls_loss=0.7349  reg_loss=0.3495  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=26s  iter_time=92.459s
+2025-08-06 14:10:07 Train INFO: [Train]: [005][00051/00051] (100.0%)  Loss=1.0820  cls_loss=0.7333  reg_loss=0.3487  lr_det=1.0e-04  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.051s
+2025-08-06 14:10:07 Train INFO: [Train]: Epoch 5 completed in 1312.6s (avg 25.242s/iter)
+2025-08-06 14:10:07 Train INFO: [Train]: Final Loss=1.0820
+2025-08-06 14:10:07 Train INFO: [Train]: Epoch 6 started (Total iterations: 52)
+2025-08-06 14:13:46 Train INFO: [Train]: [006][00005/00051] (11.5%)  Loss=1.0751  cls_loss=0.7316  reg_loss=0.3435  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1676s  iter_time=218.670s  fwd=2.292s/bwd=0.083s/opt=0.012s
+2025-08-06 14:15:20 Train INFO: [Train]: [006][00010/00051] (21.2%)  Loss=1.0892  cls_loss=0.7400  reg_loss=0.3492  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1166s  iter_time=94.286s
+2025-08-06 14:16:58 Train INFO: [Train]: [006][00015/00051] (30.8%)  Loss=1.0842  cls_loss=0.7352  reg_loss=0.3490  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=925s  iter_time=97.968s
+2025-08-06 14:19:59 Train INFO: [Train]: [006][00020/00051] (40.4%)  Loss=1.0816  cls_loss=0.7318  reg_loss=0.3498  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=874s  iter_time=180.970s
+2025-08-06 14:21:36 Train INFO: [Train]: [006][00025/00051] (50.0%)  Loss=1.0784  cls_loss=0.7294  reg_loss=0.3491  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=689s  iter_time=97.293s

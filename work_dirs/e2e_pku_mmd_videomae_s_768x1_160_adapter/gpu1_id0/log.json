@@ -76081,3 +76081,3263 @@ workflow = dict(
 2025-08-06 14:21:36 Train INFO: [Train]: [006][00025/00051] (50.0%)  Loss=1.0784  cls_loss=0.7294  reg_loss=0.3491  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=689s  iter_time=97.293s
 2025-08-06 14:23:19 Train INFO: [Train]: [006][00030/00051] (59.6%)  Loss=1.0821  cls_loss=0.7326  reg_loss=0.3495  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=536s  iter_time=102.224s
 2025-08-06 14:24:56 Train INFO: [Train]: [006][00035/00051] (69.2%)  Loss=1.0743  cls_loss=0.7267  reg_loss=0.3477  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=395s  iter_time=97.788s
+2025-08-06 14:28:02 Train INFO: [Train]: [006][00040/00051] (78.8%)  Loss=1.0746  cls_loss=0.7265  reg_loss=0.3481  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=288s  iter_time=185.592s
+2025-08-06 14:29:47 Train INFO: [Train]: [006][00045/00051] (88.5%)  Loss=1.0750  cls_loss=0.7272  reg_loss=0.3477  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=154s  iter_time=105.128s
+2025-08-06 14:31:19 Train INFO: [Train]: [006][00050/00051] (98.1%)  Loss=1.0761  cls_loss=0.7276  reg_loss=0.3484  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=91.797s
+2025-08-06 14:31:21 Train INFO: [Train]: [006][00051/00051] (100.0%)  Loss=1.0744  cls_loss=0.7263  reg_loss=0.3481  lr_det=9.9e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.176s
+2025-08-06 14:31:22 Train INFO: [Train]: Epoch 6 completed in 1274.7s (avg 24.513s/iter)
+2025-08-06 14:31:22 Train INFO: [Train]: Final Loss=1.0744
+2025-08-06 14:31:22 Train INFO: [Train]: Epoch 7 started (Total iterations: 52)
+2025-08-06 14:34:57 Train INFO: [Train]: [007][00005/00051] (11.5%)  Loss=1.1396  cls_loss=0.7641  reg_loss=0.3755  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1648s  iter_time=214.960s  fwd=2.169s/bwd=0.085s/opt=0.014s
+2025-08-06 14:36:43 Train INFO: [Train]: [007][00010/00051] (21.2%)  Loss=1.0884  cls_loss=0.7385  reg_loss=0.3500  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1196s  iter_time=105.872s
+2025-08-06 14:38:19 Train INFO: [Train]: [007][00015/00051] (30.8%)  Loss=1.0947  cls_loss=0.7400  reg_loss=0.3547  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=939s  iter_time=96.275s
+2025-08-06 14:41:30 Train INFO: [Train]: [007][00020/00051] (40.4%)  Loss=1.0804  cls_loss=0.7298  reg_loss=0.3505  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=897s  iter_time=190.865s
+2025-08-06 14:43:08 Train INFO: [Train]: [007][00025/00051] (50.0%)  Loss=1.0874  cls_loss=0.7345  reg_loss=0.3529  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=706s  iter_time=98.133s
+2025-08-06 14:44:42 Train INFO: [Train]: [007][00030/00051] (59.6%)  Loss=1.0893  cls_loss=0.7364  reg_loss=0.3529  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=542s  iter_time=93.860s
+2025-08-06 14:46:16 Train INFO: [Train]: [007][00035/00051] (69.2%)  Loss=1.0847  cls_loss=0.7317  reg_loss=0.3530  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=397s  iter_time=93.703s
+2025-08-06 14:49:10 Train INFO: [Train]: [007][00040/00051] (78.8%)  Loss=1.0766  cls_loss=0.7260  reg_loss=0.3506  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=287s  iter_time=174.676s
+2025-08-06 14:50:58 Train INFO: [Train]: [007][00045/00051] (88.5%)  Loss=1.0737  cls_loss=0.7242  reg_loss=0.3495  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=153s  iter_time=108.099s
+2025-08-06 14:52:22 Train INFO: [Train]: [007][00050/00051] (98.1%)  Loss=1.0756  cls_loss=0.7253  reg_loss=0.3503  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=83.552s
+2025-08-06 14:52:24 Train INFO: [Train]: [007][00051/00051] (100.0%)  Loss=1.0763  cls_loss=0.7256  reg_loss=0.3507  lr_det=9.9e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.026s
+2025-08-06 14:52:25 Train INFO: [Train]: Epoch 7 completed in 1262.7s (avg 24.284s/iter)
+2025-08-06 14:52:25 Train INFO: [Train]: Final Loss=1.0763
+2025-08-06 14:52:25 Train INFO: [Train]: Epoch 8 started (Total iterations: 52)
+2025-08-06 14:55:51 Train INFO: [Train]: [008][00005/00051] (11.5%)  Loss=1.0684  cls_loss=0.7191  reg_loss=0.3493  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1582s  iter_time=206.400s  fwd=2.139s/bwd=0.067s/opt=0.011s
+2025-08-06 14:57:33 Train INFO: [Train]: [008][00010/00051] (21.2%)  Loss=1.0923  cls_loss=0.7302  reg_loss=0.3620  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1151s  iter_time=102.332s
+2025-08-06 14:59:05 Train INFO: [Train]: [008][00015/00051] (30.8%)  Loss=1.0848  cls_loss=0.7293  reg_loss=0.3555  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=900s  iter_time=91.487s
+2025-08-06 15:01:53 Train INFO: [Train]: [008][00020/00051] (40.4%)  Loss=1.0689  cls_loss=0.7200  reg_loss=0.3489  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=839s  iter_time=168.321s
+2025-08-06 15:03:32 Train INFO: [Train]: [008][00025/00051] (50.0%)  Loss=1.0744  cls_loss=0.7235  reg_loss=0.3510  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=667s  iter_time=98.865s
+2025-08-06 15:05:20 Train INFO: [Train]: [008][00030/00051] (59.6%)  Loss=1.0713  cls_loss=0.7218  reg_loss=0.3494  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=525s  iter_time=107.632s
+2025-08-06 15:06:53 Train INFO: [Train]: [008][00035/00051] (69.2%)  Loss=1.0757  cls_loss=0.7252  reg_loss=0.3506  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=386s  iter_time=93.223s
+2025-08-06 15:09:59 Train INFO: [Train]: [008][00040/00051] (78.8%)  Loss=1.0731  cls_loss=0.7234  reg_loss=0.3496  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=283s  iter_time=186.184s
+2025-08-06 15:11:33 Train INFO: [Train]: [008][00045/00051] (88.5%)  Loss=1.0732  cls_loss=0.7241  reg_loss=0.3490  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=150s  iter_time=93.624s
+2025-08-06 15:13:06 Train INFO: [Train]: [008][00050/00051] (98.1%)  Loss=1.0723  cls_loss=0.7236  reg_loss=0.3487  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=24s  iter_time=93.658s
+2025-08-06 15:13:08 Train INFO: [Train]: [008][00051/00051] (100.0%)  Loss=1.0688  cls_loss=0.7217  reg_loss=0.3471  lr_det=9.9e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.038s
+2025-08-06 15:13:09 Train INFO: [Train]: Epoch 8 completed in 1244.5s (avg 23.933s/iter)
+2025-08-06 15:13:09 Train INFO: [Train]: Final Loss=1.0688
+2025-08-06 15:13:09 Train INFO: [Train]: Epoch 9 started (Total iterations: 52)
+2025-08-06 15:16:37 Train INFO: [Train]: [009][00005/00051] (11.5%)  Loss=1.0713  cls_loss=0.7173  reg_loss=0.3540  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1592s  iter_time=207.624s  fwd=2.357s/bwd=0.086s/opt=0.006s
+2025-08-06 15:18:20 Train INFO: [Train]: [009][00010/00051] (21.2%)  Loss=1.0789  cls_loss=0.7294  reg_loss=0.3495  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1159s  iter_time=103.253s
+2025-08-06 15:19:58 Train INFO: [Train]: [009][00015/00051] (30.8%)  Loss=1.0945  cls_loss=0.7400  reg_loss=0.3545  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=919s  iter_time=97.772s
+2025-08-06 15:23:06 Train INFO: [Train]: [009][00020/00051] (40.4%)  Loss=1.0787  cls_loss=0.7283  reg_loss=0.3504  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=882s  iter_time=188.661s
+2025-08-06 15:24:52 Train INFO: [Train]: [009][00025/00051] (50.0%)  Loss=1.0855  cls_loss=0.7312  reg_loss=0.3542  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=703s  iter_time=105.650s
+2025-08-06 15:26:32 Train INFO: [Train]: [009][00030/00051] (59.6%)  Loss=1.0945  cls_loss=0.7385  reg_loss=0.3560  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=544s  iter_time=99.718s
+2025-08-06 15:28:12 Train INFO: [Train]: [009][00035/00051] (69.2%)  Loss=1.0847  cls_loss=0.7315  reg_loss=0.3532  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=401s  iter_time=99.677s
+2025-08-06 15:31:25 Train INFO: [Train]: [009][00040/00051] (78.8%)  Loss=1.0857  cls_loss=0.7305  reg_loss=0.3552  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=294s  iter_time=193.565s
+2025-08-06 15:33:19 Train INFO: [Train]: [009][00045/00051] (88.5%)  Loss=1.0838  cls_loss=0.7296  reg_loss=0.3541  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=158s  iter_time=113.560s
+2025-08-06 15:34:49 Train INFO: [Train]: [009][00050/00051] (98.1%)  Loss=1.0806  cls_loss=0.7274  reg_loss=0.3532  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=90.466s
+2025-08-06 15:34:51 Train INFO: [Train]: [009][00051/00051] (100.0%)  Loss=1.0780  cls_loss=0.7259  reg_loss=0.3521  lr_det=9.9e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.041s
+2025-08-06 15:34:52 Train INFO: [Train]: Epoch 9 completed in 1302.7s (avg 25.053s/iter)
+2025-08-06 15:34:52 Train INFO: [Train]: Final Loss=1.0780
+2025-08-06 15:34:52 Train INFO: [Val]: Epoch 9 Loss
+2025-08-06 16:30:44 Train INFO: [Val]: [009]  Loss=1.3611  cls_loss=1.0060  reg_loss=0.3551  Average-mAP=0.06%
+2025-08-06 16:30:47 Train INFO: Checkpoint saved at epoch 9
+2025-08-06 16:30:47 Train INFO: [Train]: Epoch 10 started (Total iterations: 52)
+2025-08-06 16:34:26 Train INFO: [Train]: [010][00005/00051] (11.5%)  Loss=0.9987  cls_loss=0.6652  reg_loss=0.3335  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1675s  iter_time=218.470s  fwd=2.358s/bwd=0.100s/opt=0.010s
+2025-08-06 16:40:08 Train INFO: Using torch version: 2.5.1+cu121, CUDA version: 12.1
+2025-08-06 16:40:09 Train INFO: Config: 
+annotation_test = 'data/PKU-MMD/pku_test.json'
+annotation_train = 'data/PKU-MMD/pku_train.json'
+annotation_val = 'data/PKU-MMD/pku_val.json'
+block_list = None
+chunk_num = 32
+class_map = 'data/PKU-MMD/class_map.txt'
+dataset = dict(
+    test=dict(
+        ann_file='data/PKU-MMD/pku_test.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(keys=[
+                'imgs',
+            ], type='ConvertToTensor'),
+            dict(inputs='imgs', keys=[
+                'masks',
+            ], type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='testing',
+        test_mode=True,
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512),
+    train=dict(
+        ann_file='data/PKU-MMD/pku_train.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=6, type='mmaction.DecordInit'),
+            dict(
+                crop_ratio=[
+                    0.9,
+                    1.0,
+                ],
+                method='random_trunc',
+                num_clips=1,
+                scale_factor=1,
+                trunc_len=512,
+                trunc_thresh=0.5,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                182,
+            ), type='mmaction.Resize'),
+            dict(type='mmaction.RandomResizedCrop'),
+            dict(keep_ratio=False, scale=(
+                160,
+                160,
+            ), type='mmaction.Resize'),
+            dict(flip_ratio=0.5, type='mmaction.Flip'),
+            dict(transforms='default', type='mmaction.ImgAug'),
+            dict(type='mmaction.ColorJitter'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='training',
+        type='PkuPaddingDataset'),
+    val=dict(
+        ann_file='data/PKU-MMD/pku_val.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='validation',
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512))
+evaluation = dict(
+    ground_truth_filename='data/PKU-MMD/pku_val.json',
+    prediction_filename=
+    'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/predictions_val.json',
+    subset='validation',
+    tiou_thresholds=[
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9,
+    ],
+    type='mAP_PKU_MMD')
+inference = dict(
+    load_from_raw_predictions=False,
+    save_raw_prediction=False,
+    score_thresh=0.3)
+model = dict(
+    backbone=dict(
+        adapter_index=[
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+        ],
+        adapter_mlp_ratio=0.25,
+        custom=dict(
+            freeze_backbone=True,
+            norm_eval=False,
+            post_processing_pipeline=[
+                dict(
+                    keys=[
+                        'feats',
+                    ],
+                    ops='b n c t -> b c t',
+                    reduction='mean',
+                    type='Reduce'),
+            ],
+            pretrain=
+            'pretrained/vit-small-p16_videomae-k400-pre_16x4x1_kinetics-400_my.pth'
+        ),
+        depth=12,
+        drop_path_rate=0.1,
+        embed_dims=384,
+        img_size=160,
+        mlp_ratio=4.0,
+        num_frames=16,
+        num_heads=6,
+        patch_size=16,
+        pretrained=
+        'pretrained/vit-small-p16_videomae-k400-pre_16x4x1_kinetics-400_my.pth',
+        qkv_bias=True,
+        return_feat_map=True,
+        total_frames=512,
+        tubelet_size=2,
+        type='VisionTransformerAdapter',
+        use_mean_pooling=True,
+        with_cp=True),
+    neck=dict(
+        in_channels=512, num_levels=6, out_channels=512, type='FPNIdentity'),
+    projection=dict(
+        arch=(
+            2,
+            2,
+            5,
+        ),
+        attn_cfg=dict(n_head=4, n_mha_win_size=-1),
+        conv_cfg=dict(kernel_size=3, proj_pdrop=0.0),
+        in_channels=384,
+        max_seq_len=512,
+        norm_cfg=dict(type='LN'),
+        out_channels=512,
+        path_pdrop=0.1,
+        type='Conv1DTransformerProj',
+        use_abs_pe=False),
+    rpn_head=dict(
+        center_sample='radius',
+        center_sample_radius=1.5,
+        cls_prior_prob=0.01,
+        feat_channels=512,
+        in_channels=512,
+        label_smoothing=0.0,
+        loss=dict(
+            cls_loss=dict(type='FocalLoss'), reg_loss=dict(type='DIOULoss')),
+        loss_normalizer=100,
+        loss_normalizer_momentum=0.9,
+        num_classes=51,
+        num_convs=2,
+        prior_generator=dict(
+            regression_range=[
+                (
+                    0,
+                    4,
+                ),
+                (
+                    4,
+                    8,
+                ),
+                (
+                    8,
+                    16,
+                ),
+                (
+                    16,
+                    32,
+                ),
+                (
+                    32,
+                    64,
+                ),
+                (
+                    64,
+                    10000,
+                ),
+            ],
+            strides=[
+                1,
+                2,
+                4,
+                8,
+                16,
+                32,
+            ],
+            type='PointGenerator'),
+        type='ActionFormerHead'),
+    type='ActionFormer')
+optimizer = dict(
+    backbone=dict(
+        custom=[
+            dict(lr=0.0002, name='adapter', weight_decay=0.05),
+        ],
+        exclude=[
+            'backbone',
+        ],
+        lr=0,
+        weight_decay=0),
+    lr=0.0001,
+    paramwise=True,
+    type='AdamW',
+    weight_decay=0.05)
+post_processing = dict(
+    nms=dict(
+        max_seg_num=500,
+        multiclass=False,
+        sigma=0.3,
+        use_soft_nms=True,
+        voting_thresh=0.7),
+    save_dict=True)
+scale_factor = 1
+scheduler = dict(
+    max_epoch=120, type='LinearWarmupCosineAnnealingLR', warmup_epoch=1)
+solver = dict(
+    amp=True,
+    clip_grad_norm=1,
+    ema=True,
+    fp16_compress=True,
+    static_graph=True,
+    test=dict(batch_size=4, num_workers=4),
+    train=dict(batch_size=16, num_workers=4),
+    val=dict(batch_size=16, num_workers=4))
+video_dir = 'F:/dataset/pku-mmd/rgb'
+window_size = 512
+work_dir = 'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter\\gpu1_id0/'
+workflow = dict(
+    checkpoint_interval=5,
+    end_epoch=120,
+    logging_interval=5,
+    num_sanity_check=1,
+    val_eval_interval=5,
+    val_loss_interval=5,
+    val_start_epoch=5)
+
+2025-08-06 16:40:09 Train INFO: training subset: 831 videos
+2025-08-06 16:40:09 Train INFO: validation subset: 111 videos, truncated as 1958 windows.
+2025-08-06 16:40:09 Train INFO: testing subset: 132 videos, truncated as 2370 windows.
+2025-08-06 16:40:10 Train INFO: Using single GPU training...
+2025-08-06 16:40:10 Train INFO: Using Model EMA...
+2025-08-06 16:40:10 Train INFO: Using Automatic Mixed Precision...
+2025-08-06 16:40:10 Train INFO: GPU Memory: 24.0 GB
+2025-08-06 16:40:10 Train INFO: Freeze the backbone...
+2025-08-06 16:40:10 Train INFO: Training Starts...
+
+2025-08-06 16:40:10 Train INFO: Running sanity check with 1 validation steps...
+2025-08-06 16:40:10 Train INFO: [Val]: Epoch -1 Loss
+2025-08-06 16:52:10 Train INFO: Using torch version: 2.5.1+cu121, CUDA version: 12.1
+2025-08-06 16:52:10 Train INFO: Config: 
+annotation_test = 'data/PKU-MMD/pku_test.json'
+annotation_train = 'data/PKU-MMD/pku_train.json'
+annotation_val = 'data/PKU-MMD/pku_val.json'
+block_list = None
+chunk_num = 32
+class_map = 'data/PKU-MMD/class_map.txt'
+dataset = dict(
+    test=dict(
+        ann_file='data/PKU-MMD/pku_test.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(keys=[
+                'imgs',
+            ], type='ConvertToTensor'),
+            dict(inputs='imgs', keys=[
+                'masks',
+            ], type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='testing',
+        test_mode=True,
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512),
+    train=dict(
+        ann_file='data/PKU-MMD/pku_train.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=6, type='mmaction.DecordInit'),
+            dict(
+                crop_ratio=[
+                    0.9,
+                    1.0,
+                ],
+                method='random_trunc',
+                num_clips=1,
+                scale_factor=1,
+                trunc_len=512,
+                trunc_thresh=0.5,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                182,
+            ), type='mmaction.Resize'),
+            dict(type='mmaction.RandomResizedCrop'),
+            dict(keep_ratio=False, scale=(
+                160,
+                160,
+            ), type='mmaction.Resize'),
+            dict(flip_ratio=0.5, type='mmaction.Flip'),
+            dict(transforms='default', type='mmaction.ImgAug'),
+            dict(type='mmaction.ColorJitter'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='training',
+        type='PkuPaddingDataset'),
+    val=dict(
+        ann_file='data/PKU-MMD/pku_val.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='validation',
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512))
+evaluation = dict(
+    ground_truth_filename='data/PKU-MMD/pku_val.json',
+    prediction_filename=
+    'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/predictions_val.json',
+    subset='validation',
+    tiou_thresholds=[
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9,
+    ],
+    type='mAP_PKU_MMD')
+inference = dict(
+    load_from_raw_predictions=False,
+    save_raw_prediction=False,
+    score_thresh=0.3)
+model = dict(
+    backbone=dict(
+        adapter_index=[
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+        ],
+        adapter_mlp_ratio=0.25,
+        custom=dict(
+            freeze_backbone=True,
+            norm_eval=False,
+            post_processing_pipeline=[
+                dict(
+                    keys=[
+                        'feats',
+                    ],
+                    ops='b n c t -> b c t',
+                    reduction='mean',
+                    type='Reduce'),
+            ]),
+        depth=12,
+        drop_path_rate=0.1,
+        embed_dims=384,
+        img_size=160,
+        mlp_ratio=4.0,
+        num_frames=16,
+        num_heads=6,
+        patch_size=16,
+        pretrained=
+        'pretrained/vit-small-p16_videomae-k400-pre_16x4x1_kinetics-400_my.pth',
+        qkv_bias=True,
+        return_feat_map=True,
+        total_frames=512,
+        tubelet_size=2,
+        type='VisionTransformerAdapter',
+        use_mean_pooling=True,
+        with_cp=True),
+    neck=dict(
+        in_channels=512, num_levels=6, out_channels=512, type='FPNIdentity'),
+    projection=dict(
+        arch=(
+            2,
+            2,
+            5,
+        ),
+        attn_cfg=dict(n_head=4, n_mha_win_size=19),
+        conv_cfg=dict(kernel_size=3, proj_pdrop=0.0),
+        in_channels=384,
+        max_seq_len=512,
+        norm_cfg=dict(type='LN'),
+        out_channels=512,
+        path_pdrop=0.1,
+        type='Conv1DTransformerProj',
+        use_abs_pe=False),
+    rpn_head=dict(
+        center_sample='radius',
+        center_sample_radius=1.5,
+        cls_prior_prob=0.01,
+        feat_channels=512,
+        in_channels=512,
+        label_smoothing=0.0,
+        loss=dict(
+            cls_loss=dict(type='FocalLoss'), reg_loss=dict(type='DIOULoss')),
+        loss_normalizer=100,
+        loss_normalizer_momentum=0.9,
+        num_classes=51,
+        num_convs=2,
+        prior_generator=dict(
+            regression_range=[
+                (
+                    0,
+                    4,
+                ),
+                (
+                    4,
+                    8,
+                ),
+                (
+                    8,
+                    16,
+                ),
+                (
+                    16,
+                    32,
+                ),
+                (
+                    32,
+                    64,
+                ),
+                (
+                    64,
+                    10000,
+                ),
+            ],
+            strides=[
+                1,
+                2,
+                4,
+                8,
+                16,
+                32,
+            ],
+            type='PointGenerator'),
+        type='ActionFormerHead'),
+    type='ActionFormer')
+optimizer = dict(
+    backbone=dict(
+        custom=[
+            dict(lr=0.0002, name='adapter', weight_decay=0.05),
+        ],
+        exclude=[
+            'backbone',
+        ],
+        lr=0,
+        weight_decay=0),
+    lr=0.0001,
+    paramwise=True,
+    type='AdamW',
+    weight_decay=0.05)
+post_processing = dict(
+    nms=dict(
+        max_seg_num=500,
+        multiclass=False,
+        sigma=0.3,
+        use_soft_nms=True,
+        voting_thresh=0.7),
+    save_dict=True)
+scale_factor = 1
+scheduler = dict(
+    max_epoch=120, type='LinearWarmupCosineAnnealingLR', warmup_epoch=1)
+solver = dict(
+    amp=True,
+    clip_grad_norm=1,
+    ema=True,
+    fp16_compress=True,
+    static_graph=True,
+    test=dict(batch_size=4, num_workers=4),
+    train=dict(batch_size=16, num_workers=4),
+    val=dict(batch_size=16, num_workers=4))
+video_dir = 'F:/dataset/pku-mmd/rgb'
+window_size = 512
+work_dir = 'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter\\gpu1_id0/'
+workflow = dict(
+    checkpoint_interval=5,
+    end_epoch=120,
+    logging_interval=5,
+    num_sanity_check=1,
+    val_eval_interval=5,
+    val_loss_interval=5,
+    val_start_epoch=5)
+
+2025-08-06 16:52:11 Train INFO: training subset: 831 videos
+2025-08-06 16:52:11 Train INFO: validation subset: 111 videos, truncated as 1958 windows.
+2025-08-06 16:52:11 Train INFO: testing subset: 132 videos, truncated as 2370 windows.
+2025-08-06 16:59:36 Train INFO: Using torch version: 2.5.1+cu121, CUDA version: 12.1
+2025-08-06 16:59:36 Train INFO: Config: 
+annotation_test = 'data/PKU-MMD/pku_test.json'
+annotation_train = 'data/PKU-MMD/pku_train.json'
+annotation_val = 'data/PKU-MMD/pku_val.json'
+block_list = None
+chunk_num = 31
+class_map = 'data/PKU-MMD/class_map.txt'
+dataset = dict(
+    test=dict(
+        ann_file='data/PKU-MMD/pku_test.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(keys=[
+                'imgs',
+            ], type='ConvertToTensor'),
+            dict(inputs='imgs', keys=[
+                'masks',
+            ], type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='testing',
+        test_mode=True,
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512),
+    train=dict(
+        ann_file='data/PKU-MMD/pku_train.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=6, type='mmaction.DecordInit'),
+            dict(
+                crop_ratio=[
+                    0.9,
+                    1.0,
+                ],
+                method='random_trunc',
+                num_clips=1,
+                scale_factor=1,
+                trunc_len=504,
+                trunc_thresh=0.5,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                182,
+            ), type='mmaction.Resize'),
+            dict(type='mmaction.RandomResizedCrop'),
+            dict(keep_ratio=False, scale=(
+                160,
+                160,
+            ), type='mmaction.Resize'),
+            dict(flip_ratio=0.5, type='mmaction.Flip'),
+            dict(transforms='default', type='mmaction.ImgAug'),
+            dict(type='mmaction.ColorJitter'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='training',
+        type='PkuPaddingDataset'),
+    val=dict(
+        ann_file='data/PKU-MMD/pku_val.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='validation',
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512))
+evaluation = dict(
+    ground_truth_filename='data/PKU-MMD/pku_val.json',
+    prediction_filename=
+    'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/predictions_val.json',
+    subset='validation',
+    tiou_thresholds=[
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9,
+    ],
+    type='mAP_PKU_MMD')
+inference = dict(
+    load_from_raw_predictions=False,
+    save_raw_prediction=False,
+    score_thresh=0.3)
+model = dict(
+    backbone=dict(
+        adapter_index=[
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+        ],
+        adapter_mlp_ratio=0.25,
+        custom=dict(
+            freeze_backbone=True,
+            norm_eval=False,
+            post_processing_pipeline=[
+                dict(
+                    keys=[
+                        'feats',
+                    ],
+                    ops='b n c t -> b c t',
+                    reduction='mean',
+                    type='Reduce'),
+            ]),
+        depth=12,
+        drop_path_rate=0.1,
+        embed_dims=384,
+        img_size=160,
+        mlp_ratio=4.0,
+        num_frames=16,
+        num_heads=6,
+        patch_size=16,
+        pretrained=
+        'pretrained/vit-small-p16_videomae-k400-pre_16x4x1_kinetics-400_my.pth',
+        qkv_bias=True,
+        return_feat_map=True,
+        total_frames=504,
+        tubelet_size=2,
+        type='VisionTransformerAdapter',
+        use_mean_pooling=True,
+        with_cp=True),
+    neck=dict(
+        in_channels=512, num_levels=6, out_channels=512, type='FPNIdentity'),
+    projection=dict(
+        arch=(
+            2,
+            2,
+            5,
+        ),
+        attn_cfg=dict(n_head=4, n_mha_win_size=19),
+        conv_cfg=dict(kernel_size=3, proj_pdrop=0.0),
+        in_channels=384,
+        max_seq_len=504,
+        norm_cfg=dict(type='LN'),
+        out_channels=512,
+        path_pdrop=0.1,
+        type='Conv1DTransformerProj',
+        use_abs_pe=False),
+    rpn_head=dict(
+        center_sample='radius',
+        center_sample_radius=1.5,
+        cls_prior_prob=0.01,
+        feat_channels=512,
+        in_channels=512,
+        label_smoothing=0.0,
+        loss=dict(
+            cls_loss=dict(type='FocalLoss'), reg_loss=dict(type='DIOULoss')),
+        loss_normalizer=100,
+        loss_normalizer_momentum=0.9,
+        num_classes=51,
+        num_convs=2,
+        prior_generator=dict(
+            regression_range=[
+                (
+                    0,
+                    4,
+                ),
+                (
+                    4,
+                    8,
+                ),
+                (
+                    8,
+                    16,
+                ),
+                (
+                    16,
+                    32,
+                ),
+                (
+                    32,
+                    64,
+                ),
+                (
+                    64,
+                    10000,
+                ),
+            ],
+            strides=[
+                1,
+                2,
+                4,
+                8,
+                16,
+                32,
+            ],
+            type='PointGenerator'),
+        type='ActionFormerHead'),
+    type='ActionFormer')
+optimizer = dict(
+    backbone=dict(
+        custom=[
+            dict(lr=0.0002, name='adapter', weight_decay=0.05),
+        ],
+        exclude=[
+            'backbone',
+        ],
+        lr=0,
+        weight_decay=0),
+    lr=0.0001,
+    paramwise=True,
+    type='AdamW',
+    weight_decay=0.05)
+post_processing = dict(
+    nms=dict(
+        max_seg_num=500,
+        multiclass=False,
+        sigma=0.3,
+        use_soft_nms=True,
+        voting_thresh=0.7),
+    save_dict=True)
+scale_factor = 1
+scheduler = dict(
+    max_epoch=120, type='LinearWarmupCosineAnnealingLR', warmup_epoch=1)
+solver = dict(
+    amp=True,
+    clip_grad_norm=1,
+    ema=True,
+    fp16_compress=True,
+    static_graph=True,
+    test=dict(batch_size=4, num_workers=4),
+    train=dict(batch_size=16, num_workers=4),
+    val=dict(batch_size=16, num_workers=4))
+video_dir = 'F:/dataset/pku-mmd/rgb'
+window_size = 512
+work_dir = 'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter\\gpu1_id0/'
+workflow = dict(
+    checkpoint_interval=5,
+    end_epoch=120,
+    logging_interval=5,
+    num_sanity_check=1,
+    val_eval_interval=5,
+    val_loss_interval=5,
+    val_start_epoch=5)
+
+2025-08-06 16:59:37 Train INFO: training subset: 831 videos
+2025-08-06 16:59:37 Train INFO: validation subset: 111 videos, truncated as 1958 windows.
+2025-08-06 16:59:37 Train INFO: testing subset: 132 videos, truncated as 2370 windows.
+2025-08-06 17:00:50 Train INFO: Using torch version: 2.5.1+cu121, CUDA version: 12.1
+2025-08-06 17:00:50 Train INFO: Config: 
+annotation_test = 'data/PKU-MMD/pku_test.json'
+annotation_train = 'data/PKU-MMD/pku_train.json'
+annotation_val = 'data/PKU-MMD/pku_val.json'
+block_list = None
+chunk_num = 36
+class_map = 'data/PKU-MMD/class_map.txt'
+dataset = dict(
+    test=dict(
+        ann_file='data/PKU-MMD/pku_test.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(keys=[
+                'imgs',
+            ], type='ConvertToTensor'),
+            dict(inputs='imgs', keys=[
+                'masks',
+            ], type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='testing',
+        test_mode=True,
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512),
+    train=dict(
+        ann_file='data/PKU-MMD/pku_train.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=6, type='mmaction.DecordInit'),
+            dict(
+                crop_ratio=[
+                    0.9,
+                    1.0,
+                ],
+                method='random_trunc',
+                num_clips=1,
+                scale_factor=1,
+                trunc_len=576,
+                trunc_thresh=0.5,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                182,
+            ), type='mmaction.Resize'),
+            dict(type='mmaction.RandomResizedCrop'),
+            dict(keep_ratio=False, scale=(
+                160,
+                160,
+            ), type='mmaction.Resize'),
+            dict(flip_ratio=0.5, type='mmaction.Flip'),
+            dict(transforms='default', type='mmaction.ImgAug'),
+            dict(type='mmaction.ColorJitter'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='training',
+        type='PkuPaddingDataset'),
+    val=dict(
+        ann_file='data/PKU-MMD/pku_val.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='validation',
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512))
+evaluation = dict(
+    ground_truth_filename='data/PKU-MMD/pku_val.json',
+    prediction_filename=
+    'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/predictions_val.json',
+    subset='validation',
+    tiou_thresholds=[
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9,
+    ],
+    type='mAP_PKU_MMD')
+inference = dict(
+    load_from_raw_predictions=False,
+    save_raw_prediction=False,
+    score_thresh=0.3)
+model = dict(
+    backbone=dict(
+        adapter_index=[
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+        ],
+        adapter_mlp_ratio=0.25,
+        custom=dict(
+            freeze_backbone=True,
+            norm_eval=False,
+            post_processing_pipeline=[
+                dict(
+                    keys=[
+                        'feats',
+                    ],
+                    ops='b n c t -> b c t',
+                    reduction='mean',
+                    type='Reduce'),
+            ]),
+        depth=12,
+        drop_path_rate=0.1,
+        embed_dims=384,
+        img_size=160,
+        mlp_ratio=4.0,
+        num_frames=16,
+        num_heads=6,
+        patch_size=16,
+        pretrained=
+        'pretrained/vit-small-p16_videomae-k400-pre_16x4x1_kinetics-400_my.pth',
+        qkv_bias=True,
+        return_feat_map=True,
+        total_frames=576,
+        tubelet_size=2,
+        type='VisionTransformerAdapter',
+        use_mean_pooling=True,
+        with_cp=True),
+    neck=dict(
+        in_channels=512, num_levels=6, out_channels=512, type='FPNIdentity'),
+    projection=dict(
+        arch=(
+            2,
+            2,
+            5,
+        ),
+        attn_cfg=dict(n_head=4, n_mha_win_size=19),
+        conv_cfg=dict(kernel_size=3, proj_pdrop=0.0),
+        in_channels=384,
+        max_seq_len=576,
+        norm_cfg=dict(type='LN'),
+        out_channels=512,
+        path_pdrop=0.1,
+        type='Conv1DTransformerProj',
+        use_abs_pe=False),
+    rpn_head=dict(
+        center_sample='radius',
+        center_sample_radius=1.5,
+        cls_prior_prob=0.01,
+        feat_channels=512,
+        in_channels=512,
+        label_smoothing=0.0,
+        loss=dict(
+            cls_loss=dict(type='FocalLoss'), reg_loss=dict(type='DIOULoss')),
+        loss_normalizer=100,
+        loss_normalizer_momentum=0.9,
+        num_classes=51,
+        num_convs=2,
+        prior_generator=dict(
+            regression_range=[
+                (
+                    0,
+                    4,
+                ),
+                (
+                    4,
+                    8,
+                ),
+                (
+                    8,
+                    16,
+                ),
+                (
+                    16,
+                    32,
+                ),
+                (
+                    32,
+                    64,
+                ),
+                (
+                    64,
+                    10000,
+                ),
+            ],
+            strides=[
+                1,
+                2,
+                4,
+                8,
+                16,
+                32,
+            ],
+            type='PointGenerator'),
+        type='ActionFormerHead'),
+    type='ActionFormer')
+optimizer = dict(
+    backbone=dict(
+        custom=[
+            dict(lr=0.0002, name='adapter', weight_decay=0.05),
+        ],
+        exclude=[
+            'backbone',
+        ],
+        lr=0,
+        weight_decay=0),
+    lr=0.0001,
+    paramwise=True,
+    type='AdamW',
+    weight_decay=0.05)
+post_processing = dict(
+    nms=dict(
+        max_seg_num=500,
+        multiclass=False,
+        sigma=0.3,
+        use_soft_nms=True,
+        voting_thresh=0.7),
+    save_dict=True)
+scale_factor = 1
+scheduler = dict(
+    max_epoch=120, type='LinearWarmupCosineAnnealingLR', warmup_epoch=1)
+solver = dict(
+    amp=True,
+    clip_grad_norm=1,
+    ema=True,
+    fp16_compress=True,
+    static_graph=True,
+    test=dict(batch_size=4, num_workers=4),
+    train=dict(batch_size=16, num_workers=4),
+    val=dict(batch_size=16, num_workers=4))
+video_dir = 'F:/dataset/pku-mmd/rgb'
+window_size = 512
+work_dir = 'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter\\gpu1_id0/'
+workflow = dict(
+    checkpoint_interval=5,
+    end_epoch=120,
+    logging_interval=5,
+    num_sanity_check=1,
+    val_eval_interval=5,
+    val_loss_interval=5,
+    val_start_epoch=5)
+
+2025-08-06 17:00:50 Train INFO: training subset: 831 videos
+2025-08-06 17:00:50 Train INFO: validation subset: 111 videos, truncated as 1958 windows.
+2025-08-06 17:00:50 Train INFO: testing subset: 132 videos, truncated as 2370 windows.
+2025-08-06 17:00:51 Train INFO: Using single GPU training...
+2025-08-06 17:00:51 Train INFO: Using Model EMA...
+2025-08-06 17:00:51 Train INFO: Using Automatic Mixed Precision...
+2025-08-06 17:00:51 Train INFO: GPU Memory: 24.0 GB
+2025-08-06 17:00:51 Train INFO: Freeze the backbone...
+2025-08-06 17:00:51 Train INFO: Training Starts...
+
+2025-08-06 17:00:51 Train INFO: Running sanity check with 1 validation steps...
+2025-08-06 17:00:51 Train INFO: [Val]: Epoch -1 Loss
+2025-08-06 17:04:57 Train INFO: Using torch version: 2.5.1+cu121, CUDA version: 12.1
+2025-08-06 17:04:58 Train INFO: Config: 
+annotation_test = 'data/PKU-MMD/pku_test.json'
+annotation_train = 'data/PKU-MMD/pku_train.json'
+annotation_val = 'data/PKU-MMD/pku_val.json'
+block_list = None
+chunk_num = 32
+class_map = 'data/PKU-MMD/class_map.txt'
+dataset = dict(
+    test=dict(
+        ann_file='data/PKU-MMD/pku_test.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(keys=[
+                'imgs',
+            ], type='ConvertToTensor'),
+            dict(inputs='imgs', keys=[
+                'masks',
+            ], type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='testing',
+        test_mode=True,
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512),
+    train=dict(
+        ann_file='data/PKU-MMD/pku_train.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=6, type='mmaction.DecordInit'),
+            dict(
+                crop_ratio=[
+                    0.9,
+                    1.0,
+                ],
+                method='random_trunc',
+                num_clips=1,
+                scale_factor=1,
+                trunc_len=512,
+                trunc_thresh=0.5,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                182,
+            ), type='mmaction.Resize'),
+            dict(type='mmaction.RandomResizedCrop'),
+            dict(keep_ratio=False, scale=(
+                160,
+                160,
+            ), type='mmaction.Resize'),
+            dict(flip_ratio=0.5, type='mmaction.Flip'),
+            dict(transforms='default', type='mmaction.ImgAug'),
+            dict(type='mmaction.ColorJitter'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='training',
+        type='PkuPaddingDataset'),
+    val=dict(
+        ann_file='data/PKU-MMD/pku_val.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='validation',
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512))
+evaluation = dict(
+    ground_truth_filename='data/PKU-MMD/pku_val.json',
+    prediction_filename=
+    'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/predictions_val.json',
+    subset='validation',
+    tiou_thresholds=[
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9,
+    ],
+    type='mAP_PKU_MMD')
+inference = dict(
+    load_from_raw_predictions=False,
+    save_raw_prediction=False,
+    score_thresh=0.3)
+model = dict(
+    backbone=dict(
+        adapter_index=[
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+        ],
+        adapter_mlp_ratio=0.25,
+        custom=dict(
+            freeze_backbone=True,
+            norm_eval=False,
+            post_processing_pipeline=[
+                dict(
+                    keys=[
+                        'feats',
+                    ],
+                    ops='b n c t -> b c t',
+                    reduction='mean',
+                    type='Reduce'),
+            ]),
+        depth=12,
+        drop_path_rate=0.1,
+        embed_dims=384,
+        img_size=160,
+        mlp_ratio=4.0,
+        num_frames=16,
+        num_heads=6,
+        patch_size=16,
+        pretrained=
+        'pretrained/vit-small-p16_videomae-k400-pre_16x4x1_kinetics-400_my.pth',
+        qkv_bias=True,
+        return_feat_map=True,
+        total_frames=512,
+        tubelet_size=2,
+        type='VisionTransformerAdapter',
+        use_mean_pooling=True,
+        with_cp=True),
+    neck=dict(
+        in_channels=512, num_levels=6, out_channels=512, type='FPNIdentity'),
+    projection=dict(
+        arch=(
+            2,
+            2,
+            5,
+        ),
+        attn_cfg=dict(n_head=4, n_mha_win_size=-1),
+        conv_cfg=dict(kernel_size=3, proj_pdrop=0.0),
+        in_channels=384,
+        max_seq_len=512,
+        norm_cfg=dict(type='LN'),
+        out_channels=512,
+        path_pdrop=0.1,
+        type='Conv1DTransformerProj',
+        use_abs_pe=False),
+    rpn_head=dict(
+        center_sample='radius',
+        center_sample_radius=1.5,
+        cls_prior_prob=0.01,
+        feat_channels=512,
+        in_channels=512,
+        label_smoothing=0.0,
+        loss=dict(
+            cls_loss=dict(type='FocalLoss'), reg_loss=dict(type='DIOULoss')),
+        loss_normalizer=100,
+        loss_normalizer_momentum=0.9,
+        num_classes=51,
+        num_convs=2,
+        prior_generator=dict(
+            regression_range=[
+                (
+                    0,
+                    4,
+                ),
+                (
+                    4,
+                    8,
+                ),
+                (
+                    8,
+                    16,
+                ),
+                (
+                    16,
+                    32,
+                ),
+                (
+                    32,
+                    64,
+                ),
+                (
+                    64,
+                    10000,
+                ),
+            ],
+            strides=[
+                1,
+                2,
+                4,
+                8,
+                16,
+                32,
+            ],
+            type='PointGenerator'),
+        type='ActionFormerHead'),
+    type='ActionFormer')
+optimizer = dict(
+    backbone=dict(
+        custom=[
+            dict(lr=0.0002, name='adapter', weight_decay=0.05),
+        ],
+        exclude=[
+            'backbone',
+        ],
+        lr=0,
+        weight_decay=0),
+    lr=0.0001,
+    paramwise=True,
+    type='AdamW',
+    weight_decay=0.05)
+post_processing = dict(
+    nms=dict(
+        max_seg_num=500,
+        multiclass=False,
+        sigma=0.3,
+        use_soft_nms=True,
+        voting_thresh=0.7),
+    save_dict=True)
+scale_factor = 1
+scheduler = dict(
+    max_epoch=120, type='LinearWarmupCosineAnnealingLR', warmup_epoch=1)
+solver = dict(
+    amp=True,
+    clip_grad_norm=1,
+    ema=True,
+    fp16_compress=True,
+    static_graph=True,
+    test=dict(batch_size=4, num_workers=4),
+    train=dict(batch_size=16, num_workers=4),
+    val=dict(batch_size=16, num_workers=4))
+video_dir = 'F:/dataset/pku-mmd/rgb'
+window_size = 512
+work_dir = 'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter\\gpu1_id0/'
+workflow = dict(
+    checkpoint_interval=5,
+    end_epoch=120,
+    logging_interval=5,
+    num_sanity_check=1,
+    val_eval_interval=5,
+    val_loss_interval=5,
+    val_start_epoch=5)
+
+2025-08-06 17:04:58 Train INFO: training subset: 831 videos
+2025-08-06 17:04:58 Train INFO: validation subset: 111 videos, truncated as 1958 windows.
+2025-08-06 17:04:58 Train INFO: testing subset: 132 videos, truncated as 2370 windows.
+2025-08-06 17:04:59 Train INFO: Using single GPU training...
+2025-08-06 17:04:59 Train INFO: Using Model EMA...
+2025-08-06 17:04:59 Train INFO: Using Automatic Mixed Precision...
+2025-08-06 17:04:59 Train INFO: GPU Memory: 24.0 GB
+2025-08-06 17:04:59 Train INFO: Freeze the backbone...
+2025-08-06 17:04:59 Train INFO: Training Starts...
+
+2025-08-06 17:04:59 Train INFO: Running sanity check with 1 validation steps...
+2025-08-06 17:04:59 Train INFO: [Val]: Epoch -1 Loss
+2025-08-06 17:56:12 Train INFO: [Val]: [-01]  Loss=2.1701  cls_loss=1.1683  reg_loss=1.0018  Average-mAP=0.00%
+2025-08-06 17:56:13 Train INFO: Sanity check completed.
+
+2025-08-06 17:56:13 Train INFO: [Train]: Epoch 0 started (Total iterations: 52)
+2025-08-06 17:59:57 Train INFO: [Train]: [000][00005/00051] (11.5%)  Loss=1.4809  cls_loss=0.7991  reg_loss=0.6819  lr_det=9.8e-06  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1717s  iter_time=223.946s  fwd=2.209s/bwd=0.079s/opt=0.014s
+2025-08-06 18:01:32 Train INFO: [Train]: [000][00010/00051] (21.2%)  Loss=1.4957  cls_loss=0.8541  reg_loss=0.6416  lr_det=2.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1190s  iter_time=95.305s
+2025-08-06 18:03:09 Train INFO: [Train]: [000][00015/00051] (30.8%)  Loss=1.4354  cls_loss=0.8794  reg_loss=0.5560  lr_det=2.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=937s  iter_time=97.051s
+2025-08-06 18:06:18 Train INFO: [Train]: [000][00020/00051] (40.4%)  Loss=1.3920  cls_loss=0.8944  reg_loss=0.4977  lr_det=3.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=894s  iter_time=189.312s
+2025-08-06 18:07:53 Train INFO: [Train]: [000][00025/00051] (50.0%)  Loss=1.3851  cls_loss=0.9152  reg_loss=0.4699  lr_det=4.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=700s  iter_time=94.817s
+2025-08-06 18:09:34 Train INFO: [Train]: [000][00030/00051] (59.6%)  Loss=1.3835  cls_loss=0.9339  reg_loss=0.4495  lr_det=5.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=543s  iter_time=100.817s
+2025-08-06 18:11:09 Train INFO: [Train]: [000][00035/00051] (69.2%)  Loss=1.3764  cls_loss=0.9434  reg_loss=0.4330  lr_det=6.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=399s  iter_time=95.410s
+2025-08-06 18:14:09 Train INFO: [Train]: [000][00040/00051] (78.8%)  Loss=1.3489  cls_loss=0.9349  reg_loss=0.4140  lr_det=7.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=289s  iter_time=180.025s
+2025-08-06 18:15:52 Train INFO: [Train]: [000][00045/00051] (88.5%)  Loss=1.3446  cls_loss=0.9411  reg_loss=0.4035  lr_det=8.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=154s  iter_time=102.459s
+2025-08-06 18:17:29 Train INFO: [Train]: [000][00050/00051] (98.1%)  Loss=1.3385  cls_loss=0.9436  reg_loss=0.3949  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=97.375s
+2025-08-06 18:17:34 Train INFO: [Train]: [000][00051/00051] (100.0%)  Loss=1.3386  cls_loss=0.9451  reg_loss=0.3935  lr_det=1.0e-04  GPU=1393MB(alloc)/4586MB(reserved)/9292MB(max)  ETA=0s  iter_time=4.560s
+2025-08-06 18:17:35 Train INFO: [Train]: Epoch 0 completed in 1281.8s (avg 24.650s/iter)
+2025-08-06 18:17:35 Train INFO: [Train]: Final Loss=1.3386
+2025-08-06 18:17:35 Train INFO: [Train]: Epoch 1 started (Total iterations: 52)
+2025-08-06 18:21:16 Train INFO: [Train]: [001][00005/00051] (11.5%)  Loss=1.1846  cls_loss=0.9071  reg_loss=0.2775  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1698s  iter_time=221.493s  fwd=2.201s/bwd=0.076s/opt=0.010s
+2025-08-06 18:23:00 Train INFO: [Train]: [001][00010/00051] (21.2%)  Loss=1.3182  cls_loss=0.9983  reg_loss=0.3200  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1213s  iter_time=103.901s
+2025-08-06 18:24:41 Train INFO: [Train]: [001][00015/00051] (30.8%)  Loss=1.3306  cls_loss=1.0044  reg_loss=0.3262  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=960s  iter_time=101.153s
+2025-08-06 18:27:40 Train INFO: [Train]: [001][00020/00051] (40.4%)  Loss=1.3134  cls_loss=0.9931  reg_loss=0.3203  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=894s  iter_time=179.098s
+2025-08-06 18:29:15 Train INFO: [Train]: [001][00025/00051] (50.0%)  Loss=1.3188  cls_loss=0.9976  reg_loss=0.3212  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=701s  iter_time=95.195s
+2025-08-06 18:30:54 Train INFO: [Train]: [001][00030/00051] (59.6%)  Loss=1.3030  cls_loss=0.9866  reg_loss=0.3164  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=542s  iter_time=98.894s
+2025-08-06 18:32:33 Train INFO: [Train]: [001][00035/00051] (69.2%)  Loss=1.3050  cls_loss=0.9874  reg_loss=0.3176  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=399s  iter_time=98.801s
+2025-08-06 18:35:36 Train INFO: [Train]: [001][00040/00051] (78.8%)  Loss=1.3021  cls_loss=0.9845  reg_loss=0.3176  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=290s  iter_time=182.509s
+2025-08-06 18:37:17 Train INFO: [Train]: [001][00045/00051] (88.5%)  Loss=1.2849  cls_loss=0.9722  reg_loss=0.3127  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=154s  iter_time=101.612s
+2025-08-06 18:38:52 Train INFO: [Train]: [001][00050/00051] (98.1%)  Loss=1.2821  cls_loss=0.9700  reg_loss=0.3121  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=94.787s
+2025-08-06 18:38:55 Train INFO: [Train]: [001][00051/00051] (100.0%)  Loss=1.2822  cls_loss=0.9700  reg_loss=0.3123  lr_det=1.0e-04  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.607s
+2025-08-06 18:38:55 Train INFO: [Train]: Epoch 1 completed in 1280.8s (avg 24.630s/iter)
+2025-08-06 18:38:55 Train INFO: [Train]: Final Loss=1.2822
+2025-08-06 18:38:55 Train INFO: [Train]: Epoch 2 started (Total iterations: 52)
+2025-08-06 18:42:30 Train INFO: [Train]: [002][00005/00051] (11.5%)  Loss=1.1999  cls_loss=0.8982  reg_loss=0.3017  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1647s  iter_time=214.821s  fwd=2.226s/bwd=0.080s/opt=0.010s
+2025-08-06 18:44:14 Train INFO: [Train]: [002][00010/00051] (21.2%)  Loss=1.1955  cls_loss=0.8917  reg_loss=0.3037  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1188s  iter_time=103.831s
+2025-08-06 18:45:49 Train INFO: [Train]: [002][00015/00051] (30.8%)  Loss=1.1939  cls_loss=0.8862  reg_loss=0.3076  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=931s  iter_time=95.181s
+2025-08-06 18:48:47 Train INFO: [Train]: [002][00020/00051] (40.4%)  Loss=1.1673  cls_loss=0.8599  reg_loss=0.3074  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=873s  iter_time=177.802s
+2025-08-06 18:50:28 Train INFO: [Train]: [002][00025/00051] (50.0%)  Loss=1.1656  cls_loss=0.8561  reg_loss=0.3095  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=693s  iter_time=101.177s
+2025-08-06 18:52:02 Train INFO: [Train]: [002][00030/00051] (59.6%)  Loss=1.1542  cls_loss=0.8430  reg_loss=0.3112  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=533s  iter_time=94.207s
+2025-08-06 18:53:38 Train INFO: [Train]: [002][00035/00051] (69.2%)  Loss=1.1388  cls_loss=0.8281  reg_loss=0.3108  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=392s  iter_time=95.308s
+2025-08-06 18:56:41 Train INFO: [Train]: [002][00040/00051] (78.8%)  Loss=1.1373  cls_loss=0.8243  reg_loss=0.3130  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=286s  iter_time=182.897s
+2025-08-06 18:58:15 Train INFO: [Train]: [002][00045/00051] (88.5%)  Loss=1.1215  cls_loss=0.8103  reg_loss=0.3112  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=151s  iter_time=94.442s
+2025-08-06 18:59:56 Train INFO: [Train]: [002][00050/00051] (98.1%)  Loss=1.1109  cls_loss=0.7998  reg_loss=0.3111  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=101.304s
+2025-08-06 18:59:58 Train INFO: [Train]: [002][00051/00051] (100.0%)  Loss=1.1069  cls_loss=0.7968  reg_loss=0.3101  lr_det=1.0e-04  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.063s
+2025-08-06 18:59:59 Train INFO: [Train]: Epoch 2 completed in 1263.8s (avg 24.304s/iter)
+2025-08-06 18:59:59 Train INFO: [Train]: Final Loss=1.1069
+2025-08-06 18:59:59 Train INFO: [Train]: Epoch 3 started (Total iterations: 52)
+2025-08-06 19:03:37 Train INFO: [Train]: [003][00005/00051] (11.5%)  Loss=1.0159  cls_loss=0.7118  reg_loss=0.3041  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1668s  iter_time=217.522s  fwd=2.186s/bwd=0.058s/opt=0.010s
+2025-08-06 19:05:24 Train INFO: [Train]: [003][00010/00051] (21.2%)  Loss=1.0593  cls_loss=0.7432  reg_loss=0.3161  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1211s  iter_time=107.450s
+2025-08-06 19:07:03 Train INFO: [Train]: [003][00015/00051] (30.8%)  Loss=1.0629  cls_loss=0.7457  reg_loss=0.3172  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=955s  iter_time=99.321s
+2025-08-06 19:10:05 Train INFO: [Train]: [003][00020/00051] (40.4%)  Loss=1.0793  cls_loss=0.7556  reg_loss=0.3236  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=894s  iter_time=181.042s
+2025-08-06 19:11:47 Train INFO: [Train]: [003][00025/00051] (50.0%)  Loss=1.0486  cls_loss=0.7339  reg_loss=0.3147  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=708s  iter_time=102.164s
+2025-08-06 19:13:47 Train INFO: [Train]: [003][00030/00051] (59.6%)  Loss=1.0469  cls_loss=0.7330  reg_loss=0.3140  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=561s  iter_time=120.505s
+2025-08-06 19:15:21 Train INFO: [Train]: [003][00035/00051] (69.2%)  Loss=1.0524  cls_loss=0.7362  reg_loss=0.3162  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=410s  iter_time=94.269s
+2025-08-06 19:18:14 Train INFO: [Train]: [003][00040/00051] (78.8%)  Loss=1.0469  cls_loss=0.7318  reg_loss=0.3151  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=294s  iter_time=172.393s
+2025-08-06 19:19:52 Train INFO: [Train]: [003][00045/00051] (88.5%)  Loss=1.0370  cls_loss=0.7243  reg_loss=0.3127  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=156s  iter_time=97.803s
+2025-08-06 19:21:30 Train INFO: [Train]: [003][00050/00051] (98.1%)  Loss=1.0338  cls_loss=0.7213  reg_loss=0.3125  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=98.768s
+2025-08-06 19:21:32 Train INFO: [Train]: [003][00051/00051] (100.0%)  Loss=1.0296  cls_loss=0.7185  reg_loss=0.3111  lr_det=1.0e-04  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.058s
+2025-08-06 19:21:33 Train INFO: [Train]: Epoch 3 completed in 1294.2s (avg 24.888s/iter)
+2025-08-06 19:21:33 Train INFO: [Train]: Final Loss=1.0296
+2025-08-06 19:21:33 Train INFO: [Train]: Epoch 4 started (Total iterations: 52)
+2025-08-06 19:25:22 Train INFO: [Train]: [004][00005/00051] (11.5%)  Loss=1.0689  cls_loss=0.7485  reg_loss=0.3205  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1753s  iter_time=228.588s  fwd=2.193s/bwd=0.042s/opt=0.009s
+2025-08-06 19:27:02 Train INFO: [Train]: [004][00010/00051] (21.2%)  Loss=1.0100  cls_loss=0.7069  reg_loss=0.3031  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1224s  iter_time=99.670s
+2025-08-06 19:28:38 Train INFO: [Train]: [004][00015/00051] (30.8%)  Loss=0.9950  cls_loss=0.6919  reg_loss=0.3030  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=956s  iter_time=96.751s
+2025-08-06 19:31:40 Train INFO: [Train]: [004][00020/00051] (40.4%)  Loss=1.0196  cls_loss=0.7120  reg_loss=0.3076  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=895s  iter_time=181.316s
+2025-08-06 19:33:18 Train INFO: [Train]: [004][00025/00051] (50.0%)  Loss=1.0059  cls_loss=0.7030  reg_loss=0.3029  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=705s  iter_time=98.284s
+2025-08-06 19:34:53 Train INFO: [Train]: [004][00030/00051] (59.6%)  Loss=1.0201  cls_loss=0.7102  reg_loss=0.3099  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=542s  iter_time=95.160s
+2025-08-06 19:36:32 Train INFO: [Train]: [004][00035/00051] (69.2%)  Loss=1.0144  cls_loss=0.7045  reg_loss=0.3098  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=400s  iter_time=99.286s
+2025-08-06 19:39:49 Train INFO: [Train]: [004][00040/00051] (78.8%)  Loss=1.0142  cls_loss=0.7057  reg_loss=0.3085  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=294s  iter_time=196.183s
+2025-08-06 19:41:32 Train INFO: [Train]: [004][00045/00051] (88.5%)  Loss=1.0114  cls_loss=0.7037  reg_loss=0.3076  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=156s  iter_time=103.081s
+2025-08-06 19:43:00 Train INFO: [Train]: [004][00050/00051] (98.1%)  Loss=1.0182  cls_loss=0.7081  reg_loss=0.3101  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=88.141s
+2025-08-06 19:43:02 Train INFO: [Train]: [004][00051/00051] (100.0%)  Loss=1.0174  cls_loss=0.7077  reg_loss=0.3096  lr_det=1.0e-04  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.081s
+2025-08-06 19:43:03 Train INFO: [Train]: Epoch 4 completed in 1289.4s (avg 24.797s/iter)
+2025-08-06 19:43:03 Train INFO: [Train]: Final Loss=1.0174
+2025-08-06 19:43:04 Train INFO: Checkpoint saved at epoch 4
+2025-08-06 19:43:04 Train INFO: [Train]: Epoch 5 started (Total iterations: 52)
+2025-08-06 19:46:39 Train INFO: [Train]: [005][00005/00051] (11.5%)  Loss=0.9732  cls_loss=0.6788  reg_loss=0.2944  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1652s  iter_time=215.501s  fwd=2.204s/bwd=0.083s/opt=0.012s
+2025-08-06 19:48:25 Train INFO: [Train]: [005][00010/00051] (21.2%)  Loss=0.9823  cls_loss=0.6824  reg_loss=0.2999  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1199s  iter_time=106.072s
+2025-08-06 19:50:13 Train INFO: [Train]: [005][00015/00051] (30.8%)  Loss=0.9929  cls_loss=0.6925  reg_loss=0.3004  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=965s  iter_time=107.451s
+2025-08-06 19:53:12 Train INFO: [Train]: [005][00020/00051] (40.4%)  Loss=1.0005  cls_loss=0.6974  reg_loss=0.3031  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=898s  iter_time=179.209s
+2025-08-06 19:55:00 Train INFO: [Train]: [005][00025/00051] (50.0%)  Loss=1.0139  cls_loss=0.7074  reg_loss=0.3065  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=716s  iter_time=107.943s
+2025-08-06 19:56:42 Train INFO: [Train]: [005][00030/00051] (59.6%)  Loss=0.9997  cls_loss=0.6960  reg_loss=0.3036  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=554s  iter_time=102.355s
+2025-08-06 19:58:26 Train INFO: [Train]: [005][00035/00051] (69.2%)  Loss=0.9940  cls_loss=0.6931  reg_loss=0.3009  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=410s  iter_time=103.984s
+2025-08-06 20:01:24 Train INFO: [Train]: [005][00040/00051] (78.8%)  Loss=0.9983  cls_loss=0.6968  reg_loss=0.3015  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=295s  iter_time=177.330s
+2025-08-06 20:03:08 Train INFO: [Train]: [005][00045/00051] (88.5%)  Loss=1.0042  cls_loss=0.7012  reg_loss=0.3030  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=157s  iter_time=104.400s
+2025-08-06 20:04:37 Train INFO: [Train]: [005][00050/00051] (98.1%)  Loss=0.9997  cls_loss=0.6986  reg_loss=0.3012  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=89.122s
+2025-08-06 20:04:39 Train INFO: [Train]: [005][00051/00051] (100.0%)  Loss=0.9995  cls_loss=0.6985  reg_loss=0.3010  lr_det=1.0e-04  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.065s
+2025-08-06 20:04:40 Train INFO: [Train]: Epoch 5 completed in 1296.1s (avg 24.926s/iter)
+2025-08-06 20:04:40 Train INFO: [Train]: Final Loss=0.9995
+2025-08-06 20:04:40 Train INFO: [Train]: Epoch 6 started (Total iterations: 52)
+2025-08-06 20:08:22 Train INFO: [Train]: [006][00005/00051] (11.5%)  Loss=0.9994  cls_loss=0.6933  reg_loss=0.3061  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1705s  iter_time=222.419s  fwd=2.382s/bwd=0.087s/opt=0.006s
+2025-08-06 20:10:00 Train INFO: [Train]: [006][00010/00051] (21.2%)  Loss=0.9972  cls_loss=0.6941  reg_loss=0.3031  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1193s  iter_time=97.748s
+2025-08-06 20:11:39 Train INFO: [Train]: [006][00015/00051] (30.8%)  Loss=1.0060  cls_loss=0.7014  reg_loss=0.3047  lr_det=1.0e-04  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=943s  iter_time=99.130s
+2025-08-06 20:14:32 Train INFO: [Train]: [006][00020/00051] (40.4%)  Loss=1.0074  cls_loss=0.6996  reg_loss=0.3078  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=875s  iter_time=173.345s
+2025-08-06 20:16:13 Train INFO: [Train]: [006][00025/00051] (50.0%)  Loss=1.0011  cls_loss=0.6968  reg_loss=0.3043  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=694s  iter_time=101.023s
+2025-08-06 20:17:52 Train INFO: [Train]: [006][00030/00051] (59.6%)  Loss=1.0021  cls_loss=0.6982  reg_loss=0.3039  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=537s  iter_time=98.727s
+2025-08-06 20:19:40 Train INFO: [Train]: [006][00035/00051] (69.2%)  Loss=0.9922  cls_loss=0.6911  reg_loss=0.3011  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=400s  iter_time=107.935s
+2025-08-06 20:22:43 Train INFO: [Train]: [006][00040/00051] (78.8%)  Loss=0.9936  cls_loss=0.6918  reg_loss=0.3019  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=291s  iter_time=183.286s
+2025-08-06 20:24:34 Train INFO: [Train]: [006][00045/00051] (88.5%)  Loss=1.0015  cls_loss=0.6977  reg_loss=0.3038  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=156s  iter_time=110.336s
+2025-08-06 20:26:07 Train INFO: [Train]: [006][00050/00051] (98.1%)  Loss=1.0040  cls_loss=0.6994  reg_loss=0.3046  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=92.867s
+2025-08-06 20:26:09 Train INFO: [Train]: [006][00051/00051] (100.0%)  Loss=0.9976  cls_loss=0.6951  reg_loss=0.3025  lr_det=9.9e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.059s
+2025-08-06 20:26:09 Train INFO: [Train]: Epoch 6 completed in 1289.7s (avg 24.801s/iter)
+2025-08-06 20:26:09 Train INFO: [Train]: Final Loss=0.9976
+2025-08-06 20:26:09 Train INFO: [Train]: Epoch 7 started (Total iterations: 52)
+2025-08-06 20:30:00 Train INFO: [Train]: [007][00005/00051] (11.5%)  Loss=1.0433  cls_loss=0.7253  reg_loss=0.3180  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1765s  iter_time=230.266s  fwd=2.228s/bwd=0.062s/opt=0.011s
+2025-08-06 20:31:42 Train INFO: [Train]: [007][00010/00051] (21.2%)  Loss=1.0262  cls_loss=0.7124  reg_loss=0.3139  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1239s  iter_time=102.176s
+2025-08-06 20:33:19 Train INFO: [Train]: [007][00015/00051] (30.8%)  Loss=1.0216  cls_loss=0.7081  reg_loss=0.3135  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=967s  iter_time=97.404s
+2025-08-06 20:36:25 Train INFO: [Train]: [007][00020/00051] (40.4%)  Loss=0.9996  cls_loss=0.6950  reg_loss=0.3046  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=909s  iter_time=186.145s
+2025-08-06 20:38:09 Train INFO: [Train]: [007][00025/00051] (50.0%)  Loss=1.0113  cls_loss=0.7038  reg_loss=0.3075  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=719s  iter_time=103.266s
+2025-08-06 20:39:47 Train INFO: [Train]: [007][00030/00051] (59.6%)  Loss=1.0179  cls_loss=0.7068  reg_loss=0.3111  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=554s  iter_time=98.445s
+2025-08-06 20:41:27 Train INFO: [Train]: [007][00035/00051] (69.2%)  Loss=1.0041  cls_loss=0.6980  reg_loss=0.3061  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=408s  iter_time=99.731s
+2025-08-06 20:44:22 Train INFO: [Train]: [007][00040/00051] (78.8%)  Loss=0.9960  cls_loss=0.6918  reg_loss=0.3042  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=293s  iter_time=175.345s
+2025-08-06 20:46:18 Train INFO: [Train]: [007][00045/00051] (88.5%)  Loss=0.9972  cls_loss=0.6919  reg_loss=0.3053  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=158s  iter_time=115.524s
+2025-08-06 20:47:50 Train INFO: [Train]: [007][00050/00051] (98.1%)  Loss=0.9982  cls_loss=0.6919  reg_loss=0.3063  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=92.065s
+2025-08-06 20:47:52 Train INFO: [Train]: [007][00051/00051] (100.0%)  Loss=0.9975  cls_loss=0.6912  reg_loss=0.3063  lr_det=9.9e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.058s
+2025-08-06 20:47:53 Train INFO: [Train]: Epoch 7 completed in 1303.2s (avg 25.062s/iter)
+2025-08-06 20:47:53 Train INFO: [Train]: Final Loss=0.9975
+2025-08-06 20:47:53 Train INFO: [Train]: Epoch 8 started (Total iterations: 52)
+2025-08-06 20:51:31 Train INFO: [Train]: [008][00005/00051] (11.5%)  Loss=0.9551  cls_loss=0.6636  reg_loss=0.2915  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1673s  iter_time=218.208s  fwd=2.225s/bwd=0.104s/opt=0.015s
+2025-08-06 20:53:06 Train INFO: [Train]: [008][00010/00051] (21.2%)  Loss=0.9811  cls_loss=0.6835  reg_loss=0.2976  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1170s  iter_time=95.574s
+2025-08-06 20:54:41 Train INFO: [Train]: [008][00015/00051] (30.8%)  Loss=0.9884  cls_loss=0.6875  reg_loss=0.3009  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=919s  iter_time=94.867s
+2025-08-06 20:57:38 Train INFO: [Train]: [008][00020/00051] (40.4%)  Loss=0.9804  cls_loss=0.6831  reg_loss=0.2972  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=865s  iter_time=177.108s
+2025-08-06 20:59:18 Train INFO: [Train]: [008][00025/00051] (50.0%)  Loss=0.9828  cls_loss=0.6844  reg_loss=0.2984  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=685s  iter_time=99.517s
+2025-08-06 21:00:58 Train INFO: [Train]: [008][00030/00051] (59.6%)  Loss=0.9860  cls_loss=0.6860  reg_loss=0.3000  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=532s  iter_time=99.944s
+2025-08-06 21:02:43 Train INFO: [Train]: [008][00035/00051] (69.2%)  Loss=0.9889  cls_loss=0.6876  reg_loss=0.3014  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=396s  iter_time=104.672s
+2025-08-06 21:05:49 Train INFO: [Train]: [008][00040/00051] (78.8%)  Loss=0.9816  cls_loss=0.6822  reg_loss=0.2994  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=289s  iter_time=186.626s
+2025-08-06 21:07:29 Train INFO: [Train]: [008][00045/00051] (88.5%)  Loss=0.9896  cls_loss=0.6879  reg_loss=0.3017  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=153s  iter_time=100.164s
+2025-08-06 21:09:07 Train INFO: [Train]: [008][00050/00051] (98.1%)  Loss=0.9899  cls_loss=0.6880  reg_loss=0.3020  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=97.500s
+2025-08-06 21:09:09 Train INFO: [Train]: [008][00051/00051] (100.0%)  Loss=0.9891  cls_loss=0.6874  reg_loss=0.3017  lr_det=9.9e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.059s
+2025-08-06 21:09:10 Train INFO: [Train]: Epoch 8 completed in 1277.0s (avg 24.557s/iter)
+2025-08-06 21:09:10 Train INFO: [Train]: Final Loss=0.9891
+2025-08-06 21:09:10 Train INFO: [Train]: Epoch 9 started (Total iterations: 52)
+2025-08-06 21:12:45 Train INFO: [Train]: [009][00005/00051] (11.5%)  Loss=0.9947  cls_loss=0.6888  reg_loss=0.3059  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1648s  iter_time=214.979s  fwd=2.378s/bwd=0.060s/opt=0.011s
+2025-08-06 21:14:26 Train INFO: [Train]: [009][00010/00051] (21.2%)  Loss=1.0226  cls_loss=0.7110  reg_loss=0.3116  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1179s  iter_time=101.328s
+2025-08-06 21:16:07 Train INFO: [Train]: [009][00015/00051] (30.8%)  Loss=1.0301  cls_loss=0.7168  reg_loss=0.3133  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=939s  iter_time=100.864s
+2025-08-06 21:18:59 Train INFO: [Train]: [009][00020/00051] (40.4%)  Loss=1.0084  cls_loss=0.7007  reg_loss=0.3077  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=870s  iter_time=172.233s
+2025-08-06 21:20:53 Train INFO: [Train]: [009][00025/00051] (50.0%)  Loss=0.9970  cls_loss=0.6917  reg_loss=0.3053  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=704s  iter_time=114.313s
+2025-08-06 21:22:35 Train INFO: [Train]: [009][00030/00051] (59.6%)  Loss=0.9982  cls_loss=0.6931  reg_loss=0.3051  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=546s  iter_time=102.125s
+2025-08-06 21:24:12 Train INFO: [Train]: [009][00035/00051] (69.2%)  Loss=0.9942  cls_loss=0.6902  reg_loss=0.3040  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=401s  iter_time=96.674s
+2025-08-06 21:27:08 Train INFO: [Train]: [009][00040/00051] (78.8%)  Loss=0.9918  cls_loss=0.6888  reg_loss=0.3029  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=289s  iter_time=175.800s
+2025-08-06 21:28:48 Train INFO: [Train]: [009][00045/00051] (88.5%)  Loss=1.0000  cls_loss=0.6951  reg_loss=0.3049  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=154s  iter_time=100.037s
+2025-08-06 21:30:19 Train INFO: [Train]: [009][00050/00051] (98.1%)  Loss=1.0012  cls_loss=0.6956  reg_loss=0.3056  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=91.463s
+2025-08-06 21:30:22 Train INFO: [Train]: [009][00051/00051] (100.0%)  Loss=1.0006  cls_loss=0.6956  reg_loss=0.3051  lr_det=9.9e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.087s
+2025-08-06 21:30:22 Train INFO: [Train]: Epoch 9 completed in 1272.7s (avg 24.474s/iter)
+2025-08-06 21:30:22 Train INFO: [Train]: Final Loss=1.0006
+2025-08-06 21:30:22 Train INFO: [Val]: Epoch 9 Loss
+2025-08-06 22:26:22 Train INFO: [Val]: [009]  Loss=1.3366  cls_loss=1.0131  reg_loss=0.3235  Average-mAP=0.04%
+2025-08-06 22:26:24 Train INFO: Checkpoint saved at epoch 9
+2025-08-06 22:26:24 Train INFO: [Train]: Epoch 10 started (Total iterations: 52)
+2025-08-06 22:30:01 Train INFO: [Train]: [010][00005/00051] (11.5%)  Loss=0.8827  cls_loss=0.6082  reg_loss=0.2745  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1667s  iter_time=217.457s  fwd=2.283s/bwd=0.099s/opt=0.017s
+2025-08-06 22:31:37 Train INFO: [Train]: [010][00010/00051] (21.2%)  Loss=0.9269  cls_loss=0.6382  reg_loss=0.2887  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1166s  iter_time=95.302s
+2025-08-06 22:33:13 Train INFO: [Train]: [010][00015/00051] (30.8%)  Loss=0.9604  cls_loss=0.6635  reg_loss=0.2969  lr_det=9.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=921s  iter_time=96.617s
+2025-08-06 22:36:09 Train INFO: [Train]: [010][00020/00051] (40.4%)  Loss=0.9816  cls_loss=0.6788  reg_loss=0.3028  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=864s  iter_time=175.664s
+2025-08-06 22:37:59 Train INFO: [Train]: [010][00025/00051] (50.0%)  Loss=1.0059  cls_loss=0.6970  reg_loss=0.3089  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=695s  iter_time=109.686s
+2025-08-06 22:39:37 Train INFO: [Train]: [010][00030/00051] (59.6%)  Loss=1.0037  cls_loss=0.6952  reg_loss=0.3085  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=537s  iter_time=98.477s
+2025-08-06 22:41:17 Train INFO: [Train]: [010][00035/00051] (69.2%)  Loss=1.0107  cls_loss=0.6999  reg_loss=0.3108  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=397s  iter_time=99.475s
+2025-08-06 22:44:12 Train INFO: [Train]: [010][00040/00051] (78.8%)  Loss=0.9993  cls_loss=0.6930  reg_loss=0.3062  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=287s  iter_time=175.757s
+2025-08-06 22:45:58 Train INFO: [Train]: [010][00045/00051] (88.5%)  Loss=1.0067  cls_loss=0.6987  reg_loss=0.3081  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=153s  iter_time=105.863s
+2025-08-06 22:47:40 Train INFO: [Train]: [010][00050/00051] (98.1%)  Loss=0.9975  cls_loss=0.6921  reg_loss=0.3055  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=101.669s
+2025-08-06 22:47:42 Train INFO: [Train]: [010][00051/00051] (100.0%)  Loss=0.9973  cls_loss=0.6919  reg_loss=0.3053  lr_det=9.8e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.068s
+2025-08-06 22:47:43 Train INFO: [Train]: Epoch 10 completed in 1278.8s (avg 24.592s/iter)
+2025-08-06 22:47:43 Train INFO: [Train]: Final Loss=0.9973
+2025-08-06 22:47:43 Train INFO: [Train]: Epoch 11 started (Total iterations: 52)
+2025-08-06 22:51:17 Train INFO: [Train]: [011][00005/00051] (11.5%)  Loss=0.9278  cls_loss=0.6465  reg_loss=0.2813  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1647s  iter_time=214.762s  fwd=2.342s/bwd=0.074s/opt=0.011s
+2025-08-06 22:52:54 Train INFO: [Train]: [011][00010/00051] (21.2%)  Loss=0.9727  cls_loss=0.6752  reg_loss=0.2975  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1160s  iter_time=96.481s
+2025-08-06 22:54:40 Train INFO: [Train]: [011][00015/00051] (30.8%)  Loss=1.0027  cls_loss=0.6944  reg_loss=0.3082  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=938s  iter_time=105.760s
+2025-08-06 22:57:36 Train INFO: [Train]: [011][00020/00051] (40.4%)  Loss=0.9787  cls_loss=0.6790  reg_loss=0.2998  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=876s  iter_time=176.094s
+2025-08-06 22:59:14 Train INFO: [Train]: [011][00025/00051] (50.0%)  Loss=0.9854  cls_loss=0.6836  reg_loss=0.3018  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=691s  iter_time=98.079s
+2025-08-06 23:00:53 Train INFO: [Train]: [011][00030/00051] (59.6%)  Loss=0.9806  cls_loss=0.6806  reg_loss=0.3000  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=535s  iter_time=98.790s
+2025-08-06 23:02:27 Train INFO: [Train]: [011][00035/00051] (69.2%)  Loss=0.9956  cls_loss=0.6900  reg_loss=0.3056  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=393s  iter_time=93.995s
+2025-08-06 23:05:20 Train INFO: [Train]: [011][00040/00051] (78.8%)  Loss=0.9995  cls_loss=0.6932  reg_loss=0.3063  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=284s  iter_time=173.753s
+2025-08-06 23:07:02 Train INFO: [Train]: [011][00045/00051] (88.5%)  Loss=0.9976  cls_loss=0.6921  reg_loss=0.3055  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=151s  iter_time=101.119s
+2025-08-06 23:08:35 Train INFO: [Train]: [011][00050/00051] (98.1%)  Loss=0.9967  cls_loss=0.6907  reg_loss=0.3060  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=93.102s
+2025-08-06 23:08:37 Train INFO: [Train]: [011][00051/00051] (100.0%)  Loss=0.9910  cls_loss=0.6868  reg_loss=0.3042  lr_det=9.8e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.076s
+2025-08-06 23:08:37 Train INFO: [Train]: Epoch 11 completed in 1254.7s (avg 24.130s/iter)
+2025-08-06 23:08:37 Train INFO: [Train]: Final Loss=0.9910
+2025-08-06 23:08:37 Train INFO: [Train]: Epoch 12 started (Total iterations: 52)
+2025-08-06 23:12:20 Train INFO: [Train]: [012][00005/00051] (11.5%)  Loss=0.9648  cls_loss=0.6780  reg_loss=0.2868  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1709s  iter_time=222.912s  fwd=2.197s/bwd=0.054s/opt=0.011s
+2025-08-06 23:13:58 Train INFO: [Train]: [012][00010/00051] (21.2%)  Loss=1.0023  cls_loss=0.6971  reg_loss=0.3052  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1193s  iter_time=97.215s
+2025-08-06 23:15:36 Train INFO: [Train]: [012][00015/00051] (30.8%)  Loss=0.9979  cls_loss=0.6914  reg_loss=0.3065  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=943s  iter_time=98.917s
+2025-08-06 23:18:37 Train INFO: [Train]: [012][00020/00051] (40.4%)  Loss=0.9892  cls_loss=0.6855  reg_loss=0.3037  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=884s  iter_time=180.050s
+2025-08-06 23:20:13 Train INFO: [Train]: [012][00025/00051] (50.0%)  Loss=0.9906  cls_loss=0.6875  reg_loss=0.3031  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=696s  iter_time=96.635s
+2025-08-06 23:21:53 Train INFO: [Train]: [012][00030/00051] (59.6%)  Loss=0.9953  cls_loss=0.6906  reg_loss=0.3047  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=539s  iter_time=99.431s
+2025-08-06 23:23:33 Train INFO: [Train]: [012][00035/00051] (69.2%)  Loss=0.9988  cls_loss=0.6929  reg_loss=0.3059  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=398s  iter_time=100.536s
+2025-08-06 23:26:39 Train INFO: [Train]: [012][00040/00051] (78.8%)  Loss=0.9998  cls_loss=0.6932  reg_loss=0.3066  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=290s  iter_time=186.299s
+2025-08-06 23:28:21 Train INFO: [Train]: [012][00045/00051] (88.5%)  Loss=0.9919  cls_loss=0.6881  reg_loss=0.3038  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=154s  iter_time=101.580s
+2025-08-06 23:29:50 Train INFO: [Train]: [012][00050/00051] (98.1%)  Loss=0.9971  cls_loss=0.6915  reg_loss=0.3056  lr_det=9.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=89.439s
+2025-08-06 23:29:53 Train INFO: [Train]: [012][00051/00051] (100.0%)  Loss=0.9946  cls_loss=0.6898  reg_loss=0.3047  lr_det=9.8e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.074s
+2025-08-06 23:29:53 Train INFO: [Train]: Epoch 12 completed in 1275.8s (avg 24.535s/iter)
+2025-08-06 23:29:53 Train INFO: [Train]: Final Loss=0.9946
+2025-08-06 23:29:53 Train INFO: [Train]: Epoch 13 started (Total iterations: 52)
+2025-08-06 23:33:38 Train INFO: [Train]: [013][00005/00051] (11.5%)  Loss=0.9768  cls_loss=0.6676  reg_loss=0.3092  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1724s  iter_time=224.846s  fwd=2.318s/bwd=0.071s/opt=0.010s
+2025-08-06 23:35:17 Train INFO: [Train]: [013][00010/00051] (21.2%)  Loss=0.9809  cls_loss=0.6784  reg_loss=0.3025  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1208s  iter_time=99.117s
+2025-08-06 23:36:56 Train INFO: [Train]: [013][00015/00051] (30.8%)  Loss=0.9978  cls_loss=0.6893  reg_loss=0.3085  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=951s  iter_time=98.696s
+2025-08-06 23:39:54 Train INFO: [Train]: [013][00020/00051] (40.4%)  Loss=0.9736  cls_loss=0.6744  reg_loss=0.2992  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=886s  iter_time=177.718s
+2025-08-06 23:41:29 Train INFO: [Train]: [013][00025/00051] (50.0%)  Loss=0.9737  cls_loss=0.6749  reg_loss=0.2988  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=696s  iter_time=95.220s
+2025-08-06 23:43:15 Train INFO: [Train]: [013][00030/00051] (59.6%)  Loss=0.9904  cls_loss=0.6862  reg_loss=0.3042  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=543s  iter_time=106.103s
+2025-08-06 23:44:55 Train INFO: [Train]: [013][00035/00051] (69.2%)  Loss=0.9842  cls_loss=0.6817  reg_loss=0.3025  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=401s  iter_time=100.080s
+2025-08-06 23:47:55 Train INFO: [Train]: [013][00040/00051] (78.8%)  Loss=0.9856  cls_loss=0.6825  reg_loss=0.3031  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=290s  iter_time=179.800s
+2025-08-06 23:49:36 Train INFO: [Train]: [013][00045/00051] (88.5%)  Loss=0.9780  cls_loss=0.6771  reg_loss=0.3009  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=154s  iter_time=101.378s
+2025-08-06 23:51:15 Train INFO: [Train]: [013][00050/00051] (98.1%)  Loss=0.9829  cls_loss=0.6804  reg_loss=0.3025  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=99.276s
+2025-08-06 23:51:18 Train INFO: [Train]: [013][00051/00051] (100.0%)  Loss=0.9812  cls_loss=0.6793  reg_loss=0.3019  lr_det=9.7e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.055s
+2025-08-06 23:51:18 Train INFO: [Train]: Epoch 13 completed in 1285.0s (avg 24.712s/iter)
+2025-08-06 23:51:18 Train INFO: [Train]: Final Loss=0.9812
+2025-08-06 23:51:18 Train INFO: [Train]: Epoch 14 started (Total iterations: 52)
+2025-08-06 23:54:49 Train INFO: [Train]: [014][00005/00051] (11.5%)  Loss=0.9890  cls_loss=0.6803  reg_loss=0.3087  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1618s  iter_time=211.068s  fwd=2.183s/bwd=0.053s/opt=0.004s
+2025-08-06 23:56:31 Train INFO: [Train]: [014][00010/00051] (21.2%)  Loss=0.9976  cls_loss=0.6877  reg_loss=0.3099  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1165s  iter_time=101.542s
+2025-08-06 23:58:08 Train INFO: [Train]: [014][00015/00051] (30.8%)  Loss=1.0113  cls_loss=0.6977  reg_loss=0.3136  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=923s  iter_time=97.539s
+2025-08-07 00:01:20 Train INFO: [Train]: [014][00020/00051] (40.4%)  Loss=0.9994  cls_loss=0.6888  reg_loss=0.3106  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=888s  iter_time=191.491s
+2025-08-07 00:02:57 Train INFO: [Train]: [014][00025/00051] (50.0%)  Loss=1.0105  cls_loss=0.6983  reg_loss=0.3123  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=698s  iter_time=96.755s
+2025-08-07 00:04:33 Train INFO: [Train]: [014][00030/00051] (59.6%)  Loss=1.0103  cls_loss=0.6971  reg_loss=0.3132  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=539s  iter_time=96.762s
+2025-08-07 00:06:14 Train INFO: [Train]: [014][00035/00051] (69.2%)  Loss=1.0025  cls_loss=0.6910  reg_loss=0.3116  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=398s  iter_time=100.800s
+2025-08-07 00:09:27 Train INFO: [Train]: [014][00040/00051] (78.8%)  Loss=0.9957  cls_loss=0.6863  reg_loss=0.3095  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=292s  iter_time=192.556s
+2025-08-07 00:11:04 Train INFO: [Train]: [014][00045/00051] (88.5%)  Loss=1.0020  cls_loss=0.6915  reg_loss=0.3105  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=155s  iter_time=97.373s
+2025-08-07 00:12:34 Train INFO: [Train]: [014][00050/00051] (98.1%)  Loss=1.0009  cls_loss=0.6914  reg_loss=0.3095  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=90.184s
+2025-08-07 00:12:36 Train INFO: [Train]: [014][00051/00051] (100.0%)  Loss=1.0005  cls_loss=0.6911  reg_loss=0.3094  lr_det=9.7e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.095s
+2025-08-07 00:12:37 Train INFO: [Train]: Epoch 14 completed in 1278.9s (avg 24.594s/iter)
+2025-08-07 00:12:37 Train INFO: [Train]: Final Loss=1.0005
+2025-08-07 00:12:37 Train INFO: [Val]: Epoch 14 Loss
+2025-08-07 01:06:17 Train INFO: [Val]: [014]  Loss=1.2400  cls_loss=0.9245  reg_loss=0.3155  Average-mAP=0.09%
+2025-08-07 01:06:19 Train INFO: Checkpoint saved at epoch 14
+2025-08-07 01:06:19 Train INFO: [Train]: Epoch 15 started (Total iterations: 52)
+2025-08-07 01:09:55 Train INFO: [Train]: [015][00005/00051] (11.5%)  Loss=0.9319  cls_loss=0.6467  reg_loss=0.2852  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1658s  iter_time=216.316s  fwd=2.190s/bwd=0.062s/opt=0.010s
+2025-08-07 01:11:42 Train INFO: [Train]: [015][00010/00051] (21.2%)  Loss=0.9754  cls_loss=0.6760  reg_loss=0.2994  lr_det=9.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1205s  iter_time=106.982s
+2025-08-07 01:13:26 Train INFO: [Train]: [015][00015/00051] (30.8%)  Loss=0.9702  cls_loss=0.6736  reg_loss=0.2966  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=961s  iter_time=103.785s
+2025-08-07 01:16:31 Train INFO: [Train]: [015][00020/00051] (40.4%)  Loss=0.9853  cls_loss=0.6825  reg_loss=0.3028  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=903s  iter_time=184.763s
+2025-08-07 01:18:09 Train INFO: [Train]: [015][00025/00051] (50.0%)  Loss=0.9879  cls_loss=0.6830  reg_loss=0.3050  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=710s  iter_time=98.165s
+2025-08-07 01:19:48 Train INFO: [Train]: [015][00030/00051] (59.6%)  Loss=1.0047  cls_loss=0.6940  reg_loss=0.3107  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=548s  iter_time=98.567s
+2025-08-07 01:21:30 Train INFO: [Train]: [015][00035/00051] (69.2%)  Loss=0.9983  cls_loss=0.6907  reg_loss=0.3076  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=405s  iter_time=102.633s
+2025-08-07 01:24:30 Train INFO: [Train]: [015][00040/00051] (78.8%)  Loss=1.0019  cls_loss=0.6933  reg_loss=0.3087  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=293s  iter_time=179.905s
+2025-08-07 01:26:13 Train INFO: [Train]: [015][00045/00051] (88.5%)  Loss=0.9989  cls_loss=0.6921  reg_loss=0.3069  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=156s  iter_time=103.034s
+2025-08-07 01:27:43 Train INFO: [Train]: [015][00050/00051] (98.1%)  Loss=0.9977  cls_loss=0.6918  reg_loss=0.3060  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=89.675s
+2025-08-07 01:27:45 Train INFO: [Train]: [015][00051/00051] (100.0%)  Loss=0.9977  cls_loss=0.6917  reg_loss=0.3060  lr_det=9.6e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.061s
+2025-08-07 01:27:46 Train INFO: [Train]: Epoch 15 completed in 1286.7s (avg 24.743s/iter)
+2025-08-07 01:27:46 Train INFO: [Train]: Final Loss=0.9977
+2025-08-07 01:27:46 Train INFO: [Train]: Epoch 16 started (Total iterations: 52)
+2025-08-07 01:31:29 Train INFO: [Train]: [016][00005/00051] (11.5%)  Loss=1.0225  cls_loss=0.7084  reg_loss=0.3141  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1712s  iter_time=223.250s  fwd=2.197s/bwd=0.053s/opt=0.003s
+2025-08-07 01:33:05 Train INFO: [Train]: [016][00010/00051] (21.2%)  Loss=1.0083  cls_loss=0.6981  reg_loss=0.3102  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1189s  iter_time=95.733s
+2025-08-07 01:34:39 Train INFO: [Train]: [016][00015/00051] (30.8%)  Loss=1.0027  cls_loss=0.6927  reg_loss=0.3100  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=931s  iter_time=94.702s
+2025-08-07 01:37:52 Train INFO: [Train]: [016][00020/00051] (40.4%)  Loss=0.9987  cls_loss=0.6905  reg_loss=0.3082  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=894s  iter_time=192.232s
+2025-08-07 01:39:27 Train INFO: [Train]: [016][00025/00051] (50.0%)  Loss=0.9795  cls_loss=0.6781  reg_loss=0.3014  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=702s  iter_time=95.818s
+2025-08-07 01:41:10 Train INFO: [Train]: [016][00030/00051] (59.6%)  Loss=0.9913  cls_loss=0.6858  reg_loss=0.3055  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=545s  iter_time=102.107s
+2025-08-07 01:42:47 Train INFO: [Train]: [016][00035/00051] (69.2%)  Loss=0.9903  cls_loss=0.6852  reg_loss=0.3051  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=401s  iter_time=97.525s
+2025-08-07 01:45:42 Train INFO: [Train]: [016][00040/00051] (78.8%)  Loss=0.9979  cls_loss=0.6903  reg_loss=0.3076  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=289s  iter_time=174.964s
+2025-08-07 01:47:23 Train INFO: [Train]: [016][00045/00051] (88.5%)  Loss=0.9915  cls_loss=0.6856  reg_loss=0.3059  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=154s  iter_time=100.754s
+2025-08-07 01:48:56 Train INFO: [Train]: [016][00050/00051] (98.1%)  Loss=0.9925  cls_loss=0.6868  reg_loss=0.3057  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=92.905s
+2025-08-07 01:48:58 Train INFO: [Train]: [016][00051/00051] (100.0%)  Loss=0.9891  cls_loss=0.6848  reg_loss=0.3044  lr_det=9.6e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.056s
+2025-08-07 01:48:58 Train INFO: [Train]: Epoch 16 completed in 1272.8s (avg 24.476s/iter)
+2025-08-07 01:48:58 Train INFO: [Train]: Final Loss=0.9891
+2025-08-07 01:48:58 Train INFO: [Train]: Epoch 17 started (Total iterations: 52)
+2025-08-07 01:52:26 Train INFO: [Train]: [017][00005/00051] (11.5%)  Loss=0.9395  cls_loss=0.6572  reg_loss=0.2823  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1594s  iter_time=207.967s  fwd=2.191s/bwd=0.078s/opt=0.006s
+2025-08-07 01:54:01 Train INFO: [Train]: [017][00010/00051] (21.2%)  Loss=0.9908  cls_loss=0.6911  reg_loss=0.2997  lr_det=9.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1128s  iter_time=94.650s
+2025-08-07 01:55:36 Train INFO: [Train]: [017][00015/00051] (30.8%)  Loss=1.0103  cls_loss=0.7016  reg_loss=0.3087  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=895s  iter_time=95.229s
+2025-08-07 01:58:36 Train INFO: [Train]: [017][00020/00051] (40.4%)  Loss=0.9799  cls_loss=0.6815  reg_loss=0.2984  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=852s  iter_time=179.479s
+2025-08-07 02:00:16 Train INFO: [Train]: [017][00025/00051] (50.0%)  Loss=0.9837  cls_loss=0.6854  reg_loss=0.2983  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=678s  iter_time=100.481s
+2025-08-07 02:01:51 Train INFO: [Train]: [017][00030/00051] (59.6%)  Loss=0.9854  cls_loss=0.6867  reg_loss=0.2987  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=523s  iter_time=94.547s
+2025-08-07 02:03:35 Train INFO: [Train]: [017][00035/00051] (69.2%)  Loss=0.9824  cls_loss=0.6849  reg_loss=0.2975  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=390s  iter_time=104.413s
+2025-08-07 02:06:33 Train INFO: [Train]: [017][00040/00051] (78.8%)  Loss=0.9824  cls_loss=0.6849  reg_loss=0.2975  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=283s  iter_time=178.252s
+2025-08-07 02:08:16 Train INFO: [Train]: [017][00045/00051] (88.5%)  Loss=0.9806  cls_loss=0.6831  reg_loss=0.2975  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=151s  iter_time=102.561s
+2025-08-07 02:09:47 Train INFO: [Train]: [017][00050/00051] (98.1%)  Loss=0.9869  cls_loss=0.6868  reg_loss=0.3001  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=24s  iter_time=91.008s
+2025-08-07 02:09:49 Train INFO: [Train]: [017][00051/00051] (100.0%)  Loss=0.9882  cls_loss=0.6871  reg_loss=0.3011  lr_det=9.5e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.058s
+2025-08-07 02:09:50 Train INFO: [Train]: Epoch 17 completed in 1251.5s (avg 24.066s/iter)
+2025-08-07 02:09:50 Train INFO: [Train]: Final Loss=0.9882
+2025-08-07 02:09:50 Train INFO: [Train]: Epoch 18 started (Total iterations: 52)
+2025-08-07 02:13:26 Train INFO: [Train]: [018][00005/00051] (11.5%)  Loss=1.0111  cls_loss=0.7066  reg_loss=0.3045  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1654s  iter_time=215.704s  fwd=2.187s/bwd=0.081s/opt=0.009s
+2025-08-07 02:15:02 Train INFO: [Train]: [018][00010/00051] (21.2%)  Loss=1.0133  cls_loss=0.7058  reg_loss=0.3075  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1162s  iter_time=96.051s
+2025-08-07 02:16:41 Train INFO: [Train]: [018][00015/00051] (30.8%)  Loss=1.0145  cls_loss=0.7056  reg_loss=0.3088  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=926s  iter_time=99.640s
+2025-08-07 02:19:37 Train INFO: [Train]: [018][00020/00051] (40.4%)  Loss=0.9748  cls_loss=0.6769  reg_loss=0.2979  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=867s  iter_time=176.174s
+2025-08-07 02:21:27 Train INFO: [Train]: [018][00025/00051] (50.0%)  Loss=0.9933  cls_loss=0.6887  reg_loss=0.3046  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=697s  iter_time=109.593s
+2025-08-07 02:23:13 Train INFO: [Train]: [018][00030/00051] (59.6%)  Loss=0.9857  cls_loss=0.6830  reg_loss=0.3027  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=544s  iter_time=106.181s
+2025-08-07 02:24:52 Train INFO: [Train]: [018][00035/00051] (69.2%)  Loss=0.9769  cls_loss=0.6765  reg_loss=0.3004  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=401s  iter_time=98.932s
+2025-08-07 02:27:50 Train INFO: [Train]: [018][00040/00051] (78.8%)  Loss=0.9818  cls_loss=0.6795  reg_loss=0.3023  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=290s  iter_time=178.232s
+2025-08-07 02:29:36 Train INFO: [Train]: [018][00045/00051] (88.5%)  Loss=0.9949  cls_loss=0.6885  reg_loss=0.3063  lr_det=9.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=155s  iter_time=105.907s
+2025-08-07 02:31:08 Train INFO: [Train]: [018][00050/00051] (98.1%)  Loss=0.9981  cls_loss=0.6910  reg_loss=0.3071  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=91.819s
+2025-08-07 02:31:10 Train INFO: [Train]: [018][00051/00051] (100.0%)  Loss=0.9995  cls_loss=0.6920  reg_loss=0.3075  lr_det=9.4e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.063s
+2025-08-07 02:31:11 Train INFO: [Train]: Epoch 18 completed in 1281.0s (avg 24.635s/iter)
+2025-08-07 02:31:11 Train INFO: [Train]: Final Loss=0.9995
+2025-08-07 02:31:11 Train INFO: [Train]: Epoch 19 started (Total iterations: 52)
+2025-08-07 02:34:51 Train INFO: [Train]: [019][00005/00051] (11.5%)  Loss=0.9009  cls_loss=0.6268  reg_loss=0.2742  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1691s  iter_time=220.535s  fwd=2.195s/bwd=0.079s/opt=0.011s
+2025-08-07 02:36:28 Train INFO: [Train]: [019][00010/00051] (21.2%)  Loss=0.9532  cls_loss=0.6611  reg_loss=0.2921  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1181s  iter_time=96.355s
+2025-08-07 02:38:07 Train INFO: [Train]: [019][00015/00051] (30.8%)  Loss=0.9499  cls_loss=0.6602  reg_loss=0.2896  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=936s  iter_time=99.250s
+2025-08-07 02:41:12 Train INFO: [Train]: [019][00020/00051] (40.4%)  Loss=0.9664  cls_loss=0.6702  reg_loss=0.2962  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=887s  iter_time=184.413s
+2025-08-07 02:42:47 Train INFO: [Train]: [019][00025/00051] (50.0%)  Loss=0.9712  cls_loss=0.6717  reg_loss=0.2994  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=696s  iter_time=95.594s
+2025-08-07 02:44:31 Train INFO: [Train]: [019][00030/00051] (59.6%)  Loss=0.9677  cls_loss=0.6694  reg_loss=0.2983  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=542s  iter_time=103.800s
+2025-08-07 02:46:07 Train INFO: [Train]: [019][00035/00051] (69.2%)  Loss=0.9734  cls_loss=0.6725  reg_loss=0.3009  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=398s  iter_time=95.957s
+2025-08-07 02:49:01 Train INFO: [Train]: [019][00040/00051] (78.8%)  Loss=0.9685  cls_loss=0.6694  reg_loss=0.2991  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=287s  iter_time=173.746s
+2025-08-07 02:50:44 Train INFO: [Train]: [019][00045/00051] (88.5%)  Loss=0.9835  cls_loss=0.6811  reg_loss=0.3024  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=153s  iter_time=103.011s
+2025-08-07 02:52:23 Train INFO: [Train]: [019][00050/00051] (98.1%)  Loss=0.9893  cls_loss=0.6857  reg_loss=0.3036  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=99.135s
+2025-08-07 02:52:25 Train INFO: [Train]: [019][00051/00051] (100.0%)  Loss=0.9905  cls_loss=0.6867  reg_loss=0.3038  lr_det=9.4e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.077s
+2025-08-07 02:52:26 Train INFO: [Train]: Epoch 19 completed in 1274.6s (avg 24.511s/iter)
+2025-08-07 02:52:26 Train INFO: [Train]: Final Loss=0.9905
+2025-08-07 02:52:26 Train INFO: [Val]: Epoch 19 Loss
+2025-08-07 03:46:53 Train INFO: [Val]: [019]  Loss=1.1174  cls_loss=0.8026  reg_loss=0.3148  Average-mAP=0.11%
+2025-08-07 03:46:56 Train INFO: Checkpoint saved at epoch 19
+2025-08-07 03:46:56 Train INFO: [Train]: Epoch 20 started (Total iterations: 52)
+2025-08-07 03:50:35 Train INFO: [Train]: [020][00005/00051] (11.5%)  Loss=0.9234  cls_loss=0.6406  reg_loss=0.2828  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1679s  iter_time=218.966s  fwd=2.379s/bwd=0.067s/opt=0.012s
+2025-08-07 03:52:12 Train INFO: [Train]: [020][00010/00051] (21.2%)  Loss=0.9700  cls_loss=0.6708  reg_loss=0.2992  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1179s  iter_time=97.361s
+2025-08-07 03:54:02 Train INFO: [Train]: [020][00015/00051] (30.8%)  Loss=1.0016  cls_loss=0.6913  reg_loss=0.3102  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=959s  iter_time=109.711s
+2025-08-07 03:57:00 Train INFO: [Train]: [020][00020/00051] (40.4%)  Loss=0.9934  cls_loss=0.6831  reg_loss=0.3103  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=891s  iter_time=177.718s
+2025-08-07 03:58:34 Train INFO: [Train]: [020][00025/00051] (50.0%)  Loss=0.9946  cls_loss=0.6851  reg_loss=0.3095  lr_det=9.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=698s  iter_time=94.254s
+2025-08-07 04:00:14 Train INFO: [Train]: [020][00030/00051] (59.6%)  Loss=0.9951  cls_loss=0.6838  reg_loss=0.3113  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=541s  iter_time=100.361s
+2025-08-07 04:01:50 Train INFO: [Train]: [020][00035/00051] (69.2%)  Loss=0.9991  cls_loss=0.6866  reg_loss=0.3126  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=397s  iter_time=95.861s
+2025-08-07 04:04:50 Train INFO: [Train]: [020][00040/00051] (78.8%)  Loss=0.9939  cls_loss=0.6842  reg_loss=0.3096  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=288s  iter_time=180.095s
+2025-08-07 04:06:27 Train INFO: [Train]: [020][00045/00051] (88.5%)  Loss=0.9902  cls_loss=0.6822  reg_loss=0.3080  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=153s  iter_time=96.321s
+2025-08-07 04:08:03 Train INFO: [Train]: [020][00050/00051] (98.1%)  Loss=0.9857  cls_loss=0.6792  reg_loss=0.3065  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=96.220s
+2025-08-07 04:08:05 Train INFO: [Train]: [020][00051/00051] (100.0%)  Loss=0.9840  cls_loss=0.6780  reg_loss=0.3060  lr_det=9.3e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.061s
+2025-08-07 04:08:06 Train INFO: [Train]: Epoch 20 completed in 1269.6s (avg 24.416s/iter)
+2025-08-07 04:08:06 Train INFO: [Train]: Final Loss=0.9840
+2025-08-07 04:08:06 Train INFO: [Train]: Epoch 21 started (Total iterations: 52)
+2025-08-07 04:11:42 Train INFO: [Train]: [021][00005/00051] (11.5%)  Loss=0.9153  cls_loss=0.6357  reg_loss=0.2796  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1658s  iter_time=216.231s  fwd=2.366s/bwd=0.111s/opt=0.012s
+2025-08-07 04:13:20 Train INFO: [Train]: [021][00010/00051] (21.2%)  Loss=0.9652  cls_loss=0.6686  reg_loss=0.2967  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1172s  iter_time=98.101s
+2025-08-07 04:15:02 Train INFO: [Train]: [021][00015/00051] (30.8%)  Loss=0.9664  cls_loss=0.6682  reg_loss=0.2983  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=936s  iter_time=101.704s
+2025-08-07 04:18:03 Train INFO: [Train]: [021][00020/00051] (40.4%)  Loss=0.9822  cls_loss=0.6769  reg_loss=0.3053  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=882s  iter_time=181.506s
+2025-08-07 04:19:58 Train INFO: [Train]: [021][00025/00051] (50.0%)  Loss=0.9941  cls_loss=0.6851  reg_loss=0.3090  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=712s  iter_time=114.879s
+2025-08-07 04:21:37 Train INFO: [Train]: [021][00030/00051] (59.6%)  Loss=0.9936  cls_loss=0.6851  reg_loss=0.3085  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=550s  iter_time=99.230s
+2025-08-07 04:23:12 Train INFO: [Train]: [021][00035/00051] (69.2%)  Loss=0.9810  cls_loss=0.6773  reg_loss=0.3037  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=403s  iter_time=94.219s
+2025-08-07 04:26:05 Train INFO: [Train]: [021][00040/00051] (78.8%)  Loss=0.9828  cls_loss=0.6783  reg_loss=0.3045  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=290s  iter_time=173.409s
+2025-08-07 04:28:01 Train INFO: [Train]: [021][00045/00051] (88.5%)  Loss=0.9928  cls_loss=0.6852  reg_loss=0.3075  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=156s  iter_time=116.379s
+2025-08-07 04:29:33 Train INFO: [Train]: [021][00050/00051] (98.1%)  Loss=0.9811  cls_loss=0.6773  reg_loss=0.3037  lr_det=9.3e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=91.899s
+2025-08-07 04:29:35 Train INFO: [Train]: [021][00051/00051] (100.0%)  Loss=0.9795  cls_loss=0.6761  reg_loss=0.3034  lr_det=9.3e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.060s
+2025-08-07 04:29:36 Train INFO: [Train]: Epoch 21 completed in 1290.4s (avg 24.815s/iter)
+2025-08-07 04:29:36 Train INFO: [Train]: Final Loss=0.9795
+2025-08-07 04:29:36 Train INFO: [Train]: Epoch 22 started (Total iterations: 52)
+2025-08-07 04:33:11 Train INFO: [Train]: [022][00005/00051] (11.5%)  Loss=1.0313  cls_loss=0.7208  reg_loss=0.3106  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1650s  iter_time=215.184s  fwd=2.192s/bwd=0.067s/opt=0.010s
+2025-08-07 04:34:54 Train INFO: [Train]: [022][00010/00051] (21.2%)  Loss=1.0375  cls_loss=0.7244  reg_loss=0.3131  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1186s  iter_time=103.051s
+2025-08-07 04:36:29 Train INFO: [Train]: [022][00015/00051] (30.8%)  Loss=1.0120  cls_loss=0.7042  reg_loss=0.3078  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=930s  iter_time=95.025s
+2025-08-07 04:39:26 Train INFO: [Train]: [022][00020/00051] (40.4%)  Loss=1.0059  cls_loss=0.6986  reg_loss=0.3073  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=871s  iter_time=176.547s
+2025-08-07 04:41:06 Train INFO: [Train]: [022][00025/00051] (50.0%)  Loss=1.0016  cls_loss=0.6952  reg_loss=0.3064  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=690s  iter_time=99.944s
+2025-08-07 04:42:44 Train INFO: [Train]: [022][00030/00051] (59.6%)  Loss=1.0064  cls_loss=0.6989  reg_loss=0.3074  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=534s  iter_time=98.532s
+2025-08-07 04:44:21 Train INFO: [Train]: [022][00035/00051] (69.2%)  Loss=1.0080  cls_loss=0.6998  reg_loss=0.3082  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=393s  iter_time=96.942s
+2025-08-07 04:47:22 Train INFO: [Train]: [022][00040/00051] (78.8%)  Loss=1.0025  cls_loss=0.6958  reg_loss=0.3066  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=286s  iter_time=180.738s
+2025-08-07 04:49:00 Train INFO: [Train]: [022][00045/00051] (88.5%)  Loss=1.0007  cls_loss=0.6944  reg_loss=0.3063  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=152s  iter_time=97.542s
+2025-08-07 04:50:34 Train INFO: [Train]: [022][00050/00051] (98.1%)  Loss=0.9966  cls_loss=0.6916  reg_loss=0.3051  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=94.458s
+2025-08-07 04:50:36 Train INFO: [Train]: [022][00051/00051] (100.0%)  Loss=0.9959  cls_loss=0.6905  reg_loss=0.3055  lr_det=9.2e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.058s
+2025-08-07 04:50:37 Train INFO: [Train]: Epoch 22 completed in 1260.8s (avg 24.245s/iter)
+2025-08-07 04:50:37 Train INFO: [Train]: Final Loss=0.9959
+2025-08-07 04:50:37 Train INFO: [Train]: Epoch 23 started (Total iterations: 52)
+2025-08-07 04:54:13 Train INFO: [Train]: [023][00005/00051] (11.5%)  Loss=0.9610  cls_loss=0.6622  reg_loss=0.2987  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1654s  iter_time=215.743s  fwd=2.357s/bwd=0.078s/opt=0.011s
+2025-08-07 04:55:46 Train INFO: [Train]: [023][00010/00051] (21.2%)  Loss=0.9573  cls_loss=0.6593  reg_loss=0.2979  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1153s  iter_time=93.585s
+2025-08-07 04:57:21 Train INFO: [Train]: [023][00015/00051] (30.8%)  Loss=1.0089  cls_loss=0.6993  reg_loss=0.3096  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=909s  iter_time=94.641s
+2025-08-07 05:00:23 Train INFO: [Train]: [023][00020/00051] (40.4%)  Loss=1.0185  cls_loss=0.7067  reg_loss=0.3118  lr_det=9.2e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=865s  iter_time=182.084s
+2025-08-07 05:02:00 Train INFO: [Train]: [023][00025/00051] (50.0%)  Loss=1.0174  cls_loss=0.7066  reg_loss=0.3108  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=683s  iter_time=97.040s
+2025-08-07 05:03:42 Train INFO: [Train]: [023][00030/00051] (59.6%)  Loss=1.0117  cls_loss=0.7019  reg_loss=0.3098  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=532s  iter_time=102.306s
+2025-08-07 05:05:18 Train INFO: [Train]: [023][00035/00051] (69.2%)  Loss=1.0050  cls_loss=0.6972  reg_loss=0.3078  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=391s  iter_time=95.452s
+2025-08-07 05:08:11 Train INFO: [Train]: [023][00040/00051] (78.8%)  Loss=1.0058  cls_loss=0.6965  reg_loss=0.3093  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=283s  iter_time=172.982s
+2025-08-07 05:09:54 Train INFO: [Train]: [023][00045/00051] (88.5%)  Loss=0.9995  cls_loss=0.6920  reg_loss=0.3075  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=151s  iter_time=103.293s
+2025-08-07 05:11:32 Train INFO: [Train]: [023][00050/00051] (98.1%)  Loss=0.9995  cls_loss=0.6912  reg_loss=0.3083  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=97.771s
+2025-08-07 05:11:34 Train INFO: [Train]: [023][00051/00051] (100.0%)  Loss=1.0030  cls_loss=0.6939  reg_loss=0.3091  lr_det=9.1e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.075s
+2025-08-07 05:11:35 Train INFO: [Train]: Epoch 23 completed in 1257.7s (avg 24.187s/iter)
+2025-08-07 05:11:35 Train INFO: [Train]: Final Loss=1.0030
+2025-08-07 05:11:35 Train INFO: [Train]: Epoch 24 started (Total iterations: 52)
+2025-08-07 05:15:13 Train INFO: [Train]: [024][00005/00051] (11.5%)  Loss=0.8703  cls_loss=0.6010  reg_loss=0.2693  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1672s  iter_time=218.046s  fwd=2.179s/bwd=0.068s/opt=0.006s
+2025-08-07 05:16:53 Train INFO: [Train]: [024][00010/00051] (21.2%)  Loss=0.9161  cls_loss=0.6304  reg_loss=0.2856  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1186s  iter_time=100.160s
+2025-08-07 05:18:36 Train INFO: [Train]: [024][00015/00051] (30.8%)  Loss=0.9279  cls_loss=0.6407  reg_loss=0.2872  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=948s  iter_time=103.085s
+2025-08-07 05:21:47 Train INFO: [Train]: [024][00020/00051] (40.4%)  Loss=0.9562  cls_loss=0.6594  reg_loss=0.2968  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=904s  iter_time=191.067s
+2025-08-07 05:23:27 Train INFO: [Train]: [024][00025/00051] (50.0%)  Loss=0.9661  cls_loss=0.6668  reg_loss=0.2994  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=712s  iter_time=99.702s
+2025-08-07 05:25:06 Train INFO: [Train]: [024][00030/00051] (59.6%)  Loss=0.9822  cls_loss=0.6776  reg_loss=0.3046  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=550s  iter_time=99.355s
+2025-08-07 05:26:41 Train INFO: [Train]: [024][00035/00051] (69.2%)  Loss=0.9792  cls_loss=0.6745  reg_loss=0.3047  lr_det=9.1e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=403s  iter_time=95.154s
+2025-08-07 05:29:37 Train INFO: [Train]: [024][00040/00051] (78.8%)  Loss=0.9796  cls_loss=0.6768  reg_loss=0.3028  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=290s  iter_time=175.748s
+2025-08-07 05:31:19 Train INFO: [Train]: [024][00045/00051] (88.5%)  Loss=0.9777  cls_loss=0.6754  reg_loss=0.3023  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=154s  iter_time=102.096s
+2025-08-07 05:32:49 Train INFO: [Train]: [024][00050/00051] (98.1%)  Loss=0.9769  cls_loss=0.6746  reg_loss=0.3023  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=90.130s
+2025-08-07 05:32:51 Train INFO: [Train]: [024][00051/00051] (100.0%)  Loss=0.9769  cls_loss=0.6745  reg_loss=0.3024  lr_det=9.0e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.069s
+2025-08-07 05:32:52 Train INFO: [Train]: Epoch 24 completed in 1277.3s (avg 24.564s/iter)
+2025-08-07 05:32:52 Train INFO: [Train]: Final Loss=0.9769
+2025-08-07 05:32:52 Train INFO: [Val]: Epoch 24 Loss
+2025-08-07 06:25:02 Train INFO: [Val]: [024]  Loss=1.0540  cls_loss=0.7393  reg_loss=0.3147  Average-mAP=0.20%
+2025-08-07 06:25:04 Train INFO: Checkpoint saved at epoch 24
+2025-08-07 06:25:04 Train INFO: [Train]: Epoch 25 started (Total iterations: 52)
+2025-08-07 06:28:38 Train INFO: [Train]: [025][00005/00051] (11.5%)  Loss=0.9957  cls_loss=0.6949  reg_loss=0.3007  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1645s  iter_time=214.609s  fwd=2.212s/bwd=0.095s/opt=0.008s
+2025-08-07 06:30:15 Train INFO: [Train]: [025][00010/00051] (21.2%)  Loss=0.9909  cls_loss=0.6964  reg_loss=0.2945  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1161s  iter_time=96.891s
+2025-08-07 06:32:02 Train INFO: [Train]: [025][00015/00051] (30.8%)  Loss=0.9802  cls_loss=0.6862  reg_loss=0.2941  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=942s  iter_time=107.053s
+2025-08-07 06:35:09 Train INFO: [Train]: [025][00020/00051] (40.4%)  Loss=0.9764  cls_loss=0.6848  reg_loss=0.2915  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=894s  iter_time=186.860s
+2025-08-07 06:36:45 Train INFO: [Train]: [025][00025/00051] (50.0%)  Loss=0.9842  cls_loss=0.6892  reg_loss=0.2950  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=702s  iter_time=96.285s
+2025-08-07 06:38:28 Train INFO: [Train]: [025][00030/00051] (59.6%)  Loss=0.9783  cls_loss=0.6863  reg_loss=0.2920  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=545s  iter_time=102.370s
+2025-08-07 06:40:05 Train INFO: [Train]: [025][00035/00051] (69.2%)  Loss=0.9770  cls_loss=0.6853  reg_loss=0.2918  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=400s  iter_time=97.048s
+2025-08-07 06:42:56 Train INFO: [Train]: [025][00040/00051] (78.8%)  Loss=0.9847  cls_loss=0.6894  reg_loss=0.2953  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=288s  iter_time=170.745s
+2025-08-07 06:44:39 Train INFO: [Train]: [025][00045/00051] (88.5%)  Loss=0.9842  cls_loss=0.6891  reg_loss=0.2951  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=153s  iter_time=103.951s
+2025-08-07 06:46:09 Train INFO: [Train]: [025][00050/00051] (98.1%)  Loss=0.9850  cls_loss=0.6897  reg_loss=0.2953  lr_det=9.0e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=89.840s
+2025-08-07 06:46:11 Train INFO: [Train]: [025][00051/00051] (100.0%)  Loss=0.9842  cls_loss=0.6888  reg_loss=0.2954  lr_det=9.0e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.071s
+2025-08-07 06:46:12 Train INFO: [Train]: Epoch 25 completed in 1268.5s (avg 24.393s/iter)
+2025-08-07 06:46:12 Train INFO: [Train]: Final Loss=0.9842
+2025-08-07 06:46:12 Train INFO: [Train]: Epoch 26 started (Total iterations: 52)
+2025-08-07 06:49:57 Train INFO: [Train]: [026][00005/00051] (11.5%)  Loss=0.9683  cls_loss=0.6696  reg_loss=0.2987  lr_det=8.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1723s  iter_time=224.730s  fwd=2.218s/bwd=0.061s/opt=0.008s
+2025-08-07 06:51:38 Train INFO: [Train]: [026][00010/00051] (21.2%)  Loss=0.9558  cls_loss=0.6643  reg_loss=0.2915  lr_det=8.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1215s  iter_time=101.241s
+2025-08-07 06:53:18 Train INFO: [Train]: [026][00015/00051] (30.8%)  Loss=0.9875  cls_loss=0.6854  reg_loss=0.3021  lr_det=8.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=959s  iter_time=100.336s
+2025-08-07 06:56:25 Train INFO: [Train]: [026][00020/00051] (40.4%)  Loss=0.9619  cls_loss=0.6663  reg_loss=0.2955  lr_det=8.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=905s  iter_time=186.579s
+2025-08-07 06:58:04 Train INFO: [Train]: [026][00025/00051] (50.0%)  Loss=0.9736  cls_loss=0.6755  reg_loss=0.2981  lr_det=8.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=712s  iter_time=98.785s
+2025-08-07 06:59:40 Train INFO: [Train]: [026][00030/00051] (59.6%)  Loss=0.9751  cls_loss=0.6776  reg_loss=0.2975  lr_det=8.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=547s  iter_time=96.309s
+2025-08-07 07:01:16 Train INFO: [Train]: [026][00035/00051] (69.2%)  Loss=0.9752  cls_loss=0.6776  reg_loss=0.2977  lr_det=8.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=402s  iter_time=95.971s
+2025-08-07 07:04:31 Train INFO: [Train]: [026][00040/00051] (78.8%)  Loss=0.9668  cls_loss=0.6722  reg_loss=0.2947  lr_det=8.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=295s  iter_time=195.222s
+2025-08-07 07:06:09 Train INFO: [Train]: [026][00045/00051] (88.5%)  Loss=0.9724  cls_loss=0.6750  reg_loss=0.2974  lr_det=8.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=156s  iter_time=97.794s
+2025-08-07 07:07:37 Train INFO: [Train]: [026][00050/00051] (98.1%)  Loss=0.9787  cls_loss=0.6790  reg_loss=0.2998  lr_det=8.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=87.546s
+2025-08-07 07:07:39 Train INFO: [Train]: [026][00051/00051] (100.0%)  Loss=0.9823  cls_loss=0.6814  reg_loss=0.3009  lr_det=8.9e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.075s
+2025-08-07 07:07:40 Train INFO: [Train]: Epoch 26 completed in 1287.4s (avg 24.757s/iter)
+2025-08-07 07:07:40 Train INFO: [Train]: Final Loss=0.9823
+2025-08-07 07:07:40 Train INFO: [Train]: Epoch 27 started (Total iterations: 52)
+2025-08-07 07:11:21 Train INFO: [Train]: [027][00005/00051] (11.5%)  Loss=0.9978  cls_loss=0.7049  reg_loss=0.2930  lr_det=8.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1701s  iter_time=221.832s  fwd=2.177s/bwd=0.085s/opt=0.009s
+2025-08-07 07:12:54 Train INFO: [Train]: [027][00010/00051] (21.2%)  Loss=0.9948  cls_loss=0.6992  reg_loss=0.2956  lr_det=8.9e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1172s  iter_time=92.514s
+2025-08-07 07:14:34 Train INFO: [Train]: [027][00015/00051] (30.8%)  Loss=0.9795  cls_loss=0.6854  reg_loss=0.2941  lr_det=8.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=933s  iter_time=100.125s
+2025-08-07 07:17:43 Train INFO: [Train]: [027][00020/00051] (40.4%)  Loss=0.9673  cls_loss=0.6745  reg_loss=0.2928  lr_det=8.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=892s  iter_time=189.448s
+2025-08-07 07:19:17 Train INFO: [Train]: [027][00025/00051] (50.0%)  Loss=0.9666  cls_loss=0.6737  reg_loss=0.2929  lr_det=8.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=698s  iter_time=93.703s
+2025-08-07 07:20:53 Train INFO: [Train]: [027][00030/00051] (59.6%)  Loss=0.9767  cls_loss=0.6788  reg_loss=0.2979  lr_det=8.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=537s  iter_time=95.664s
+2025-08-07 07:22:31 Train INFO: [Train]: [027][00035/00051] (69.2%)  Loss=0.9899  cls_loss=0.6875  reg_loss=0.3025  lr_det=8.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=396s  iter_time=98.053s
+2025-08-07 07:25:29 Train INFO: [Train]: [027][00040/00051] (78.8%)  Loss=0.9868  cls_loss=0.6846  reg_loss=0.3022  lr_det=8.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=287s  iter_time=177.955s
+2025-08-07 07:27:05 Train INFO: [Train]: [027][00045/00051] (88.5%)  Loss=0.9916  cls_loss=0.6882  reg_loss=0.3034  lr_det=8.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=152s  iter_time=95.895s
+2025-08-07 07:28:39 Train INFO: [Train]: [027][00050/00051] (98.1%)  Loss=0.9930  cls_loss=0.6897  reg_loss=0.3034  lr_det=8.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=94.643s
+2025-08-07 07:28:41 Train INFO: [Train]: [027][00051/00051] (100.0%)  Loss=0.9868  cls_loss=0.6853  reg_loss=0.3014  lr_det=8.8e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.079s
+2025-08-07 07:28:42 Train INFO: [Train]: Epoch 27 completed in 1262.6s (avg 24.282s/iter)
+2025-08-07 07:28:42 Train INFO: [Train]: Final Loss=0.9868
+2025-08-07 07:28:42 Train INFO: [Train]: Epoch 28 started (Total iterations: 52)
+2025-08-07 07:32:15 Train INFO: [Train]: [028][00005/00051] (11.5%)  Loss=0.9933  cls_loss=0.6799  reg_loss=0.3135  lr_det=8.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1633s  iter_time=213.014s  fwd=2.204s/bwd=0.066s/opt=0.008s
+2025-08-07 07:33:49 Train INFO: [Train]: [028][00010/00051] (21.2%)  Loss=0.9672  cls_loss=0.6702  reg_loss=0.2970  lr_det=8.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1144s  iter_time=94.039s
+2025-08-07 07:35:25 Train INFO: [Train]: [028][00015/00051] (30.8%)  Loss=0.9912  cls_loss=0.6885  reg_loss=0.3027  lr_det=8.8e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=907s  iter_time=95.928s
+2025-08-07 07:38:22 Train INFO: [Train]: [028][00020/00051] (40.4%)  Loss=0.9667  cls_loss=0.6724  reg_loss=0.2943  lr_det=8.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=857s  iter_time=177.292s
+2025-08-07 07:40:03 Train INFO: [Train]: [028][00025/00051] (50.0%)  Loss=0.9866  cls_loss=0.6853  reg_loss=0.3013  lr_det=8.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=681s  iter_time=100.510s
+2025-08-07 07:41:44 Train INFO: [Train]: [028][00030/00051] (59.6%)  Loss=0.9715  cls_loss=0.6751  reg_loss=0.2964  lr_det=8.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=529s  iter_time=100.624s
+2025-08-07 07:43:19 Train INFO: [Train]: [028][00035/00051] (69.2%)  Loss=0.9699  cls_loss=0.6737  reg_loss=0.2962  lr_det=8.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=390s  iter_time=95.825s
+2025-08-07 07:46:25 Train INFO: [Train]: [028][00040/00051] (78.8%)  Loss=0.9747  cls_loss=0.6760  reg_loss=0.2987  lr_det=8.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=285s  iter_time=186.086s
+2025-08-07 07:48:03 Train INFO: [Train]: [028][00045/00051] (88.5%)  Loss=0.9734  cls_loss=0.6747  reg_loss=0.2988  lr_det=8.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=151s  iter_time=97.093s
+2025-08-07 07:49:38 Train INFO: [Train]: [028][00050/00051] (98.1%)  Loss=0.9766  cls_loss=0.6773  reg_loss=0.2993  lr_det=8.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=95.582s
+2025-08-07 07:49:40 Train INFO: [Train]: [028][00051/00051] (100.0%)  Loss=0.9760  cls_loss=0.6768  reg_loss=0.2993  lr_det=8.7e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.077s
+2025-08-07 07:49:41 Train INFO: [Train]: Epoch 28 completed in 1258.8s (avg 24.208s/iter)
+2025-08-07 07:49:41 Train INFO: [Train]: Final Loss=0.9760
+2025-08-07 07:49:41 Train INFO: [Train]: Epoch 29 started (Total iterations: 52)
+2025-08-07 07:53:23 Train INFO: [Train]: [029][00005/00051] (11.5%)  Loss=0.9667  cls_loss=0.6807  reg_loss=0.2860  lr_det=8.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1702s  iter_time=222.034s  fwd=2.284s/bwd=0.086s/opt=0.006s
+2025-08-07 07:55:01 Train INFO: [Train]: [029][00010/00051] (21.2%)  Loss=0.9779  cls_loss=0.6872  reg_loss=0.2907  lr_det=8.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1192s  iter_time=97.812s
+2025-08-07 07:56:46 Train INFO: [Train]: [029][00015/00051] (30.8%)  Loss=0.9840  cls_loss=0.6869  reg_loss=0.2971  lr_det=8.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=955s  iter_time=104.753s
+2025-08-07 07:59:49 Train INFO: [Train]: [029][00020/00051] (40.4%)  Loss=0.9830  cls_loss=0.6834  reg_loss=0.2996  lr_det=8.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=898s  iter_time=183.864s
+2025-08-07 08:01:36 Train INFO: [Train]: [029][00025/00051] (50.0%)  Loss=0.9837  cls_loss=0.6850  reg_loss=0.2987  lr_det=8.7e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=715s  iter_time=106.827s
+2025-08-07 08:03:17 Train INFO: [Train]: [029][00030/00051] (59.6%)  Loss=0.9870  cls_loss=0.6875  reg_loss=0.2995  lr_det=8.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=553s  iter_time=101.023s
+2025-08-07 08:04:56 Train INFO: [Train]: [029][00035/00051] (69.2%)  Loss=0.9803  cls_loss=0.6818  reg_loss=0.2985  lr_det=8.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=407s  iter_time=98.681s
+2025-08-07 08:07:55 Train INFO: [Train]: [029][00040/00051] (78.8%)  Loss=0.9767  cls_loss=0.6792  reg_loss=0.2975  lr_det=8.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=294s  iter_time=179.108s
+2025-08-07 08:09:37 Train INFO: [Train]: [029][00045/00051] (88.5%)  Loss=0.9808  cls_loss=0.6809  reg_loss=0.2998  lr_det=8.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=156s  iter_time=101.881s
+2025-08-07 08:11:15 Train INFO: [Train]: [029][00050/00051] (98.1%)  Loss=0.9769  cls_loss=0.6794  reg_loss=0.2974  lr_det=8.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=97.792s
+2025-08-07 08:11:17 Train INFO: [Train]: [029][00051/00051] (100.0%)  Loss=0.9739  cls_loss=0.6771  reg_loss=0.2968  lr_det=8.6e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.101s
+2025-08-07 08:11:18 Train INFO: [Train]: Epoch 29 completed in 1296.6s (avg 24.935s/iter)
+2025-08-07 08:11:18 Train INFO: [Train]: Final Loss=0.9739
+2025-08-07 08:11:18 Train INFO: [Val]: Epoch 29 Loss
+2025-08-07 09:02:11 Train INFO: [Val]: [029]  Loss=1.0272  cls_loss=0.7129  reg_loss=0.3143  Average-mAP=0.21%
+2025-08-07 09:02:13 Train INFO: Checkpoint saved at epoch 29
+2025-08-07 09:02:13 Train INFO: [Train]: Epoch 30 started (Total iterations: 52)
+2025-08-07 09:05:38 Train INFO: [Train]: [030][00005/00051] (11.5%)  Loss=0.9297  cls_loss=0.6423  reg_loss=0.2874  lr_det=8.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1577s  iter_time=205.635s  fwd=2.193s/bwd=0.045s/opt=0.012s
+2025-08-07 09:07:16 Train INFO: [Train]: [030][00010/00051] (21.2%)  Loss=0.9928  cls_loss=0.6924  reg_loss=0.3004  lr_det=8.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1129s  iter_time=97.256s
+2025-08-07 09:08:56 Train INFO: [Train]: [030][00015/00051] (30.8%)  Loss=1.0251  cls_loss=0.7206  reg_loss=0.3045  lr_det=8.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=906s  iter_time=99.916s
+2025-08-07 09:12:09 Train INFO: [Train]: [030][00020/00051] (40.4%)  Loss=1.0179  cls_loss=0.7103  reg_loss=0.3076  lr_det=8.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=881s  iter_time=193.875s
+2025-08-07 09:13:49 Train INFO: [Train]: [030][00025/00051] (50.0%)  Loss=0.9915  cls_loss=0.6908  reg_loss=0.3007  lr_det=8.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=697s  iter_time=99.924s
+2025-08-07 09:15:31 Train INFO: [Train]: [030][00030/00051] (59.6%)  Loss=0.9869  cls_loss=0.6871  reg_loss=0.2998  lr_det=8.6e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=541s  iter_time=101.864s
+2025-08-07 09:17:15 Train INFO: [Train]: [030][00035/00051] (69.2%)  Loss=0.9857  cls_loss=0.6844  reg_loss=0.3014  lr_det=8.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=401s  iter_time=103.833s
+2025-08-07 09:20:30 Train INFO: [Train]: [030][00040/00051] (78.8%)  Loss=0.9870  cls_loss=0.6852  reg_loss=0.3018  lr_det=8.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=294s  iter_time=194.919s
+2025-08-07 09:22:08 Train INFO: [Train]: [030][00045/00051] (88.5%)  Loss=0.9899  cls_loss=0.6866  reg_loss=0.3033  lr_det=8.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=156s  iter_time=98.103s
+2025-08-07 09:23:44 Train INFO: [Train]: [030][00050/00051] (98.1%)  Loss=0.9881  cls_loss=0.6860  reg_loss=0.3021  lr_det=8.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=25s  iter_time=95.624s
+2025-08-07 09:23:46 Train INFO: [Train]: [030][00051/00051] (100.0%)  Loss=0.9866  cls_loss=0.6846  reg_loss=0.3019  lr_det=8.5e-05  GPU=1393MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=0s  iter_time=2.144s
+2025-08-07 09:23:47 Train INFO: [Train]: Epoch 30 completed in 1294.2s (avg 24.889s/iter)
+2025-08-07 09:23:47 Train INFO: [Train]: Final Loss=0.9866
+2025-08-07 09:23:47 Train INFO: [Train]: Epoch 31 started (Total iterations: 52)
+2025-08-07 09:27:21 Train INFO: [Train]: [031][00005/00051] (11.5%)  Loss=1.0018  cls_loss=0.6890  reg_loss=0.3128  lr_det=8.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1639s  iter_time=213.812s  fwd=2.280s/bwd=0.076s/opt=0.007s
+2025-08-07 09:29:05 Train INFO: [Train]: [031][00010/00051] (21.2%)  Loss=0.9880  cls_loss=0.6837  reg_loss=0.3044  lr_det=8.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=1186s  iter_time=104.345s
+2025-08-07 09:30:44 Train INFO: [Train]: [031][00015/00051] (30.8%)  Loss=1.0097  cls_loss=0.6999  reg_loss=0.3098  lr_det=8.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=938s  iter_time=98.625s
+2025-08-07 09:33:58 Train INFO: [Train]: [031][00020/00051] (40.4%)  Loss=0.9934  cls_loss=0.6852  reg_loss=0.3082  lr_det=8.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=903s  iter_time=194.650s
+2025-08-07 09:35:38 Train INFO: [Train]: [031][00025/00051] (50.0%)  Loss=0.9757  cls_loss=0.6742  reg_loss=0.3015  lr_det=8.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=711s  iter_time=99.616s
+2025-08-07 09:37:19 Train INFO: [Train]: [031][00030/00051] (59.6%)  Loss=0.9954  cls_loss=0.6890  reg_loss=0.3064  lr_det=8.5e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=550s  iter_time=101.183s
+2025-08-07 09:39:04 Train INFO: [Train]: [031][00035/00051] (69.2%)  Loss=0.9961  cls_loss=0.6898  reg_loss=0.3063  lr_det=8.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=407s  iter_time=104.582s
+2025-08-07 09:42:05 Train INFO: [Train]: [031][00040/00051] (78.8%)  Loss=0.9917  cls_loss=0.6862  reg_loss=0.3055  lr_det=8.4e-05  GPU=1430MB(alloc)/11824MB(reserved)/9292MB(max)  ETA=295s  iter_time=181.164s
+2025-08-07 09:43:21 Train INFO: Using torch version: 2.5.1+cu121, CUDA version: 12.1
+2025-08-07 09:43:21 Train INFO: Config: 
+annotation_test = 'data/PKU-MMD/pku_test.json'
+annotation_train = 'data/PKU-MMD/pku_train.json'
+annotation_val = 'data/PKU-MMD/pku_val.json'
+block_list = None
+chunk_num = 32
+class_map = 'data/PKU-MMD/class_map.txt'
+dataset = dict(
+    test=dict(
+        ann_file='data/PKU-MMD/pku_test.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(keys=[
+                'imgs',
+            ], type='ConvertToTensor'),
+            dict(inputs='imgs', keys=[
+                'masks',
+            ], type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='testing',
+        test_mode=True,
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512),
+    train=dict(
+        ann_file='data/PKU-MMD/pku_train.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=6, type='mmaction.DecordInit'),
+            dict(
+                crop_ratio=[
+                    0.9,
+                    1.0,
+                ],
+                method='random_trunc',
+                num_clips=1,
+                scale_factor=1,
+                trunc_len=512,
+                trunc_thresh=0.5,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                182,
+            ), type='mmaction.Resize'),
+            dict(type='mmaction.RandomResizedCrop'),
+            dict(keep_ratio=False, scale=(
+                160,
+                160,
+            ), type='mmaction.Resize'),
+            dict(flip_ratio=0.5, type='mmaction.Flip'),
+            dict(transforms='default', type='mmaction.ImgAug'),
+            dict(type='mmaction.ColorJitter'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='training',
+        type='PkuPaddingDataset'),
+    val=dict(
+        ann_file='data/PKU-MMD/pku_val.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='validation',
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512))
+evaluation = dict(
+    ground_truth_filename='data/PKU-MMD/pku_val.json',
+    prediction_filename=
+    'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/predictions_val.json',
+    subset='validation',
+    tiou_thresholds=[
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9,
+    ],
+    type='mAP_PKU_MMD')
+inference = dict(
+    load_from_raw_predictions=False,
+    save_raw_prediction=False,
+    score_thresh=0.3)
+model = dict(
+    backbone=dict(
+        adapter_index=[
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+        ],
+        adapter_mlp_ratio=0.25,
+        custom=dict(
+            freeze_backbone=True,
+            norm_eval=False,
+            post_processing_pipeline=[
+                dict(
+                    keys=[
+                        'feats',
+                    ],
+                    ops='b n c t -> b c t',
+                    reduction='mean',
+                    type='Reduce'),
+            ]),
+        depth=12,
+        drop_path_rate=0.1,
+        embed_dims=384,
+        img_size=160,
+        mlp_ratio=4.0,
+        num_frames=16,
+        num_heads=6,
+        patch_size=16,
+        pretrained=
+        'pretrained/vit-small-p16_videomae-k400-pre_16x4x1_kinetics-400_my.pth',
+        qkv_bias=True,
+        return_feat_map=True,
+        total_frames=512,
+        tubelet_size=2,
+        type='VisionTransformerAdapter',
+        use_mean_pooling=True,
+        with_cp=True),
+    neck=dict(
+        in_channels=512, num_levels=6, out_channels=512, type='FPNIdentity'),
+    projection=dict(
+        arch=(
+            2,
+            2,
+            5,
+        ),
+        attn_cfg=dict(n_head=4, n_mha_win_size=-1),
+        conv_cfg=dict(kernel_size=3, proj_pdrop=0.0),
+        in_channels=384,
+        max_seq_len=512,
+        norm_cfg=dict(type='LN'),
+        out_channels=512,
+        path_pdrop=0.1,
+        type='Conv1DTransformerProj',
+        use_abs_pe=False),
+    rpn_head=dict(
+        center_sample='radius',
+        center_sample_radius=1.5,
+        cls_prior_prob=0.01,
+        feat_channels=512,
+        in_channels=512,
+        label_smoothing=0.0,
+        loss=dict(
+            cls_loss=dict(type='FocalLoss'), reg_loss=dict(type='DIOULoss')),
+        loss_normalizer=100,
+        loss_normalizer_momentum=0.9,
+        num_classes=51,
+        num_convs=2,
+        prior_generator=dict(
+            regression_range=[
+                (
+                    0,
+                    4,
+                ),
+                (
+                    4,
+                    8,
+                ),
+                (
+                    8,
+                    16,
+                ),
+                (
+                    16,
+                    32,
+                ),
+                (
+                    32,
+                    64,
+                ),
+                (
+                    64,
+                    10000,
+                ),
+            ],
+            strides=[
+                1,
+                2,
+                4,
+                8,
+                16,
+                32,
+            ],
+            type='PointGenerator'),
+        type='ActionFormerHead'),
+    type='ActionFormer')
+optimizer = dict(
+    backbone=dict(
+        custom=[
+            dict(lr=0.0002, name='adapter', weight_decay=0.05),
+        ],
+        exclude=[
+            'backbone',
+        ],
+        lr=0,
+        weight_decay=0),
+    lr=0.0001,
+    paramwise=True,
+    type='AdamW',
+    weight_decay=0.05)
+post_processing = dict(
+    nms=dict(
+        max_seg_num=500,
+        multiclass=False,
+        sigma=0.3,
+        use_soft_nms=True,
+        voting_thresh=0.7),
+    save_dict=True)
+scale_factor = 1
+scheduler = dict(
+    max_epoch=120, type='LinearWarmupCosineAnnealingLR', warmup_epoch=1)
+solver = dict(
+    amp=True,
+    clip_grad_norm=1,
+    ema=True,
+    fp16_compress=True,
+    static_graph=True,
+    test=dict(batch_size=4, num_workers=4),
+    train=dict(batch_size=16, num_workers=4),
+    val=dict(batch_size=16, num_workers=4))
+video_dir = 'F:/dataset/pku-mmd/rgb'
+window_size = 512
+work_dir = 'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter\\gpu1_id0/'
+workflow = dict(
+    checkpoint_interval=5,
+    end_epoch=120,
+    logging_interval=5,
+    num_sanity_check=1,
+    val_eval_interval=5,
+    val_loss_interval=5,
+    val_start_epoch=5)
+
+2025-08-07 09:43:22 Train INFO: training subset: 831 videos
+2025-08-07 09:43:22 Train INFO: validation subset: 111 videos, truncated as 1958 windows.
+2025-08-07 09:43:22 Train INFO: testing subset: 132 videos, truncated as 2370 windows.
+2025-08-07 09:43:22 Train INFO: Using single GPU training...
+2025-08-07 09:43:22 Train INFO: Using Model EMA...
+2025-08-07 09:43:22 Train INFO: Using Automatic Mixed Precision...
+2025-08-07 09:43:22 Train INFO: GPU Memory: 24.0 GB
+2025-08-07 09:43:22 Train INFO: Freeze the backbone...
+2025-08-07 09:43:22 Train INFO: Resume training from: work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/checkpoint/epoch_29.pth
+2025-08-07 09:43:23 Train INFO: Resume epoch is 29
+2025-08-07 09:43:24 Train INFO: Training Starts...
+
+2025-08-07 09:43:24 Train INFO: [Train]: Epoch 30 started (Total iterations: 52)
+2025-08-07 09:47:01 Train INFO: [Train]: [030][00005/00051] (11.5%)  Loss=1.0942  cls_loss=0.7518  reg_loss=0.3424  lr_det=8.6e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1668s  iter_time=217.541s  fwd=2.171s/bwd=0.081s/opt=0.024s
+2025-08-07 09:48:45 Train INFO: [Train]: [030][00010/00051] (21.2%)  Loss=1.0313  cls_loss=0.7152  reg_loss=0.3161  lr_det=8.6e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1199s  iter_time=104.017s
+2025-08-07 09:50:33 Train INFO: [Train]: [030][00015/00051] (30.8%)  Loss=1.0137  cls_loss=0.7055  reg_loss=0.3081  lr_det=8.6e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=966s  iter_time=107.842s
+2025-08-07 09:53:32 Train INFO: [Train]: [030][00020/00051] (40.4%)  Loss=1.0090  cls_loss=0.6999  reg_loss=0.3090  lr_det=8.6e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=898s  iter_time=178.955s
+2025-08-07 09:55:07 Train INFO: [Train]: [030][00025/00051] (50.0%)  Loss=0.9787  cls_loss=0.6793  reg_loss=0.2994  lr_det=8.6e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=703s  iter_time=95.134s
+2025-08-07 09:56:41 Train INFO: [Train]: [030][00030/00051] (59.6%)  Loss=0.9982  cls_loss=0.6915  reg_loss=0.3067  lr_det=8.6e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=540s  iter_time=94.132s
+2025-08-07 09:58:14 Train INFO: [Train]: [030][00035/00051] (69.2%)  Loss=0.9824  cls_loss=0.6814  reg_loss=0.3010  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=396s  iter_time=92.797s
+2025-08-07 10:01:17 Train INFO: [Train]: [030][00040/00051] (78.8%)  Loss=0.9775  cls_loss=0.6764  reg_loss=0.3011  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=288s  iter_time=182.691s
+2025-08-07 10:02:57 Train INFO: [Train]: [030][00045/00051] (88.5%)  Loss=0.9780  cls_loss=0.6759  reg_loss=0.3021  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=153s  iter_time=100.645s
+2025-08-07 10:04:25 Train INFO: [Train]: [030][00050/00051] (98.1%)  Loss=0.9855  cls_loss=0.6806  reg_loss=0.3050  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=25s  iter_time=87.539s
+2025-08-07 10:04:29 Train INFO: [Train]: [030][00051/00051] (100.0%)  Loss=0.9821  cls_loss=0.6783  reg_loss=0.3038  lr_det=8.5e-05  GPU=1392MB(alloc)/3792MB(reserved)/9268MB(max)  ETA=0s  iter_time=4.478s
+2025-08-07 10:04:30 Train INFO: [Train]: Epoch 30 completed in 1266.4s (avg 24.355s/iter)
+2025-08-07 10:04:30 Train INFO: [Train]: Final Loss=0.9821
+2025-08-07 10:04:30 Train INFO: [Train]: Epoch 31 started (Total iterations: 52)
+2025-08-07 10:07:54 Train INFO: [Train]: [031][00005/00051] (11.5%)  Loss=0.9852  cls_loss=0.6722  reg_loss=0.3130  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1562s  iter_time=203.691s  fwd=2.169s/bwd=0.096s/opt=0.015s
+2025-08-07 10:09:34 Train INFO: [Train]: [031][00010/00051] (21.2%)  Loss=0.9883  cls_loss=0.6764  reg_loss=0.3119  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1133s  iter_time=100.251s
+2025-08-07 10:11:11 Train INFO: [Train]: [031][00015/00051] (30.8%)  Loss=0.9835  cls_loss=0.6741  reg_loss=0.3093  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=902s  iter_time=97.014s
+2025-08-07 10:14:01 Train INFO: [Train]: [031][00020/00051] (40.4%)  Loss=0.9742  cls_loss=0.6673  reg_loss=0.3069  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=843s  iter_time=170.063s
+2025-08-07 10:15:41 Train INFO: [Train]: [031][00025/00051] (50.0%)  Loss=0.9816  cls_loss=0.6724  reg_loss=0.3092  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=671s  iter_time=100.031s
+2025-08-07 10:17:21 Train INFO: [Train]: [031][00030/00051] (59.6%)  Loss=0.9902  cls_loss=0.6789  reg_loss=0.3112  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=523s  iter_time=100.267s
+2025-08-07 10:18:58 Train INFO: [Train]: [031][00035/00051] (69.2%)  Loss=0.9908  cls_loss=0.6816  reg_loss=0.3092  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=386s  iter_time=96.373s
+2025-08-07 10:21:46 Train INFO: [Train]: [031][00040/00051] (78.8%)  Loss=0.9760  cls_loss=0.6727  reg_loss=0.3033  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=278s  iter_time=168.416s
+2025-08-07 10:23:39 Train INFO: [Train]: [031][00045/00051] (88.5%)  Loss=0.9787  cls_loss=0.6748  reg_loss=0.3039  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=150s  iter_time=112.706s
+2025-08-07 10:25:05 Train INFO: [Train]: [031][00050/00051] (98.1%)  Loss=0.9793  cls_loss=0.6758  reg_loss=0.3035  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=24s  iter_time=86.656s
+2025-08-07 10:25:07 Train INFO: [Train]: [031][00051/00051] (100.0%)  Loss=0.9794  cls_loss=0.6757  reg_loss=0.3037  lr_det=8.4e-05  GPU=1392MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=0s  iter_time=2.052s
+2025-08-07 10:25:08 Train INFO: [Train]: Epoch 31 completed in 1238.3s (avg 23.814s/iter)
+2025-08-07 10:25:08 Train INFO: [Train]: Final Loss=0.9794
+2025-08-07 10:25:08 Train INFO: [Train]: Epoch 32 started (Total iterations: 52)
+2025-08-07 10:28:49 Train INFO: [Train]: [032][00005/00051] (11.5%)  Loss=0.8792  cls_loss=0.6099  reg_loss=0.2693  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1690s  iter_time=220.396s  fwd=2.304s/bwd=0.066s/opt=0.024s
+2025-08-07 10:30:29 Train INFO: [Train]: [032][00010/00051] (21.2%)  Loss=0.9999  cls_loss=0.6917  reg_loss=0.3083  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1196s  iter_time=100.361s
+2025-08-07 10:32:06 Train INFO: [Train]: [032][00015/00051] (30.8%)  Loss=1.0129  cls_loss=0.6986  reg_loss=0.3142  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=940s  iter_time=97.073s
+2025-08-07 10:35:01 Train INFO: [Train]: [032][00020/00051] (40.4%)  Loss=0.9998  cls_loss=0.6903  reg_loss=0.3095  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=875s  iter_time=175.244s
+2025-08-07 10:36:44 Train INFO: [Train]: [032][00025/00051] (50.0%)  Loss=1.0043  cls_loss=0.6936  reg_loss=0.3108  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=696s  iter_time=102.681s
+2025-08-07 10:38:24 Train INFO: [Train]: [032][00030/00051] (59.6%)  Loss=0.9931  cls_loss=0.6859  reg_loss=0.3072  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=539s  iter_time=100.276s
+2025-08-07 10:40:01 Train INFO: [Train]: [032][00035/00051] (69.2%)  Loss=0.9961  cls_loss=0.6891  reg_loss=0.3070  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=397s  iter_time=96.793s
+2025-08-07 10:42:42 Train INFO: Using torch version: 2.5.1+cu121, CUDA version: 12.1
+2025-08-07 10:42:42 Train INFO: Config: 
+annotation_test = 'data/PKU-MMD/pku_test.json'
+annotation_train = 'data/PKU-MMD/pku_train.json'
+annotation_val = 'data/PKU-MMD/pku_val.json'
+block_list = None
+chunk_num = 32
+class_map = 'data/PKU-MMD/class_map.txt'
+dataset = dict(
+    test=dict(
+        ann_file='data/PKU-MMD/pku_test.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(keys=[
+                'imgs',
+            ], type='ConvertToTensor'),
+            dict(inputs='imgs', keys=[
+                'masks',
+            ], type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='testing',
+        test_mode=True,
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512),
+    train=dict(
+        ann_file='data/PKU-MMD/pku_train.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=6, type='mmaction.DecordInit'),
+            dict(
+                crop_ratio=[
+                    0.9,
+                    1.0,
+                ],
+                method='random_trunc',
+                num_clips=1,
+                scale_factor=1,
+                trunc_len=512,
+                trunc_thresh=0.5,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                182,
+            ), type='mmaction.Resize'),
+            dict(type='mmaction.RandomResizedCrop'),
+            dict(keep_ratio=False, scale=(
+                160,
+                160,
+            ), type='mmaction.Resize'),
+            dict(flip_ratio=0.5, type='mmaction.Flip'),
+            dict(transforms='default', type='mmaction.ImgAug'),
+            dict(type='mmaction.ColorJitter'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='training',
+        type='PkuPaddingDataset'),
+    val=dict(
+        ann_file='data/PKU-MMD/pku_val.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='validation',
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512))
+evaluation = dict(
+    ground_truth_filename='data/PKU-MMD/pku_val.json',
+    prediction_filename=
+    'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/predictions_val.json',
+    subset='validation',
+    tiou_thresholds=[
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9,
+    ],
+    type='mAP_PKU_MMD')
+inference = dict(
+    load_from_raw_predictions=False,
+    save_raw_prediction=False,
+    score_thresh=0.3)
+model = dict(
+    backbone=dict(
+        adapter_index=[
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+        ],
+        adapter_mlp_ratio=0.25,
+        custom=dict(
+            freeze_backbone=True,
+            norm_eval=False,
+            post_processing_pipeline=[
+                dict(
+                    keys=[
+                        'feats',
+                    ],
+                    ops='b n c t -> b c t',
+                    reduction='mean',
+                    type='Reduce'),
+            ]),
+        depth=12,
+        drop_path_rate=0.1,
+        embed_dims=384,
+        img_size=160,
+        mlp_ratio=4.0,
+        num_frames=16,
+        num_heads=6,
+        patch_size=16,
+        pretrained=
+        'pretrained/vit-small-p16_videomae-k400-pre_16x4x1_kinetics-400_my.pth',
+        qkv_bias=True,
+        return_feat_map=True,
+        total_frames=512,
+        tubelet_size=2,
+        type='VisionTransformerAdapter',
+        use_mean_pooling=True,
+        with_cp=True),
+    neck=dict(
+        in_channels=512, num_levels=6, out_channels=512, type='FPNIdentity'),
+    projection=dict(
+        arch=(
+            2,
+            2,
+            5,
+        ),
+        attn_cfg=dict(n_head=4, n_mha_win_size=-1),
+        conv_cfg=dict(kernel_size=3, proj_pdrop=0.0),
+        in_channels=384,
+        max_seq_len=512,
+        norm_cfg=dict(type='LN'),
+        out_channels=512,
+        path_pdrop=0.1,
+        type='Conv1DTransformerProj',
+        use_abs_pe=False),
+    rpn_head=dict(
+        center_sample='radius',
+        center_sample_radius=1.5,
+        cls_prior_prob=0.01,
+        feat_channels=512,
+        in_channels=512,
+        label_smoothing=0.0,
+        loss=dict(
+            cls_loss=dict(type='FocalLoss'), reg_loss=dict(type='DIOULoss')),
+        loss_normalizer=100,
+        loss_normalizer_momentum=0.9,
+        num_classes=51,
+        num_convs=2,
+        prior_generator=dict(
+            regression_range=[
+                (
+                    0,
+                    4,
+                ),
+                (
+                    4,
+                    8,
+                ),
+                (
+                    8,
+                    16,
+                ),
+                (
+                    16,
+                    32,
+                ),
+                (
+                    32,
+                    64,
+                ),
+                (
+                    64,
+                    10000,
+                ),
+            ],
+            strides=[
+                1,
+                2,
+                4,
+                8,
+                16,
+                32,
+            ],
+            type='PointGenerator'),
+        type='ActionFormerHead'),
+    type='ActionFormer')
+optimizer = dict(
+    backbone=dict(
+        custom=[
+            dict(lr=0.0002, name='adapter', weight_decay=0.05),
+        ],
+        exclude=[
+            'backbone',
+        ],
+        lr=0,
+        weight_decay=0),
+    lr=0.0001,
+    paramwise=True,
+    type='AdamW',
+    weight_decay=0.05)
+post_processing = dict(
+    nms=dict(
+        max_seg_num=500,
+        multiclass=False,
+        sigma=0.3,
+        use_soft_nms=True,
+        voting_thresh=0.7),
+    save_dict=True)
+scale_factor = 1
+scheduler = dict(
+    max_epoch=120, type='LinearWarmupCosineAnnealingLR', warmup_epoch=1)
+solver = dict(
+    amp=True,
+    clip_grad_norm=1,
+    ema=True,
+    fp16_compress=True,
+    static_graph=True,
+    test=dict(batch_size=4, num_workers=4),
+    train=dict(batch_size=16, num_workers=4),
+    val=dict(batch_size=16, num_workers=4))
+video_dir = 'F:/dataset/pku-mmd/rgb'
+window_size = 512
+work_dir = 'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter\\gpu1_id0/'
+workflow = dict(
+    checkpoint_interval=5,
+    end_epoch=120,
+    logging_interval=5,
+    num_sanity_check=1,
+    val_eval_interval=5,
+    val_loss_interval=5,
+    val_start_epoch=5)
+
+2025-08-07 10:42:43 Train INFO: training subset: 831 videos
+2025-08-07 10:42:43 Train INFO: validation subset: 111 videos, truncated as 1958 windows.
+2025-08-07 10:42:43 Train INFO: testing subset: 132 videos, truncated as 2370 windows.
+2025-08-07 10:42:43 Train INFO: Using single GPU training...
+2025-08-07 10:42:43 Train INFO: Using Model EMA...
+2025-08-07 10:42:43 Train INFO: Using Automatic Mixed Precision...
+2025-08-07 10:42:43 Train INFO: GPU Memory: 24.0 GB
+2025-08-07 10:42:43 Train INFO: Freeze the backbone...
+2025-08-07 10:42:43 Train INFO: Resume training from: work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/checkpoint/epoch_29.pth
+2025-08-07 10:42:45 Train INFO: Resume epoch is 29
+2025-08-07 10:42:45 Train INFO: Training Starts...
+
+2025-08-07 10:42:45 Train INFO: [Train]: Epoch 30 started (Total iterations: 52)
+2025-08-07 10:46:19 Train INFO: [Train]: [030][00005/00051] (11.5%)  Loss=1.0942  cls_loss=0.7518  reg_loss=0.3424  lr_det=8.6e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1646s  iter_time=214.639s  fwd=2.242s/bwd=0.091s/opt=0.023s
+2025-08-07 10:47:56 Train INFO: [Train]: [030][00010/00051] (21.2%)  Loss=1.0313  cls_loss=0.7152  reg_loss=0.3161  lr_det=8.6e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1162s  iter_time=97.007s
+2025-08-07 10:49:28 Train INFO: [Train]: [030][00015/00051] (30.8%)  Loss=1.0136  cls_loss=0.7055  reg_loss=0.3081  lr_det=8.6e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=908s  iter_time=91.684s
+2025-08-07 10:52:23 Train INFO: [Train]: [030][00020/00051] (40.4%)  Loss=1.0089  cls_loss=0.6999  reg_loss=0.3090  lr_det=8.6e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=854s  iter_time=175.021s
+2025-08-07 10:54:06 Train INFO: [Train]: [030][00025/00051] (50.0%)  Loss=0.9787  cls_loss=0.6793  reg_loss=0.2994  lr_det=8.6e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=681s  iter_time=103.003s
+2025-08-07 10:55:42 Train INFO: [Train]: [030][00030/00051] (59.6%)  Loss=0.9981  cls_loss=0.6914  reg_loss=0.3068  lr_det=8.6e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=526s  iter_time=95.681s
+2025-08-07 10:57:17 Train INFO: [Train]: [030][00035/00051] (69.2%)  Loss=0.9824  cls_loss=0.6813  reg_loss=0.3011  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=388s  iter_time=95.012s
+2025-08-07 11:00:08 Train INFO: [Train]: [030][00040/00051] (78.8%)  Loss=0.9775  cls_loss=0.6764  reg_loss=0.3012  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=280s  iter_time=171.394s
+2025-08-07 11:02:03 Train INFO: [Train]: [030][00045/00051] (88.5%)  Loss=0.9781  cls_loss=0.6759  reg_loss=0.3022  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=151s  iter_time=114.559s
+2025-08-07 11:03:37 Train INFO: [Train]: [030][00050/00051] (98.1%)  Loss=0.9856  cls_loss=0.6805  reg_loss=0.3051  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=25s  iter_time=93.783s
+2025-08-07 11:03:41 Train INFO: [Train]: [030][00051/00051] (100.0%)  Loss=0.9822  cls_loss=0.6783  reg_loss=0.3039  lr_det=8.5e-05  GPU=1392MB(alloc)/3792MB(reserved)/9268MB(max)  ETA=0s  iter_time=4.649s
+2025-08-07 11:03:42 Train INFO: [Train]: Epoch 30 completed in 1257.2s (avg 24.177s/iter)
+2025-08-07 11:03:42 Train INFO: [Train]: Final Loss=0.9822
+2025-08-07 11:03:42 Train INFO: [Train]: Epoch 31 started (Total iterations: 52)
+2025-08-07 11:07:10 Train INFO: [Train]: [031][00005/00051] (11.5%)  Loss=0.9850  cls_loss=0.6722  reg_loss=0.3128  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1594s  iter_time=207.976s  fwd=2.126s/bwd=0.090s/opt=0.022s
+2025-08-07 11:08:51 Train INFO: [Train]: [031][00010/00051] (21.2%)  Loss=0.9883  cls_loss=0.6765  reg_loss=0.3118  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1150s  iter_time=100.636s
+2025-08-07 11:10:35 Train INFO: [Train]: [031][00015/00051] (30.8%)  Loss=0.9835  cls_loss=0.6742  reg_loss=0.3093  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=930s  iter_time=104.765s
+2025-08-07 11:13:29 Train INFO: [Train]: [031][00020/00051] (40.4%)  Loss=0.9742  cls_loss=0.6672  reg_loss=0.3070  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=867s  iter_time=174.042s
+2025-08-07 11:15:02 Train INFO: [Train]: [031][00025/00051] (50.0%)  Loss=0.9818  cls_loss=0.6724  reg_loss=0.3094  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=680s  iter_time=92.469s
+2025-08-07 11:16:40 Train INFO: [Train]: [031][00030/00051] (59.6%)  Loss=0.9905  cls_loss=0.6789  reg_loss=0.3116  lr_det=8.5e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=527s  iter_time=98.199s
+2025-08-07 11:18:18 Train INFO: [Train]: [031][00035/00051] (69.2%)  Loss=0.9910  cls_loss=0.6816  reg_loss=0.3094  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=389s  iter_time=98.164s
+2025-08-07 11:21:11 Train INFO: [Train]: [031][00040/00051] (78.8%)  Loss=0.9762  cls_loss=0.6727  reg_loss=0.3035  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=281s  iter_time=172.497s
+2025-08-07 11:22:52 Train INFO: [Train]: [031][00045/00051] (88.5%)  Loss=0.9788  cls_loss=0.6748  reg_loss=0.3040  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=150s  iter_time=101.624s
+2025-08-07 11:24:27 Train INFO: [Train]: [031][00050/00051] (98.1%)  Loss=0.9796  cls_loss=0.6759  reg_loss=0.3037  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=24s  iter_time=94.976s
+2025-08-07 11:24:29 Train INFO: [Train]: [031][00051/00051] (100.0%)  Loss=0.9797  cls_loss=0.6759  reg_loss=0.3038  lr_det=8.4e-05  GPU=1392MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=0s  iter_time=2.033s
+2025-08-07 11:24:30 Train INFO: [Train]: Epoch 31 completed in 1248.2s (avg 24.003s/iter)
+2025-08-07 11:24:30 Train INFO: [Train]: Final Loss=0.9797
+2025-08-07 11:24:30 Train INFO: [Train]: Epoch 32 started (Total iterations: 52)
+2025-08-07 11:28:08 Train INFO: [Train]: [032][00005/00051] (11.5%)  Loss=0.8797  cls_loss=0.6104  reg_loss=0.2693  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1669s  iter_time=217.709s  fwd=2.354s/bwd=0.087s/opt=0.026s
+2025-08-07 11:29:54 Train INFO: [Train]: [032][00010/00051] (21.2%)  Loss=0.9998  cls_loss=0.6918  reg_loss=0.3080  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1207s  iter_time=106.140s
+2025-08-07 11:31:26 Train INFO: [Train]: [032][00015/00051] (30.8%)  Loss=1.0128  cls_loss=0.6986  reg_loss=0.3142  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=936s  iter_time=92.213s
+2025-08-07 11:34:14 Train INFO: [Train]: [032][00020/00051] (40.4%)  Loss=0.9995  cls_loss=0.6902  reg_loss=0.3093  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=861s  iter_time=167.469s
+2025-08-07 11:35:53 Train INFO: [Train]: [032][00025/00051] (50.0%)  Loss=1.0041  cls_loss=0.6935  reg_loss=0.3107  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=683s  iter_time=99.387s
+2025-08-07 11:37:34 Train INFO: [Train]: [032][00030/00051] (59.6%)  Loss=0.9930  cls_loss=0.6858  reg_loss=0.3071  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=531s  iter_time=101.080s
+2025-08-07 11:39:07 Train INFO: [Train]: [032][00035/00051] (69.2%)  Loss=0.9960  cls_loss=0.6890  reg_loss=0.3070  lr_det=8.4e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=390s  iter_time=93.146s
+2025-08-07 11:41:49 Train INFO: [Train]: [032][00040/00051] (78.8%)  Loss=0.9949  cls_loss=0.6880  reg_loss=0.3069  lr_det=8.3e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=279s  iter_time=161.387s
+2025-08-07 11:43:28 Train INFO: [Train]: [032][00045/00051] (88.5%)  Loss=0.9825  cls_loss=0.6801  reg_loss=0.3024  lr_det=8.3e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=148s  iter_time=99.232s
+2025-08-07 11:45:00 Train INFO: [Train]: [032][00050/00051] (98.1%)  Loss=0.9817  cls_loss=0.6794  reg_loss=0.3023  lr_det=8.3e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=24s  iter_time=92.356s
+2025-08-07 11:45:02 Train INFO: [Train]: [032][00051/00051] (100.0%)  Loss=0.9823  cls_loss=0.6799  reg_loss=0.3024  lr_det=8.3e-05  GPU=1392MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=0s  iter_time=2.025s
+2025-08-07 11:45:03 Train INFO: [Train]: Epoch 32 completed in 1232.9s (avg 23.709s/iter)
+2025-08-07 11:45:03 Train INFO: [Train]: Final Loss=0.9823
+2025-08-07 11:45:03 Train INFO: [Train]: Epoch 33 started (Total iterations: 52)
+2025-08-07 11:48:39 Train INFO: [Train]: [033][00005/00051] (11.5%)  Loss=0.9783  cls_loss=0.6788  reg_loss=0.2995  lr_det=8.3e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1659s  iter_time=216.354s  fwd=2.112s/bwd=0.078s/opt=0.010s
+2025-08-07 11:50:14 Train INFO: [Train]: [033][00010/00051] (21.2%)  Loss=0.9764  cls_loss=0.6774  reg_loss=0.2990  lr_det=8.3e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1160s  iter_time=94.895s
+2025-08-07 11:51:55 Train INFO: [Train]: [033][00015/00051] (30.8%)  Loss=0.9868  cls_loss=0.6870  reg_loss=0.2998  lr_det=8.3e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=927s  iter_time=100.693s
+2025-08-07 11:54:50 Train INFO: [Train]: [033][00020/00051] (40.4%)  Loss=0.9795  cls_loss=0.6799  reg_loss=0.2996  lr_det=8.3e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=867s  iter_time=175.505s
+2025-08-07 11:56:30 Train INFO: [Train]: [033][00025/00051] (50.0%)  Loss=0.9858  cls_loss=0.6846  reg_loss=0.3012  lr_det=8.3e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=686s  iter_time=99.039s
+2025-08-07 11:58:06 Train INFO: [Train]: [033][00030/00051] (59.6%)  Loss=0.9896  cls_loss=0.6865  reg_loss=0.3031  lr_det=8.3e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=530s  iter_time=96.038s
+2025-08-07 11:59:42 Train INFO: [Train]: [033][00035/00051] (69.2%)  Loss=0.9873  cls_loss=0.6846  reg_loss=0.3028  lr_det=8.3e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=391s  iter_time=96.180s
+2025-08-07 12:02:41 Train INFO: [Train]: [033][00040/00051] (78.8%)  Loss=0.9945  cls_loss=0.6894  reg_loss=0.3051  lr_det=8.2e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=284s  iter_time=179.422s
+2025-08-07 12:04:18 Train INFO: [Train]: [033][00045/00051] (88.5%)  Loss=0.9884  cls_loss=0.6848  reg_loss=0.3036  lr_det=8.2e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=151s  iter_time=97.252s
+2025-08-07 12:05:52 Train INFO: [Train]: [033][00050/00051] (98.1%)  Loss=0.9858  cls_loss=0.6824  reg_loss=0.3033  lr_det=8.2e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=24s  iter_time=93.247s
+2025-08-07 12:05:54 Train INFO: [Train]: [033][00051/00051] (100.0%)  Loss=0.9833  cls_loss=0.6809  reg_loss=0.3024  lr_det=8.2e-05  GPU=1392MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=0s  iter_time=2.030s
+2025-08-07 12:05:54 Train INFO: [Train]: Epoch 33 completed in 1251.4s (avg 24.065s/iter)
+2025-08-07 12:05:54 Train INFO: [Train]: Final Loss=0.9833
+2025-08-07 12:05:54 Train INFO: [Train]: Epoch 34 started (Total iterations: 52)
+2025-08-07 12:09:28 Train INFO: [Train]: [034][00005/00051] (11.5%)  Loss=0.9598  cls_loss=0.6620  reg_loss=0.2978  lr_det=8.2e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1636s  iter_time=213.366s  fwd=2.135s/bwd=0.087s/opt=0.026s
+2025-08-07 12:11:12 Train INFO: [Train]: [034][00010/00051] (21.2%)  Loss=1.0001  cls_loss=0.6915  reg_loss=0.3086  lr_det=8.2e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=1182s  iter_time=103.845s
+2025-08-07 12:12:46 Train INFO: [Train]: [034][00015/00051] (30.8%)  Loss=1.0005  cls_loss=0.6916  reg_loss=0.3088  lr_det=8.2e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=927s  iter_time=94.814s
+2025-08-07 12:15:41 Train INFO: [Train]: [034][00020/00051] (40.4%)  Loss=1.0189  cls_loss=0.7057  reg_loss=0.3133  lr_det=8.2e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=866s  iter_time=174.565s
+2025-08-07 12:17:20 Train INFO: [Train]: [034][00025/00051] (50.0%)  Loss=0.9917  cls_loss=0.6872  reg_loss=0.3045  lr_det=8.2e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=686s  iter_time=99.139s
+2025-08-07 12:18:59 Train INFO: [Train]: [034][00030/00051] (59.6%)  Loss=0.9940  cls_loss=0.6892  reg_loss=0.3048  lr_det=8.2e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=532s  iter_time=99.211s
+2025-08-07 12:20:46 Train INFO: [Train]: [034][00035/00051] (69.2%)  Loss=1.0020  cls_loss=0.6945  reg_loss=0.3075  lr_det=8.2e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=396s  iter_time=106.148s
+2025-08-07 12:23:44 Train INFO: [Train]: [034][00040/00051] (78.8%)  Loss=0.9988  cls_loss=0.6916  reg_loss=0.3071  lr_det=8.1e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=287s  iter_time=178.608s
+2025-08-07 12:25:36 Train INFO: [Train]: [034][00045/00051] (88.5%)  Loss=0.9917  cls_loss=0.6863  reg_loss=0.3054  lr_det=8.1e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=154s  iter_time=112.137s
+2025-08-07 12:27:17 Train INFO: [Train]: [034][00050/00051] (98.1%)  Loss=0.9909  cls_loss=0.6851  reg_loss=0.3058  lr_det=8.1e-05  GPU=1428MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=25s  iter_time=101.108s
+2025-08-07 12:27:19 Train INFO: [Train]: [034][00051/00051] (100.0%)  Loss=0.9866  cls_loss=0.6822  reg_loss=0.3044  lr_det=8.1e-05  GPU=1392MB(alloc)/11026MB(reserved)/9268MB(max)  ETA=0s  iter_time=2.029s
+2025-08-07 12:27:20 Train INFO: [Train]: Epoch 34 completed in 1285.7s (avg 24.726s/iter)
+2025-08-07 12:27:20 Train INFO: [Train]: Final Loss=0.9866
+2025-08-07 12:27:20 Train INFO: [Val]: Epoch 34 Loss
+2025-08-07 13:18:02 Train INFO: [Val]: [034]  Loss=1.0156  cls_loss=0.7019  reg_loss=0.3137  Average-mAP=0.05%
+2025-08-07 13:18:04 Train INFO: Checkpoint saved at epoch 34
+2025-08-07 13:18:04 Train INFO: [Train]: Epoch 35 started (Total iterations: 52)
+2025-08-07 13:19:57 Train INFO: Using torch version: 2.5.1+cu121, CUDA version: 12.1
+2025-08-07 13:19:57 Train INFO: Config: 
+annotation_test = 'data/PKU-MMD/pku_test.json'
+annotation_train = 'data/PKU-MMD/pku_train.json'
+annotation_val = 'data/PKU-MMD/pku_val.json'
+block_list = None
+chunk_num = 32
+class_map = 'data/PKU-MMD/class_map.txt'
+dataset = dict(
+    test=dict(
+        ann_file='data/PKU-MMD/pku_test.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(keys=[
+                'imgs',
+            ], type='ConvertToTensor'),
+            dict(inputs='imgs', keys=[
+                'masks',
+            ], type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='testing',
+        test_mode=True,
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512),
+    train=dict(
+        ann_file='data/PKU-MMD/pku_train.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=6, type='mmaction.DecordInit'),
+            dict(
+                crop_ratio=[
+                    0.9,
+                    1.0,
+                ],
+                method='random_trunc',
+                num_clips=1,
+                scale_factor=1,
+                trunc_len=512,
+                trunc_thresh=0.5,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                182,
+            ), type='mmaction.Resize'),
+            dict(type='mmaction.RandomResizedCrop'),
+            dict(keep_ratio=False, scale=(
+                160,
+                160,
+            ), type='mmaction.Resize'),
+            dict(flip_ratio=0.5, type='mmaction.Flip'),
+            dict(transforms='default', type='mmaction.ImgAug'),
+            dict(type='mmaction.ColorJitter'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='training',
+        type='PkuPaddingDataset'),
+    val=dict(
+        ann_file='data/PKU-MMD/pku_val.json',
+        class_map='data/PKU-MMD/class_map.txt',
+        data_path='F:/dataset/pku-mmd/rgb',
+        feature_stride=1,
+        filter_gt=False,
+        pipeline=[
+            dict(format='avi', type='PrepareVideoInfo'),
+            dict(num_threads=4, type='mmaction.DecordInit'),
+            dict(
+                method='sliding_window',
+                num_clips=1,
+                scale_factor=1,
+                type='LoadFrames'),
+            dict(type='mmaction.DecordDecode'),
+            dict(scale=(
+                -1,
+                160,
+            ), type='mmaction.Resize'),
+            dict(crop_size=160, type='mmaction.CenterCrop'),
+            dict(input_format='NCTHW', type='mmaction.FormatShape'),
+            dict(
+                keys=[
+                    'imgs',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='ConvertToTensor'),
+            dict(
+                inputs='imgs',
+                keys=[
+                    'masks',
+                    'gt_segments',
+                    'gt_labels',
+                ],
+                type='Collect'),
+        ],
+        sample_stride=1,
+        subset_name='validation',
+        type='PkuSlidingDataset',
+        window_overlap_ratio=0.5,
+        window_size=512))
+evaluation = dict(
+    ground_truth_filename='data/PKU-MMD/pku_val.json',
+    prediction_filename=
+    'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/predictions_val.json',
+    subset='validation',
+    tiou_thresholds=[
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9,
+    ],
+    type='mAP_PKU_MMD')
+inference = dict(
+    load_from_raw_predictions=False,
+    save_raw_prediction=False,
+    score_thresh=0.3)
+model = dict(
+    backbone=dict(
+        adapter_index=[
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+        ],
+        adapter_mlp_ratio=0.25,
+        custom=dict(
+            freeze_backbone=True,
+            norm_eval=False,
+            post_processing_pipeline=[
+                dict(
+                    keys=[
+                        'feats',
+                    ],
+                    ops='b n c t -> b c t',
+                    reduction='mean',
+                    type='Reduce'),
+            ]),
+        depth=12,
+        drop_path_rate=0.1,
+        embed_dims=384,
+        img_size=160,
+        mlp_ratio=4.0,
+        num_frames=16,
+        num_heads=6,
+        patch_size=16,
+        pretrained=
+        'pretrained/vit-small-p16_videomae-k400-pre_16x4x1_kinetics-400_my.pth',
+        qkv_bias=True,
+        return_feat_map=True,
+        total_frames=512,
+        tubelet_size=2,
+        type='VisionTransformerAdapter',
+        use_mean_pooling=True,
+        with_cp=True),
+    neck=dict(
+        in_channels=512, num_levels=6, out_channels=512, type='FPNIdentity'),
+    projection=dict(
+        arch=(
+            2,
+            2,
+            5,
+        ),
+        attn_cfg=dict(n_head=4, n_mha_win_size=-1),
+        conv_cfg=dict(kernel_size=3, proj_pdrop=0.0),
+        in_channels=384,
+        max_seq_len=512,
+        norm_cfg=dict(type='LN'),
+        out_channels=512,
+        path_pdrop=0.1,
+        type='Conv1DTransformerProj',
+        use_abs_pe=False),
+    rpn_head=dict(
+        center_sample='radius',
+        center_sample_radius=1.5,
+        cls_prior_prob=0.01,
+        feat_channels=512,
+        in_channels=512,
+        label_smoothing=0.0,
+        loss=dict(
+            cls_loss=dict(type='FocalLoss'), reg_loss=dict(type='DIOULoss')),
+        loss_normalizer=100,
+        loss_normalizer_momentum=0.9,
+        num_classes=51,
+        num_convs=2,
+        prior_generator=dict(
+            regression_range=[
+                (
+                    0,
+                    4,
+                ),
+                (
+                    4,
+                    8,
+                ),
+                (
+                    8,
+                    16,
+                ),
+                (
+                    16,
+                    32,
+                ),
+                (
+                    32,
+                    64,
+                ),
+                (
+                    64,
+                    10000,
+                ),
+            ],
+            strides=[
+                1,
+                2,
+                4,
+                8,
+                16,
+                32,
+            ],
+            type='PointGenerator'),
+        type='ActionFormerHead'),
+    type='ActionFormer')
+optimizer = dict(
+    backbone=dict(
+        custom=[
+            dict(lr=0.0002, name='adapter', weight_decay=0.05),
+        ],
+        exclude=[
+            'backbone',
+        ],
+        lr=0,
+        weight_decay=0),
+    lr=0.0001,
+    paramwise=True,
+    type='AdamW',
+    weight_decay=0.05)
+post_processing = dict(
+    nms=dict(
+        max_seg_num=500,
+        multiclass=False,
+        sigma=0.3,
+        use_soft_nms=True,
+        voting_thresh=0.7),
+    save_dict=True)
+scale_factor = 1
+scheduler = dict(
+    max_epoch=120, type='LinearWarmupCosineAnnealingLR', warmup_epoch=1)
+solver = dict(
+    amp=True,
+    clip_grad_norm=1,
+    ema=True,
+    fp16_compress=True,
+    static_graph=True,
+    test=dict(batch_size=4, num_workers=4),
+    train=dict(batch_size=16, num_workers=4),
+    val=dict(batch_size=16, num_workers=4))
+video_dir = 'F:/dataset/pku-mmd/rgb'
+window_size = 512
+work_dir = 'work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter\\gpu1_id0/'
+workflow = dict(
+    checkpoint_interval=5,
+    end_epoch=120,
+    logging_interval=5,
+    num_sanity_check=1,
+    val_eval_interval=5,
+    val_loss_interval=5,
+    val_start_epoch=5)
+
+2025-08-07 13:19:57 Train INFO: training subset: 831 videos
+2025-08-07 13:19:57 Train INFO: validation subset: 111 videos, truncated as 1958 windows.
+2025-08-07 13:19:57 Train INFO: testing subset: 132 videos, truncated as 2370 windows.
+2025-08-07 13:19:58 Train INFO: Using single GPU training...
+2025-08-07 13:19:58 Train INFO: Using Model EMA...
+2025-08-07 13:19:58 Train INFO: Using Automatic Mixed Precision...
+2025-08-07 13:19:58 Train INFO: GPU Memory: 24.0 GB
+2025-08-07 13:19:58 Train INFO: Freeze the backbone...
+2025-08-07 13:19:58 Train INFO: Resume training from: work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/checkpoint/epoch_34.pth
+2025-08-07 13:19:58 Train INFO: Resume epoch is 34
+2025-08-07 13:19:58 Train INFO: Training Starts...
+
+2025-08-07 13:19:58 Train INFO: Running validation check with 1 validation steps...
+2025-08-07 13:19:58 Train INFO: [Val]: Epoch 34 Loss
+2025-08-07 14:12:38 Train INFO: [Val]: [034]  Loss=1.0156  cls_loss=0.7019  reg_loss=0.3137  Average-mAP=0.80%
+2025-08-07 14:12:39 Train INFO: Validation check completed.
+
+2025-08-07 14:12:39 Train INFO: [Train]: Epoch 35 started (Total iterations: 52)
+2025-08-07 14:16:02 Train INFO: [Train]: [035][00005/00051] (11.5%)  Loss=0.9842  cls_loss=0.6733  reg_loss=0.3109  lr_det=8.1e-05  GPU=1428MB(alloc)/11964MB(reserved)/9496MB(max)  ETA=1555s  iter_time=202.867s  fwd=2.113s/bwd=0.048s/opt=0.012s
+2025-08-07 14:17:43 Train INFO: [Train]: [035][00010/00051] (21.2%)  Loss=0.9873  cls_loss=0.6763  reg_loss=0.3110  lr_det=8.1e-05  GPU=1428MB(alloc)/11964MB(reserved)/9496MB(max)  ETA=1133s  iter_time=101.050s
+2025-08-07 14:19:25 Train INFO: [Train]: [035][00015/00051] (30.8%)  Loss=0.9821  cls_loss=0.6732  reg_loss=0.3089  lr_det=8.1e-05  GPU=1428MB(alloc)/11964MB(reserved)/9496MB(max)  ETA=912s  iter_time=101.452s
+2025-08-07 14:22:25 Train INFO: [Train]: [035][00020/00051] (40.4%)  Loss=0.9731  cls_loss=0.6668  reg_loss=0.3062  lr_det=8.1e-05  GPU=1428MB(alloc)/11964MB(reserved)/9496MB(max)  ETA=865s  iter_time=180.523s
+2025-08-07 14:24:02 Train INFO: [Train]: [035][00025/00051] (50.0%)  Loss=0.9806  cls_loss=0.6719  reg_loss=0.3087  lr_det=8.1e-05  GPU=1428MB(alloc)/11964MB(reserved)/9496MB(max)  ETA=683s  iter_time=96.718s
+2025-08-07 14:25:42 Train INFO: [Train]: [035][00030/00051] (59.6%)  Loss=0.9894  cls_loss=0.6784  reg_loss=0.3110  lr_det=8.1e-05  GPU=1428MB(alloc)/11964MB(reserved)/9496MB(max)  ETA=531s  iter_time=100.516s
+2025-08-07 14:27:23 Train INFO: [Train]: [035][00035/00051] (69.2%)  Loss=0.9896  cls_loss=0.6807  reg_loss=0.3089  lr_det=8.0e-05  GPU=1428MB(alloc)/11964MB(reserved)/9496MB(max)  ETA=393s  iter_time=100.434s
+2025-08-07 14:30:28 Train INFO: [Train]: [035][00040/00051] (78.8%)  Loss=0.9748  cls_loss=0.6717  reg_loss=0.3031  lr_det=8.0e-05  GPU=1428MB(alloc)/11964MB(reserved)/9496MB(max)  ETA=287s  iter_time=185.153s
+2025-08-07 14:32:07 Train INFO: [Train]: [035][00045/00051] (88.5%)  Loss=0.9767  cls_loss=0.6728  reg_loss=0.3039  lr_det=8.0e-05  GPU=1428MB(alloc)/11964MB(reserved)/9496MB(max)  ETA=152s  iter_time=99.226s
+2025-08-07 14:33:51 Train INFO: [Train]: [035][00050/00051] (98.1%)  Loss=0.9772  cls_loss=0.6737  reg_loss=0.3035  lr_det=8.0e-05  GPU=1428MB(alloc)/11964MB(reserved)/9496MB(max)  ETA=25s  iter_time=104.293s
+2025-08-07 14:33:56 Train INFO: [Train]: [035][00051/00051] (100.0%)  Loss=0.9774  cls_loss=0.6737  reg_loss=0.3037  lr_det=8.0e-05  GPU=1393MB(alloc)/4694MB(reserved)/9496MB(max)  ETA=0s  iter_time=4.680s
+2025-08-07 14:33:57 Train INFO: [Train]: Epoch 35 completed in 1278.1s (avg 24.578s/iter)
+2025-08-07 14:33:57 Train INFO: [Train]: Final Loss=0.9774
+2025-08-07 14:33:57 Train INFO: [Train]: Epoch 36 started (Total iterations: 52)
+2025-08-07 14:37:52 Train INFO: [Train]: [036][00005/00051] (11.5%)  Loss=0.8743  cls_loss=0.6056  reg_loss=0.2687  lr_det=8.0e-05  GPU=1429MB(alloc)/11926MB(reserved)/9496MB(max)  ETA=1801s  iter_time=234.878s  fwd=2.304s/bwd=0.079s/opt=0.020s
+2025-08-07 14:39:35 Train INFO: [Train]: [036][00010/00051] (21.2%)  Loss=0.9969  cls_loss=0.6888  reg_loss=0.3080  lr_det=8.0e-05  GPU=1429MB(alloc)/11926MB(reserved)/9496MB(max)  ETA=1259s  iter_time=103.001s
+2025-08-07 14:41:13 Train INFO: [Train]: [036][00015/00051] (30.8%)  Loss=1.0096  cls_loss=0.6957  reg_loss=0.3139  lr_det=8.0e-05  GPU=1429MB(alloc)/11926MB(reserved)/9496MB(max)  ETA=981s  iter_time=98.275s
+2025-08-07 14:44:29 Train INFO: [Train]: [036][00020/00051] (40.4%)  Loss=0.9979  cls_loss=0.6888  reg_loss=0.3091  lr_det=8.0e-05  GPU=1429MB(alloc)/11926MB(reserved)/9496MB(max)  ETA=932s  iter_time=195.247s
+2025-08-07 14:46:10 Train INFO: [Train]: [036][00025/00051] (50.0%)  Loss=1.0018  cls_loss=0.6914  reg_loss=0.3103  lr_det=8.0e-05  GPU=1429MB(alloc)/11926MB(reserved)/9496MB(max)  ETA=733s  iter_time=101.287s
+2025-08-07 14:48:02 Train INFO: [Train]: [036][00030/00051] (59.6%)  Loss=0.9900  cls_loss=0.6833  reg_loss=0.3067  lr_det=8.0e-05  GPU=1429MB(alloc)/11926MB(reserved)/9496MB(max)  ETA=572s  iter_time=111.612s
+2025-08-07 14:49:50 Train INFO: [Train]: [036][00035/00051] (69.2%)  Loss=0.9938  cls_loss=0.6873  reg_loss=0.3065  lr_det=7.9e-05  GPU=1429MB(alloc)/11926MB(reserved)/9496MB(max)  ETA=424s  iter_time=108.646s
+2025-08-07 14:52:54 Train INFO: [Train]: [036][00040/00051] (78.8%)  Loss=0.9927  cls_loss=0.6864  reg_loss=0.3063  lr_det=7.9e-05  GPU=1429MB(alloc)/11926MB(reserved)/9496MB(max)  ETA=305s  iter_time=183.665s
+2025-08-07 14:54:46 Train INFO: [Train]: [036][00045/00051] (88.5%)  Loss=0.9805  cls_loss=0.6787  reg_loss=0.3018  lr_det=7.9e-05  GPU=1429MB(alloc)/11926MB(reserved)/9496MB(max)  ETA=163s  iter_time=112.275s
+2025-08-07 14:56:21 Train INFO: [Train]: [036][00050/00051] (98.1%)  Loss=0.9796  cls_loss=0.6780  reg_loss=0.3015  lr_det=7.9e-05  GPU=1429MB(alloc)/11926MB(reserved)/9496MB(max)  ETA=26s  iter_time=95.217s
+2025-08-07 14:56:23 Train INFO: [Train]: [036][00051/00051] (100.0%)  Loss=0.9801  cls_loss=0.6785  reg_loss=0.3016  lr_det=7.9e-05  GPU=1393MB(alloc)/11926MB(reserved)/9496MB(max)  ETA=0s  iter_time=2.062s
+2025-08-07 14:56:24 Train INFO: [Train]: Epoch 36 completed in 1347.0s (avg 25.903s/iter)
+2025-08-07 14:56:24 Train INFO: [Train]: Final Loss=0.9801
+2025-08-07 14:56:24 Train INFO: [Train]: Epoch 37 started (Total iterations: 52)

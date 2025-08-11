@@ -17,7 +17,7 @@ dataset = dict(
         class_map=class_map,
         data_path=video_dir,
         filter_gt=False,
-        feature_stride=1,  # 2에서 1로 되돌림
+        feature_stride=1,  
         sample_stride=1,
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
@@ -29,7 +29,7 @@ dataset = dict(
                 trunc_len=window_size,
                 trunc_thresh=0.5,
                 crop_ratio=[0.9, 1.0],
-                scale_factor=1,  # 1로 되돌림
+                scale_factor=1, 
             ),
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 182)),
@@ -52,12 +52,12 @@ dataset = dict(
         filter_gt=False,
         window_size=window_size,
         window_overlap_ratio=0.5,
-        feature_stride=1,  # 2에서 1로 되돌림
+        feature_stride=1,  
         sample_stride=1,
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
             dict(type="mmaction.DecordInit", num_threads=4),
-            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1),  # 1로 되돌림
+            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1),  
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 160)),
             dict(type="mmaction.CenterCrop", crop_size=160),
@@ -76,12 +76,12 @@ dataset = dict(
         test_mode=True,
         window_size=window_size,
         window_overlap_ratio=0.5,
-        feature_stride=1,  # 2에서 1로 되돌림
+        feature_stride=1,  
         sample_stride=1,
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
             dict(type="mmaction.DecordInit", num_threads=4),
-            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1),  # 1로 되돌림
+            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1), 
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 160)),
             dict(type="mmaction.CenterCrop", crop_size=160),
@@ -94,8 +94,8 @@ dataset = dict(
 
 evaluation = dict(
     type="mAP_PKU_MMD",
-    subset="validation",  # 일관성 유지
+    subset="validation",  
     tiou_thresholds=[0.1, 0.3, 0.5, 0.7, 0.9],
     ground_truth_filename="data/PKU-MMD/pku_val.json",
-    prediction_filename="work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/predictions_val.json",  # 예측 결과 저장 경로
+    prediction_filename="work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/predictions_val.json", 
 )

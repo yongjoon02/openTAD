@@ -87,7 +87,7 @@ class PkuSlidingDataset(SlidingWindowDataset):
             feature_start_idx=int(window_centers[0] / self.snippet_stride),
             feature_end_idx=int(window_centers[-1] / self.snippet_stride),
             sample_stride=self.sample_stride,
-            fps=30.0,  # 10.0에서 30.0으로 변경
+            fps=30.0,  
             snippet_stride=self.snippet_stride,
             window_start_frame=window_centers[0],
             duration=video_info["frame"], 
@@ -187,6 +187,7 @@ class PkuPaddingDataset(PaddingDataset):
             sample_stride=self.sample_stride,
             snippet_stride=self.snippet_stride,
             fps=30.0,  # 10.0에서 30.0으로 변경
+            window_start_frame=0,  # PaddingDataset은 window 시작점이 0
             duration=video_info["frame"],  
             offset_frames=self.offset_frames,
             **video_anno,

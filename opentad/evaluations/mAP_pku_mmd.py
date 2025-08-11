@@ -31,17 +31,24 @@ class mAP_PKU_MMD:
         self.ground_truth = self._import_ground_truth(ground_truth_filename)
         self.prediction = self._import_prediction(prediction_filename)
 
-        # Create activity index from ground truth labels (실제 사용되는 클래스만)
-        self.activity_index = {j: i for i, j in enumerate(sorted(self.ground_truth["label"].unique()))}
-        # Ground truth는 이미 올바른 인덱스이므로 매핑하지 않음
-        # Prediction만 매핑 (모델 출력이 0-50 범위라고 가정)
-        # 매핑 전에 유효한 라벨만 필터링
-        valid_labels = set(self.activity_index.keys())
-        self.prediction = self.prediction[self.prediction["label"].isin(valid_labels)]
-        if len(self.prediction) > 0:
-            self.prediction["label"] = self.prediction["label"].replace(self.activity_index)
-        else:
-            print("Warning: No valid predictions found after label filtering!")
+        # PKU-MMD는 0-based 인덱싱 사용 (class_map.txt 기준)
+        # Ground truth와 prediction 모두 이미 올바른 0-based 인덱스
+        # 추가 매핑 불필요
+        print(f"Ground truth 라벨 범위: {self.ground_truth['label'].min()} - {self.ground_truth['label'].max()}")
+        print(f"Prediction 라벨 범위: {self.prediction['label'].min()} - {self.prediction['label'].max()}")
+        
+        # 공통 라벨 확인
+        gt_labels = set(self.ground_truth['label'].unique())
+        pred_labels = set(self.prediction['label'].unique())
+        common_labels = gt_labels & pred_labels
+        print(f"공통 라벨 수: {len(common_labels)}")
+        
+        if len(common_labels) == 0:
+            print("Warning: Ground truth와 prediction에 공통 라벨이 없습니다!")
+        
+        # activity_index는 단순히 0부터 시작하는 인덱스
+        all_labels = sorted(gt_labels | pred_labels)
+        self.activity_index = {label: i for i, label in enumerate(all_labels)}
 
     def _import_ground_truth(self, ground_truth_filename):
         """Reads ground truth file and returns the ground truth instances.
@@ -59,12 +66,13 @@ class mAP_PKU_MMD:
         with open(ground_truth_filename, "r") as fobj:
             data = json.load(fobj)
 
-        # Load class map
+        # Load class map (1-based to 0-based conversion)
         class_map_file = "data/PKU-MMD/class_map.txt"
         with open(class_map_file, "r") as f:
             class_names = [line.strip() for line in f.readlines()]
         
-        class_index = {name: i for i, name in enumerate(class_names)}
+        # PKU-MMD 클래스맵은 1부터 시작하므로 0부터 시작하도록 변환
+        class_index = {name: i for i, name in enumerate(class_names)}  # 0-based indexing
 
         # Read ground truth data.
         video_lst, t_start_lst, t_end_lst, label_lst = [], [], [], []
@@ -148,10 +156,10 @@ class mAP_PKU_MMD:
                         # 숫자 라벨인 경우
                         label_idx = int(label)
                     
-                    # 예측 결과를 프레임 단위로 변환 (feature_stride=4 적용)
-                    feature_stride = 4  # VideoMAE-S의 feature_stride
-                    t_start_frame = float(result["segment"][0]) * feature_stride
-                    t_end_frame = float(result["segment"][1]) * feature_stride
+                    # 예측 결과는 이미 프레임 단위로 변환된 상태 (post_processing에서 처리됨)
+                    # 추가 변환 불필요
+                    t_start_frame = float(result["segment"][0])
+                    t_end_frame = float(result["segment"][1])
                     
                     video_lst.append(video_id)
                     t_start_lst.append(t_start_frame)

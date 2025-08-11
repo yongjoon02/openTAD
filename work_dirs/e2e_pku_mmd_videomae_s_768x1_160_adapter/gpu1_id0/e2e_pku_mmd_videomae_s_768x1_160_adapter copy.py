@@ -5,8 +5,8 @@ _base_ = [
 ]
 
 
-scale_factor = 1  # 2에서 1로 되돌림 - 모델과 일치
-chunk_num = 512 * scale_factor // 16  # 512/16=32 chunks, since videomae takes 16 frames as input
+scale_factor = 1  
+chunk_num = 512 * scale_factor // 16  
 
 
 dataset = dict(
@@ -18,10 +18,10 @@ dataset = dict(
                 type="LoadFrames",
                 num_clips=1,
                 method="random_trunc",
-                trunc_len=512,
+                trunc_len=512,  
                 trunc_thresh=0.5,
                 crop_ratio=[0.9, 1.0],
-                scale_factor=1,  # 2에서 1로 되돌림
+                scale_factor=1,  
             ),
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 182)),
@@ -39,7 +39,7 @@ dataset = dict(
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
             dict(type="mmaction.DecordInit", num_threads=4),
-            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1),  # 1로 되돌림
+            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1), 
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 160)),
             dict(type="mmaction.CenterCrop", crop_size=160), 
@@ -52,7 +52,7 @@ dataset = dict(
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
             dict(type="mmaction.DecordInit", num_threads=4),
-            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1),  # 1로 되돌림
+            dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1),  
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 160)),
             dict(type="mmaction.CenterCrop", crop_size=160),
@@ -69,10 +69,9 @@ model = dict(
     num_classes=51,
     prior_generator=dict(
         type="PointGenerator",
-        strides=[4, 8, 16, 32, 64, 128],              
+        strides=[1, 2, 4, 8, 16, 32],  
         regression_range=[                             
-            (0, 8), (8, 16), (16, 32),
-            (32, 64), (64, 128), (128, 10000)
+            (0, 4), (4, 8), (8, 16), (16, 32), (32, 64), (64, 10000) 
         ],
     ),
     center_sample_radius=1.5,
@@ -94,10 +93,9 @@ model = dict(
         return_feat_map=True,
         with_cp=True,
         adapter_mlp_ratio=0.25,
-        total_frames=512,
+        total_frames=512,  # 576에서 512로 되돌림
         adapter_index=list(range(12)),
         custom=dict(
-            pretrain="pretrained/vit-small-p16_videomae-k400-pre_16x4x1_kinetics-400_my.pth",
             norm_eval=False,
             freeze_backbone=True,
             post_processing_pipeline=[
@@ -106,9 +104,10 @@ model = dict(
         ),
     ),
     projection=dict(
-        in_channels=384,  
-        max_seq_len=512,
-        attn_cfg=dict(n_mha_win_size=-1),
+        in_channels=384, 
+        out_channels=512,   
+        max_seq_len=512,  
+        attn_cfg=dict(n_mha_win_size=-1),  
     ),
 )
 
@@ -157,22 +156,21 @@ post_processing = dict(
 workflow = dict(
     logging_interval=5,
     checkpoint_interval=5,
-    val_loss_interval=5,      # 매 에폭마다 loss 계산
-    val_eval_interval=5,      # 매 에폭마다 mAP 평가
-    val_start_epoch=5,        # 1에폭부터 validation 시작
-    end_epoch=120,              # 3에폭까지 학습
-    num_sanity_check=1,       # 학습 시작 전 validation 실행 (PyTorch Lightning style)
+    val_loss_interval=5,     
+    val_eval_interval=5,      
+    val_start_epoch=5,       
+    end_epoch=120,           
+    num_sanity_check=1,       
 )
 
 work_dir = "work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter"
 
-# 새로 학습하기 위해 기존 체크포인트 로드 제거
 # load_from = "work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter/gpu1_id0/checkpoint/epoch_13.pth"
 # resume = True
 
-evaluation = dict(
-    type="mAP_PKU_MMD",
-    subset="validation",  
-    tiou_thresholds=[0.1, 0.3, 0.5, 0.7, 0.9],
-    ground_truth_filename="data/PKU-MMD/pku_val.json",  
-)
+# evaluation = dict(
+#     type="mAP_PKU_MMD",
+#     subset="validation",  
+#     tiou_thresholds=[0.1, 0.3, 0.5, 0.7, 0.9],
+#     ground_truth_filename="data/PKU-MMD/pku_val.json",  
+# )

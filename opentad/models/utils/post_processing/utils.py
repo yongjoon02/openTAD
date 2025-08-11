@@ -57,26 +57,43 @@ def convert_to_seconds(segments, meta):
         print(f"DEBUG: convert_to_seconds - meta fps: {meta.get('fps', 'NOT_FOUND')}")
         print(f"DEBUG: convert_to_seconds - meta duration: {meta.get('duration', 'NOT_FOUND')}")
     
-    # PKU-MMD 특별 처리: 프레임 단위 유지 (시간 변환 안함)
-    if "video_name" in meta and meta.get("fps", 0) == 30.0:  # PKU-MMD 특성 확인 (30fps)
-        # PKU-MMD는 프레임 단위로 그대로 유지 (시간 변환 안함)
-        # segments는 이미 프레임 단위이므로 그대로 사용
+    # PKU-MMD 특별 처리: 프레임 단위 유지
+    if meta.get("fps", 0) == 30.0:  # PKU-MMD (30fps)
+        # PKU-MMD는 윈도우 기준 -> 전체 기준 변환만 수행
+        snippet_stride = meta["snippet_stride"]
+        offset_frames = meta["offset_frames"]
+        window_start_frame = meta.get("window_start_frame", 0)
+        
+        # 윈도우 기준 세그먼트를 전체 비디오 기준으로 변환
+        segments = segments * snippet_stride + window_start_frame + offset_frames
+        
         if segments.shape[0] > 0:
             print(f"DEBUG: convert_to_seconds - PKU-MMD mode, segments after (frame): {segments[:3]}")
+    
     elif meta["fps"] == -1:  # resize setting, like in anet / hacs
         segments = segments / meta["resize_length"] * meta["duration"]
+    
     else:  # sliding window / padding setting, like in thumos / ego4d
         snippet_stride = meta["snippet_stride"]
         offset_frames = meta["offset_frames"]
-        window_start_frame = meta["window_start_frame"] if "window_start_frame" in meta.keys() else 0
+        window_start_frame = meta.get("window_start_frame", 0)
+        
+        # 다른 데이터셋 (초 단위로 변환)
         segments = (segments * snippet_stride + window_start_frame + offset_frames) / meta["fps"]
 
-    # truncate all boundaries within [0, duration] (duration도 프레임 단위로 처리)
+    # truncate all boundaries within [0, duration]
     if segments.shape[0] > 0:
         segments[segments <= 0.0] *= 0.0
-        # duration을 프레임 단위로 변환 (초 * fps)
-        max_frames = meta["duration"] * meta["fps"] if meta.get("fps", 0) == 30.0 else meta["duration"]
+        
+        # PKU-MMD는 프레임 단위, 다른 데이터셋은 초 단위
+        if meta.get("fps", 0) == 30.0:  # PKU-MMD
+            max_frames = meta["duration"]  # duration이 이미 프레임 단위
+        else:  # 다른 데이터셋
+            max_frames = meta["duration"]  # duration이 초 단위
+        
         segments[segments >= max_frames] = segments[segments >= max_frames] * 0.0 + max_frames
+        
         if "video_name" in meta:
             print(f"DEBUG: convert_to_seconds - final segments (frame): {segments[:3]}")
+    
     return segments

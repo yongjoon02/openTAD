@@ -195,13 +195,16 @@ def visualize_pku_batch_sample(data_dict, sample_idx=0, title="sample"):
             print(f" sample {sample_idx} has no metadata")
 
 # 시각화 실행 (선택적)
-# if 'data_dict' in locals():
-#     visualize_pku_batch_sample(data_dict, sample_idx=0, title="sample 0")
-# 
-#     if data_dict['inputs'].shape[0] > 1:
-#         visualize_pku_batch_sample(data_dict, sample_idx=1, title="sample 1")
-# 
-# else:
-#     print("no batch data")
+# 배치 데이터 로드
+data_dict = next(iter(train_loader))
+
+if 'data_dict' in locals():
+    visualize_pku_batch_sample(data_dict, sample_idx=0, title="sample 0")
+
+    if data_dict['inputs'].shape[0] > 1:
+        visualize_pku_batch_sample(data_dict, sample_idx=1, title="sample 1")
+
+else:
+    print("no batch data")
 
 print("PKU-MMD unit test completed!") 

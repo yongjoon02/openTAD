@@ -13,7 +13,7 @@ dataset = dict(
     train=dict(
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
-            dict(type="mmaction.DecordInit", num_threads=6),
+            dict(type="mmaction.DecordInit", num_threads=4), 
             dict(
                 type="LoadFrames",
                 num_clips=1,
@@ -38,7 +38,7 @@ dataset = dict(
     val=dict(
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
-            dict(type="mmaction.DecordInit", num_threads=4),
+            dict(type="mmaction.DecordInit", num_threads=4),  
             dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1), 
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 160)),
@@ -51,7 +51,7 @@ dataset = dict(
     test=dict(
         pipeline=[
             dict(type="PrepareVideoInfo", format="avi"),
-            dict(type="mmaction.DecordInit", num_threads=4),
+            dict(type="mmaction.DecordInit", num_threads=4), 
             dict(type="LoadFrames", num_clips=1, method="sliding_window", scale_factor=1),  
             dict(type="mmaction.DecordDecode"),
             dict(type="mmaction.Resize", scale=(-1, 160)),
@@ -112,9 +112,9 @@ model = dict(
 )
 
 solver = dict(
-    train=dict(batch_size=16, num_workers=4), 
-    val=dict(batch_size=16, num_workers=4),     
-    test=dict(batch_size=4, num_workers=4),    
+    train=dict(batch_size=8, num_workers=4),   # 배치 크기 16->8, 워커 수 4->2로 감소
+    val=dict(batch_size=8, num_workers=4),     # 배치 크기 16->8, 워커 수 4->2로 감소
+    test=dict(batch_size=4, num_workers=4),    # 배치 크기 4->2, 워커 수 4->2로 감소
     clip_grad_norm=1,
     amp=True,
     fp16_compress=True,
@@ -144,11 +144,11 @@ scheduler = dict(type="LinearWarmupCosineAnnealingLR", warmup_epoch=5, max_epoch
 inference = dict(
     load_from_raw_predictions=False, 
     save_raw_prediction=False,
-    score_thresh=0.03,  
+    score_thresh=0.05,  
 )
 post_processing = dict(
     nms=dict(
-        use_soft_nms=True,
+        use_soft_nms=False,
         sigma=0.3,  
         max_seg_num=1000,  
         multiclass=False, 
@@ -167,7 +167,7 @@ workflow = dict(
     num_sanity_check=0,    
 )
 
-work_dir = "work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter_unfreeze"
+work_dir = "work_dirs/e2e_pku_mmd_videomae_s_768x1_160_adapter"
 
 # 완전히 새로 시작 - 체크포인트 로드 없음
 # load_from = None
